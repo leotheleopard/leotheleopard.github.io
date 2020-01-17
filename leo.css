@@ -13,5 +13,16 @@ h1 {
 	text-align:center;
 	font-size:24px;
 } body {
-	background-image:url(234962962-source.gif);
+	background-image:url(2020-01-17_11.46.40.png)
+} ul {
+	font-family:Overseer, Chicago, sans-serif;
+	text-align:center;
+	font-size:24px;
+} li { 
+	font-family:Overseer, Chicago, sans-serif;
+	text-align:center;
+	font-size:24px;
+} .About {
+	padding-left:200px;
+	padding-right:200px;
 }
