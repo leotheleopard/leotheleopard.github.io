@@ -1,7 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
-
-h1 {
+@font-face {
+	font-family:Overseer;
+	src:url(Overseer.ttf);
+} h1 {
 	font-family:Overseer, Chicago, sans-serif;
 	text-align:center;
 } p {
@@ -14,7 +16,6 @@ h1 {
 	font-size:24px;
 } body {
 	background:url(BGimage.png);
-	background-repeat:no-repeat;
 	background-attachment:fixed;
 } ul {
 	font-family:Overseer, Chicago, sans-serif;
