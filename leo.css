@@ -1,28 +1,28 @@
 @charset "utf-8";
 /* CSS Document */
 @font-face {
-	font-family:Overseer;
+	font-family: "Overseer";
 	src:url(Overseer.ttf);
 } h1 {
-	font-family:Overseer, Chicago, sans-serif;
+	font-family:"Overseer", sans-serif;
 	text-align:center;
 } p {
 	font-size:24px;
-	font-family:Overseer, Chicago, sans-serif;
+	font-family:"Overseer", Chicago, sans-serif;
 	text-align:center;
 } button {
-	font-family:Overseer, Chicago, sans-serif;
+	font-family:"Overseer", Chicago, sans-serif;
 	text-align:center;
 	font-size:24px;
 } body {
 	background:url(BGimage.png);
 	background-attachment:fixed;
 } ul {
-	font-family:Overseer, Chicago, sans-serif;
+	font-family:"Overseer", Chicago, sans-serif;
 	text-align:center;
 	font-size:24px;
 } li { 
-	font-family:Overseer, Chicago, sans-serif;
+	font-family:"Overseer", Chicago, sans-serif;
 	text-align:center;
 	font-size:24px;
 } .About {
