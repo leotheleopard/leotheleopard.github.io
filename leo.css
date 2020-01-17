@@ -17,6 +17,8 @@
 } body {
 	background:url(BGimage.png);
 	background-attachment:fixed;
+	padding-left:200px;
+	padding-right:200px;
 } ul {
 	font-family:"Overseer", Chicago, sans-serif;
 	text-align:center;
@@ -25,7 +27,4 @@
 	font-family:"Overseer", Chicago, sans-serif;
 	text-align:center;
 	font-size:24px;
-} .About {
-	padding-left:200px;
-	padding-right:200px;
 }
