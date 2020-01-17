@@ -6,6 +6,7 @@
 } h1 {
 	font-family:"Overseer", sans-serif;
 	text-align:center;
+	font-size:36px;
 } p {
 	font-size:24px;
 	font-family:"Overseer", Chicago, sans-serif;
@@ -23,8 +24,8 @@
 	font-family:"Overseer", Chicago, sans-serif;
 	text-align:center;
 	font-size:24px;
-} li { 
+} h2 { 
 	font-family:"Overseer", Chicago, sans-serif;
 	text-align:center;
-	font-size:24px;
+	font-size:32px;
 }
