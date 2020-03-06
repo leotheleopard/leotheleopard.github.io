@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/leotheleopardnz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://leotheleopard.github.io
+  * I am leotheleopardnz (https://keybase.io/leotheleopardnz) on keybase.
+  * I have a public key ASANFE16sVP9k5wWO7gtOzEBiZQdNfFzMxLpu43_xoTjZQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01200d144d7ab153fd939c163bb82d3b310189941d35f1733312e9bb8dffc684e3650a",
+      "host": "keybase.io",
+      "kid": "01200d144d7ab153fd939c163bb82d3b310189941d35f1733312e9bb8dffc684e3650a",
+      "uid": "3048f6ada2be7a1f9b56a9d45c2b2719",
+      "username": "leotheleopardnz"
+    },
+    "merkle_root": {
+      "ctime": 1583499125,
+      "hash": "038a6ca60c8dd491e2df6a9c99ab26a472d728d29bf233cde111df5df1faf317dd7c26ba2145cf938da6a19e04e0f11b3390e5508e9efceebdbd76fad50a0dc3",
+      "hash_meta": "f38c35ac2b35bffdf83b27c18937081a570090ef9d172818e5ec30e85970ba8a",
+      "seqno": 15075767
+    },
+    "service": {
+      "entropy": "dGE+eODuUlIS9p2jj8tUraUs",
+      "hostname": "leotheleopard.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.2.1"
+  },
+  "ctime": 1583499152,
+  "expire_in": 504576000,
+  "prev": "a04a91bdb615e12bea29321d8ed259ccfb2a25840eca644b2ef9071f064a921a",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgDRRNerFT/ZOcFju4LTsxAYmUHTXxczMS6buN/8aE42UKp3BheWxvYWTESpcCB8QgoEqRvbYV4SvqKTIdjtJZzPsqJYQOymRLLvkHHwZKkhrEIB711KdE/iqfgvyuV6RdeM/APEmdTkoEtkhB7gSXdSMYAgHCo3NpZ8RALgnvZJgbWPbMOIvsedPPuAuWd85rUbbhfCq2Dt+vLI/GdQ4YmbJEpenrAYxOLut+NzVuBr5O2XiMPuHhreMQCKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBeNMgYzi6UnZc3mv+pdFITuKdfHAZSrW1Z7YzFKCzDPo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/leotheleopardnz
+
+==================================================================
