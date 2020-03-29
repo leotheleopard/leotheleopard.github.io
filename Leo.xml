@@ -1,512 +1,512 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ServerPack version="3.4" xmlns="http://www.mcupdater.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mcupdater.com http://files.mcupdater.com/ServerPackv2.xsd">
-	<Server id="Leos" abstract="false" name="Leo&apos;s Pack" newsUrl="about:blank" version="1.12.2" generateList="true" autoConnect="true" revision="1" mainClass="net.minecraft.launchwrapper.Launch" launcherType="Vanilla">
+	<Server id="LeoPack" abstract="false" name="Leo&apos;s Pack For Fun" newsUrl="about:blank" iconUrl="http://leotheleopard.github.io/icon.ico" version="1.12.2" generateList="true" autoConnect="true" revision="1" mainClass="net.minecraft.launchwrapper.Launch" launcherType="Vanilla">
 		<Loader type="Forge" version="14.23.5.2847" loadOrder="0"/>
 		<Module name="(C) Blkdragon112" id="cblkdragon" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Blkdragon112.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Blkdragon112.tbl</URL>
 			<Size>9419</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>f3dd01ea6968d2b8b0c04157ae083aeb</MD5>
 		</Module>
 		<Module name="(C) bludde" id="cbludde" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20bludde.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20bludde.tbl</URL>
 			<Size>2459</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>2ca3f5efe21b6f751eba3263eda696fc</MD5>
 		</Module>
 		<Module name="(C) BlueTears__" id="cbluetears__" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20BlueTears__.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20BlueTears__.tbl</URL>
 			<Size>1751</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>c036b756452fd47c857d6748ff07b966</MD5>
 		</Module>
 		<Module name="(C) Chakorii" id="cchakorii" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Chakorii.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Chakorii.tbl</URL>
 			<Size>2633</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>a31fd5a84ff900d8fda620c47fcbf2d8</MD5>
 		</Module>
 		<Module name="(C) CherryJimbo" id="ccherryjimbo" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20CherryJimbo.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20CherryJimbo.tbl</URL>
 			<Size>4114</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>caa1fb07e2523075de1d7d34be7a4034</MD5>
 		</Module>
 		<Module name="(C) ChipUK" id="cchipuk" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20ChipUK.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20ChipUK.tbl</URL>
 			<Size>2102</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>ee654bfa4943a459e6baf3d3617a0926</MD5>
 		</Module>
 		<Module name="(C) Cieronph" id="ccieronph" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Cieronph.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Cieronph.tbl</URL>
 			<Size>1274</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>7a139f25dded2983acc8c750d1cbdc0b</MD5>
 		</Module>
 		<Module name="(C) claycorp" id="cclaycorp" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20claycorp.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20claycorp.tbl</URL>
 			<Size>1524</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>c9950f43d940030befcadc148c9d906a</MD5>
 		</Module>
 		<Module name="(C) Cloudhunter" id="ccloudhunter" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Cloudhunter.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Cloudhunter.tbl</URL>
 			<Size>2642</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>48261a0693b988ad9a582004e73bcc83</MD5>
 		</Module>
 		<Module name="(C) credstick" id="ccredstick" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20credstick.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20credstick.tbl</URL>
 			<Size>3803</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>28f64073b469ba82e50f27939015d3dd</MD5>
 		</Module>
 		<Module name="(C) creeperdude12321" id="ccreeperdude" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20creeperdude12321.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20creeperdude12321.tbl</URL>
 			<Size>2064</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>48cccb9a67424d9e8f4550b0d87f0a0a</MD5>
 		</Module>
 		<Module name="(C) Cronoo" id="ccronoo" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Cronoo.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Cronoo.tbl</URL>
 			<Size>2158</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>6c1f01a649d2c448dff13aca2c5e4d5e</MD5>
 		</Module>
 		<Module name="(C) Datagne" id="cdatagne" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Datagne.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Datagne.tbl</URL>
 			<Size>1878</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>bbc247c5988750e149ad3f8360cd0c49</MD5>
 		</Module>
 		<Module name="(C) daveydee3" id="cdaveydee" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20daveydee3.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20daveydee3.tbl</URL>
 			<Size>915</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>ff0515cab9e99cff6e47dea0cea0afea</MD5>
 		</Module>
 		<Module name="(C) Deadman775" id="cdeadman" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Deadman775.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Deadman775.tbl</URL>
 			<Size>2811</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>773121e665104ee18bcf0584ed1c26e3</MD5>
 		</Module>
 		<Module name="(C) DeCMK" id="cdecmk" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20DeCMK.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20DeCMK.tbl</URL>
 			<Size>1580</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>9fb429607cd2370504ec8972cb80b25c</MD5>
 		</Module>
 		<Module name="(C) DigiplayW8" id="cdigiplayw" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20DigiplayW8.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20DigiplayW8.tbl</URL>
 			<Size>3230</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>638bd0798056b2c6e62787f46e77a903</MD5>
 		</Module>
 		<Module name="(C) dimaleyko" id="cdimaleyko" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20dimaleyko.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20dimaleyko.tbl</URL>
 			<Size>2276</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>7f4dc2d24bf7865d5f47ab411f95de58</MD5>
 		</Module>
 		<Module name="(C) Direwolf20" id="cdirewolf" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Direwolf20.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Direwolf20.tbl</URL>
 			<Size>2400</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>408e7fb594cdfb5437680db7946fbd55</MD5>
 		</Module>
 		<Module name="(C) DJFLuFFy_vs_joe" id="cdjfluffy_vs_joe" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20DJFLuFFy_vs_joe.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20DJFLuFFy_vs_joe.tbl</URL>
 			<Size>3839</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>8287e699609ff500d2955204a35915b3</MD5>
 		</Module>
 		<Module name="(C) E.V.A." id="ceva" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20E.V.A..tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20E.V.A..tbl</URL>
 			<Size>2506</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>4a4568c3dc74306ea9a0992b9ee62205</MD5>
 		</Module>
 		<Module name="(C) failprone22" id="cfailprone" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20failprone22.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20failprone22.tbl</URL>
 			<Size>1937</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>0f00860258951a74329324fd8d122fe4</MD5>
 		</Module>
 		<Module name="(C) FireBall1725" id="cfireball" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20FireBall1725.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20FireBall1725.tbl</URL>
 			<Size>2006</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>254e004a7c08a61ae93e4f6a4eb80069</MD5>
 		</Module>
 		<Module name="(C) Fridgeboy" id="cfridgeboy" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Fridgeboy.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Fridgeboy.tbl</URL>
 			<Size>1603</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>874ec4301a11b3ca7dda45cd881f2b76</MD5>
 		</Module>
 		<Module name="(C) Grumpie" id="cgrumpie" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Grumpie.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Grumpie.tbl</URL>
 			<Size>2675</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>bf86d0a05af6f9d02e732549874480c0</MD5>
 		</Module>
 		<Module name="(C) gtakingiscool" id="cgtakingiscool" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20gtakingiscool.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20gtakingiscool.tbl</URL>
 			<Size>2172</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>ab1b3342c79e143b102054b1a852d138</MD5>
 		</Module>
 		<Module name="(C) HaloBoy12321" id="chaloboy" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20HaloBoy12321.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20HaloBoy12321.tbl</URL>
 			<Size>2441</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>ac9ab943dd3c0a371923ca4ed40f3290</MD5>
 		</Module>
 		<Module name="(C) Hanse00" id="chanse" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Hanse00.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Hanse00.tbl</URL>
 			<Size>2409</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>2277b2395958bfcca0dcd4e0d5875824</MD5>
 		</Module>
 		<Module name="(C) iChun" id="cichun" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20iChun.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20iChun.tbl</URL>
 			<Size>1632</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>fbcdf0952d16b5c46ec51af51a1bc188</MD5>
 		</Module>
 		<Module name="(C) IvyKirax" id="civykirax" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20IvyKirax.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20IvyKirax.tbl</URL>
 			<Size>3132</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>1b2118c93820ca77f35507ba7bc34918</MD5>
 		</Module>
 		<Module name="(C) Jahdoh" id="cjahdoh" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Jahdoh.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Jahdoh.tbl</URL>
 			<Size>1461</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>12a2349702b5906dfcf412060138196b</MD5>
 		</Module>
 		<Module name="(C) Jakja22" id="cjakja" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Jakja22.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Jakja22.tbl</URL>
 			<Size>2462</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>6d757760f4b1c8064cd3eb98f9c84249</MD5>
 		</Module>
 		<Module name="(C) jmanpenilla" id="cjmanpenilla" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20jmanpenilla.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20jmanpenilla.tbl</URL>
 			<Size>1387</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>a6910f0421fef7726edb297dd85e4014</MD5>
 		</Module>
 		<Module name="(C) kacifox" id="ckacifox" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20kacifox.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20kacifox.tbl</URL>
 			<Size>3429</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>5ebdb36560e8c57539b19087c75ee4e8</MD5>
 		</Module>
 		<Module name="(C) KaywinnitBeej" id="ckaywinnitbeej" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20KaywinnitBeej.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20KaywinnitBeej.tbl</URL>
 			<Size>1384</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>88767ece9f5bdce9ed28ce357b7f2872</MD5>
 		</Module>
 		<Module name="(C) Kihira" id="ckihira" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Kihira.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Kihira.tbl</URL>
 			<Size>4051</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>2dbdcd3d41a81625d74873b31bdc718f</MD5>
 		</Module>
 		<Module name="(C) kirby1502" id="ckirby" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20kirby1502.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20kirby1502.tbl</URL>
 			<Size>2941</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>ea0ba6f14c0cbb45ae8815cefddea255</MD5>
 		</Module>
 		<Module name="(C) Lambert2191" id="clambert" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Lambert2191.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Lambert2191.tbl</URL>
 			<Size>2817</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>eb3be0211a93dbfe686ff7fd83db3827</MD5>
 		</Module>
 		<Module name="(C) megatronp" id="cmegatronp" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20megatronp.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20megatronp.tbl</URL>
 			<Size>3092</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>061dc14cf9fe88d5431c3a56b6e62664</MD5>
 		</Module>
 		<Module name="(C) MidriffCryo" id="cmidriffcryo" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20MidriffCryo.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20MidriffCryo.tbl</URL>
 			<Size>2852</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>b253f58029aaccd7b89f49f858217c1d</MD5>
 		</Module>
 		<Module name="(C) Morvelaira" id="cmorvelaira" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Morvelaira.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Morvelaira.tbl</URL>
 			<Size>1761</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>4ce2278cb6176debd71b5e046f223fab</MD5>
 		</Module>
 		<Module name="(C) Mr. Haz" id="cmrhaz" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Mr.%20Haz.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Mr.%20Haz.tbl</URL>
 			<Size>2124</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>852200c891e5ee2b0ca1a0d9f5a5318e</MD5>
 		</Module>
 		<Module name="(C) mrgreaper" id="cmrgreaper" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20mrgreaper.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20mrgreaper.tbl</URL>
 			<Size>2259</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>4646cbc25c86215ed5f3ce66d9929ab5</MD5>
 		</Module>
 		<Module name="(C) MrMallenby" id="cmrmallenby" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20MrMallenby.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20MrMallenby.tbl</URL>
 			<Size>1980</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>b4e91ee7a5501d5eafebce0e767718e1</MD5>
 		</Module>
 		<Module name="(C) mroberts6" id="cmroberts" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20mroberts6.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20mroberts6.tbl</URL>
 			<Size>2890</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>d325e615a7235d2269212966920d901c</MD5>
 		</Module>
 		<Module name="(C) odedex" id="codedex" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20odedex.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20odedex.tbl</URL>
 			<Size>3048</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>b8aec717a1128cbde4ff9219a939934a</MD5>
 		</Module>
 		<Module name="(C) restoredhalo901" id="crestoredhalo" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20restoredhalo901.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20restoredhalo901.tbl</URL>
 			<Size>1680</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>4856fea2639903604f88f0677c9f400d</MD5>
 		</Module>
 		<Module name="(C) RoyalAngelzor" id="croyalangelzor" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20RoyalAngelzor.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20RoyalAngelzor.tbl</URL>
 			<Size>2667</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>c38017840fb51e4b923b81fa6c1ddf8c</MD5>
 		</Module>
 		<Module name="(C) rxiv" id="crxiv" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20rxiv.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20rxiv.tbl</URL>
 			<Size>1494</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>e68464f3b2a7e3f12241ac46681dce35</MD5>
 		</Module>
 		<Module name="(C) scarletr0se" id="cscarletrse" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20scarletr0se.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20scarletr0se.tbl</URL>
 			<Size>9208</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>4d2d5aed2ff8f8a60353a0c51492d286</MD5>
 		</Module>
 		<Module name="(C) SitDownCreepa" id="csitdowncreepa" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20SitDownCreepa.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20SitDownCreepa.tbl</URL>
 			<Size>2433</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>a4d2075d187971baf20419e3675d5184</MD5>
 		</Module>
 		<Module name="(C) sivina" id="csivina" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20sivina.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20sivina.tbl</URL>
 			<Size>1751</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>0040c76163b7a3e2ae9f09eeab59be06</MD5>
 		</Module>
 		<Module name="(C) skeledron" id="cskeledron" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20skeledron.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20skeledron.tbl</URL>
 			<Size>2508</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>31749d840d3a567e37dc18b6a14d05c4</MD5>
 		</Module>
 		<Module name="(C) Soaryn" id="csoaryn" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Soaryn.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Soaryn.tbl</URL>
 			<Size>2992</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>655ff57eb7aac4f8a22261489c46d5a2</MD5>
 		</Module>
 		<Module name="(C) stonislandmodz" id="cstonislandmodz" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20stonislandmodz.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20stonislandmodz.tbl</URL>
 			<Size>2194</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>e3b0909fc395e5005e89e81f4e16821e</MD5>
 		</Module>
 		<Module name="(C) stramp_" id="cstramp_" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20stramp_.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20stramp_.tbl</URL>
 			<Size>1686</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>c6f54899448dfc7a8bc414f522e3af80</MD5>
 		</Module>
 		<Module name="(C) Swisstobi" id="cswisstobi" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Swisstobi.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Swisstobi.tbl</URL>
 			<Size>3221</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>47909f4d30eaa5ce10f6bd32ee5ab4e3</MD5>
 		</Module>
 		<Module name="(C) TheForensicDuck" id="ctheforensicduck" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20TheForensicDuck.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20TheForensicDuck.tbl</URL>
 			<Size>1877</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>89d78a0964bfbeca7e22315ce7ca65df</MD5>
 		</Module>
 		<Module name="(C) TheMattaBase" id="cthemattabase" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20TheMattaBase.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20TheMattaBase.tbl</URL>
 			<Size>18856</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>40c87347920841104f7907614d5b165e</MD5>
 		</Module>
 		<Module name="(C) TheMusicalBoy93" id="cthemusicalboy" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20TheMusicalBoy93.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20TheMusicalBoy93.tbl</URL>
 			<Size>7047</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>10ad270554946194e661f47be772b23c</MD5>
 		</Module>
 		<Module name="(C) tiena63" id="ctiena" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20tiena63.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20tiena63.tbl</URL>
 			<Size>1912</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>3ccde72784d72c8dc9ea71db7dd694ff</MD5>
 		</Module>
 		<Module name="(C) Tigereye10" id="ctigereye" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Tigereye10.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Tigereye10.tbl</URL>
 			<Size>3195</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>b2c2eb937b6a00d3715ede5ddbe0a6fe</MD5>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/UniqueNames.txt</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/UniqueNames.txt</URL>
 				<Path>config/UniqueNames.txt</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>4f26fdaac40c1d8565247b135669107e</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="(C) Toby1066" id="ctoby" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Toby1066.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Toby1066.tbl</URL>
 			<Size>1599</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>51e44ea34331c0357292a380931c0e49</MD5>
 		</Module>
 		<Module name="(C) Umbra" id="cumbra" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20Umbra.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20Umbra.tbl</URL>
 			<Size>4125</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>4e0c6339431b99c1102a1e1bfe5d290e</MD5>
 		</Module>
 		<Module name="(C) vincemuhs" id="cvincemuhs" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20vincemuhs.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20vincemuhs.tbl</URL>
 			<Size>2420</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>753a30a88a72ab53e3386833cc96927f</MD5>
 		</Module>
 		<Module name="(C) wyld" id="cwyld" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Contributors/(C)%20wyld.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Contributors/(C)%20wyld.tbl</URL>
 			<Size>2467</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>696e35219d8f3f660df1d4c722306bb7</MD5>
 		</Module>
 		<Module name="Abraham Lincoln Hat" id="abrahamlincolnhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Abraham%20Lincoln%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Abraham%20Lincoln%20Hat.tbl</URL>
 			<Size>1865</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>10d690e74f3080d74a23733a95e04fea</MD5>
 		</Module>
 		<Module name="Aerwhale Hat" id="aerwhalehat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/The_Mushroomcow&apos;s%20Collection/Aerwhale%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/The_Mushroomcow&apos;s%20Collection/Aerwhale%20Hat.tbl</URL>
 			<Size>4006</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>ad1849aacea40dced7d920d34f8c5dd1</MD5>
 		</Module>
 		<Module name="Anvilhead" id="anvilhead" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Portalcrafter51&apos;s%20Collection/Anvilhead.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Portalcrafter51&apos;s%20Collection/Anvilhead.tbl</URL>
 			<Size>1124</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>2cf0f12c97423806c707bffb0a7d58c4</MD5>
 		</Module>
 		<Module name="AppleCore-mc1.12.2-3.2.0" id="applecoremc" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/AppleCore-mc1.12.2-3.2.0.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/AppleCore-mc1.12.2-3.2.0.jar</URL>
 			<Size>88308</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>1cbb68f6f8e55dbbe525dd8d90f86d1f</MD5>
 		</Module>
 		<Module name="AppleHat" id="applehat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/AppleHat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/AppleHat.tbl</URL>
 			<Size>1423</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>2865f73c0c3925486584e9cbcde1cc5e</MD5>
 		</Module>
 		<Module name="AppleSkin" id="appleskin" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/AppleSkin-mc1.12-1.0.9.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/AppleSkin-mc1.12-1.0.9.jar</URL>
 			<Size>32317</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -519,14 +519,14 @@
 				<authors>squeek</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/appleskin.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/appleskin.cfg</URL>
 				<Path>config/appleskin.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>5985c69d22b2f08443f7179dcd227f68</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Applied Energistics 2" id="appliedenergistics2" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/appliedenergistics2-rv6-stable-7.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/appliedenergistics2-rv6-stable-7.jar</URL>
 			<Size>4062630</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -539,100 +539,100 @@
 				<authors>AlgorithmX2</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/AppliedEnergistics2/AppliedEnergistics2.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/AppliedEnergistics2/AppliedEnergistics2.cfg</URL>
 				<Path>config/AppliedEnergistics2/AppliedEnergistics2.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>bc1d3d080d2d16520039b6ee0d6be657</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/AppliedEnergistics2/CustomRecipes.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/AppliedEnergistics2/CustomRecipes.cfg</URL>
 				<Path>config/AppliedEnergistics2/CustomRecipes.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>1030f2981d7a8ddc1d6fd3ce920ffa00</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/AppliedEnergistics2/Facades.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/AppliedEnergistics2/Facades.cfg</URL>
 				<Path>config/AppliedEnergistics2/Facades.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>b9cbb1590af5ea4efe126f7ca05b23ad</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/AppliedEnergistics2/items.csv</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/AppliedEnergistics2/items.csv</URL>
 				<Path>config/AppliedEnergistics2/items.csv</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>2c291106966fb953b6ae6621116cebf0</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/AppliedEnergistics2/VersionChecker.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/AppliedEnergistics2/VersionChecker.cfg</URL>
 				<Path>config/AppliedEnergistics2/VersionChecker.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>e40aebdaaccbb70820ffbb9f6126b92c</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Arrow Head" id="arrowhead" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Arrow%20Head.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Arrow%20Head.tbl</URL>
 			<Size>1230</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>cf5c18aa43fadc3a3d0df801045a4ae4</MD5>
 		</Module>
 		<Module name="Arrowed Top Hat" id="arrowedtophat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Arrowed%20Top%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Arrowed%20Top%20Hat.tbl</URL>
 			<Size>1499</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>b002caaddc3c2d1cdf665d6a0a07aade</MD5>
 		</Module>
 		<Module name="Ash&apos;s Cap" id="ashscap" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Ash&apos;s%20Cap.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Ash&apos;s%20Cap.tbl</URL>
 			<Size>24469</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>815ddc8018417a998445709eb3cd582f</MD5>
 		</Module>
 		<Module name="Australian Minecart" id="australianminecart" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Australian%20Minecart.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Australian%20Minecart.tbl</URL>
 			<Size>6103</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>02485bf0edc257936652645abed1095d</MD5>
 		</Module>
 		<Module name="Axehead" id="axehead" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Axehead.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Axehead.tbl</URL>
 			<Size>1679</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>f446473fe569da915e48a7fbc66d96bf</MD5>
 		</Module>
 		<Module name="Baby Turtle" id="babyturtle" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Mr_Hazard&apos;s%20Collection/Baby%20Turtle.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Mr_Hazard&apos;s%20Collection/Baby%20Turtle.tbl</URL>
 			<Size>1667</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>ae8ede10d53a52154eee74c5a610f757</MD5>
 		</Module>
 		<Module name="Bane Mask" id="banemask" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Bane%20Mask.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Bane%20Mask.tbl</URL>
 			<Size>2289</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>00ab6e21f54f506019ff58ddd1fff26a</MD5>
 		</Module>
 		<Module name="BetterFps-1.4.8" id="betterfps" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/BetterFps-1.4.8.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/BetterFps-1.4.8.jar</URL>
 			<Size>155196</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>d36f4d3c0f96e99a9a1ad2e8eeda1fc4</MD5>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/betterfps.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/betterfps.json</URL>
 				<Path>config/betterfps.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>be6cb76d2d5c4a28ffd3f54eeef4ae9f</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Biomes O&apos; Plenty" id="biomesoplenty" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/BiomesOPlenty-1.12.2-7.0.1.2444-universal.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/BiomesOPlenty-1.12.2-7.0.1.2444-universal.jar</URL>
 			<Size>4702147</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -645,691 +645,691 @@
 				<authors>Adubbz, Amnet, Cheeserolls, Forstride, ted80</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/alps.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/alps.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/alps.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>9d8c136bd1b627206e3df487fe79dc6c</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/alps_foothills.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/alps_foothills.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/alps_foothills.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>ccd5ae7d8c424cd2597585225f5f829e</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/bamboo_forest.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/bamboo_forest.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/bamboo_forest.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>23d566d8dbc102fa9c99c3279d7adbb1</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/bayou.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/bayou.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/bayou.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>74abd7c0665d6335cd60cfac5a698310</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/bog.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/bog.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/bog.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>01962f70e36f70fc04da48207dbc71fe</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/boreal_forest.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/boreal_forest.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/boreal_forest.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>a7fdd616845989cfca23aacc7519d561</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/brushland.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/brushland.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/brushland.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>2566d23379859130e4d6e0243b7c50b8</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/chaparral.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/chaparral.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/chaparral.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>b3b670d29feabf549b907ff0c19af432</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/cherry_blossom_grove.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/cherry_blossom_grove.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/cherry_blossom_grove.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>cf7347294f75551af2d46f73a57f102e</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/cold_desert.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/cold_desert.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/cold_desert.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>387138af2c9606ea50e82abefd15ec40</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/coniferous_forest.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/coniferous_forest.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/coniferous_forest.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>09a6f87ec92b5d3f452f8f4387869a57</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/coral_reef.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/coral_reef.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/coral_reef.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>e4c7b8a37036691d192f6b84309044c3</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/corrupted_sands.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/corrupted_sands.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/corrupted_sands.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>df19968df1cc881d7f36f048b5ddf785</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/crag.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/crag.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/crag.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>c5874ebf9c142ba36f6d2c518bba2afb</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/dead_forest.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/dead_forest.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/dead_forest.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>0987e23015420a891f7bb0da237995f2</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/dead_swamp.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/dead_swamp.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/dead_swamp.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>90ccb0c3f197cadf0706f68afc0debd3</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/eucalyptus_forest.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/eucalyptus_forest.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/eucalyptus_forest.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>d4a69a39a13faa091b4edcee601da336</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/fen.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/fen.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/fen.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>aa32c2ee4b7288fab17bb379156e28d6</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/flower_field.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/flower_field.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/flower_field.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>fc52f6e5aaeaf190b87e44ee43ddabb6</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/flower_island.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/flower_island.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/flower_island.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>fa7e270f674cf1a2a6739898be0fb120</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/fungi_forest.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/fungi_forest.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/fungi_forest.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>9233edc809ecf15bfcf0358d8d27f052</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/glacier.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/glacier.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/glacier.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>c0562dae8b7efb85963dcf2bee84e769</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/grassland.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/grassland.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/grassland.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>8df56cf0e85d8f9f30bd44baca6740ab</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/gravel_beach.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/gravel_beach.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/gravel_beach.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>73a4faf75b0f075b03365adce3dc9bb0</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/grove.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/grove.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/grove.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>e1a2fae91fe63c265af2154fdf932806</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/highland.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/highland.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/highland.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>8413d7ad87d5e21c2fb13a08f2760867</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/kelp_forest.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/kelp_forest.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/kelp_forest.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>30bd2deb8e4b2924a15cc2bd4ff4769d</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/land_of_lakes.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/land_of_lakes.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/land_of_lakes.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>5531f72ab132abedfd7856168bd4dc08</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/lavender_fields.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/lavender_fields.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/lavender_fields.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>bef514e62013f2dbcad9f2934102531d</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/lush_desert.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/lush_desert.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/lush_desert.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>04020daf4620cb5a2018ac3f8f00d3c3</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/lush_swamp.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/lush_swamp.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/lush_swamp.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>27389954ecf8dff1417bd88b4a0fbdc6</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/mangrove.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/mangrove.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/mangrove.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>1ded78212a31f33a471401257c095aba</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/maple_woods.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/maple_woods.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/maple_woods.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>6314f4c697eb20c0fd273bb7c41c8127</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/marsh.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/marsh.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/marsh.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>0aae58041cacc51b509877d9188c2d4a</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/meadow.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/meadow.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/meadow.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>1c04b1f069a50490634f863a1eba1c28</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/moor.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/moor.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/moor.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>19ba9e97d2f001ffc0162bec36604c78</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/mountain.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/mountain.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/mountain.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>3d37dd3b24d9d5d7672989d6d99655e8</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/mountain_foothills.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/mountain_foothills.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/mountain_foothills.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>48bd60e2473b3d2f2f5bcb76d5741a57</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/mystic_grove.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/mystic_grove.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/mystic_grove.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>32583f83cbff48aa7a4a988b0ce7e565</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/oasis.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/oasis.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/oasis.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>ecdc3ef0d8dd64912b38ae133d539573</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/ominous_woods.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/ominous_woods.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/ominous_woods.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>41a94b99dc1633007413fe4297ab51f6</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/orchard.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/orchard.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/orchard.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>ab55509df7aa61829c4340ddebc6a2f4</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/origin_beach.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/origin_beach.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/origin_beach.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>fd7aeda2eafd2c1886a601bce38d4c50</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/origin_island.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/origin_island.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/origin_island.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>a0630883aceaa3e6cb01c6d19c4cb058</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/outback.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/outback.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/outback.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>d048a7c431f8a8d083944cdaf5070a00</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/overgrown_cliffs.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/overgrown_cliffs.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/overgrown_cliffs.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>cc382c5e26f21f8fc7342cbc256b0cbb</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/pasture.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/pasture.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/pasture.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>ddcef49def0e1e1cf2ac8e336cecef60</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/phantasmagoric_inferno.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/phantasmagoric_inferno.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/phantasmagoric_inferno.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>24a8c4ec4094d5885b2359d9772a16e1</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/prairie.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/prairie.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/prairie.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>0cf65d8e7341fbd2a4c67e5530581139</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/quagmire.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/quagmire.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/quagmire.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>7912c19e2b642ed130474824e42bb0c2</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/rainforest.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/rainforest.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/rainforest.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>9417841b767c76d290fac2678d7805b0</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/redwood_forest.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/redwood_forest.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/redwood_forest.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>791ddebdeb7bcab2f8fb23b5a9d31591</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/redwood_forest_edge.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/redwood_forest_edge.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/redwood_forest_edge.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>e2ebe8c3d53bae4d5dc006a156a640d0</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/sacred_springs.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/sacred_springs.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/sacred_springs.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>0a049606d334ec91c8b158ca3efdc174</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/seasonal_forest.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/seasonal_forest.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/seasonal_forest.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>47aa29b2537fe3f78502d5711e28e32a</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/shield.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/shield.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/shield.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>b871616505c244b046c4035a20bd20d6</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/shrubland.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/shrubland.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/shrubland.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>7eac71527dd868b6c9e193e37fbbd5ea</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/snowy_coniferous_forest.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/snowy_coniferous_forest.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/snowy_coniferous_forest.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>eff980a3d1896cf93d08a2918769a524</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/snowy_forest.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/snowy_forest.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/snowy_forest.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>194b291c04e407c1aafdd7a7be35cd91</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/snowy_tundra.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/snowy_tundra.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/snowy_tundra.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>cec39e555a93e0a8e64c6100a6ffc9cd</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/steppe.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/steppe.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/steppe.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>9ddeca8d00f8e445e6a999238010f9b7</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/temperate_rainforest.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/temperate_rainforest.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/temperate_rainforest.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>c84c583b3d935e477c232d56d926f7a8</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/tropical_island.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/tropical_island.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/tropical_island.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>f91fff668a8ffab2fff0886c5f0a1e46</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/tropical_rainforest.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/tropical_rainforest.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/tropical_rainforest.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>d2961c86126d8d91d8395568d6e1289e</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/tundra.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/tundra.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/tundra.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>fa5d2f0e544b12bf6792b2d55d67a059</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/undergarden.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/undergarden.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/undergarden.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>1a437ad2f01af7c296cdcc2cdc73e85d</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/visceral_heap.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/visceral_heap.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/visceral_heap.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>c774b81ee8315290ae07b1497988d682</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/volcanic_island.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/volcanic_island.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/volcanic_island.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>31189ec766848fa86a9598b503b00527</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/wasteland.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/wasteland.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/wasteland.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>f4256978a36f301b3eafd56033dbda5e</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/wetland.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/wetland.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/wetland.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>8b61504aa1eba238b9d021d324d7f199</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/white_beach.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/white_beach.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/white_beach.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>bc4717d7fb7f72ded63ad078fd20e443</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/woodland.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/woodland.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/woodland.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>b7407f5d2fcd52e943ba8c1d5dfecf58</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/biomesoplenty/xeric_shrubland.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/biomesoplenty/xeric_shrubland.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/biomesoplenty/xeric_shrubland.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>a51d3ef531186775ee6c865f9037c43d</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/beaches.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/beaches.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/beaches.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>26f8055462660e07ba05db22dfd0dde2</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/birch_forest.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/birch_forest.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/birch_forest.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>6dc1a361fe757680f0b7ef5ded015a8f</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/birch_forest_hills.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/birch_forest_hills.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/birch_forest_hills.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>6dc1a361fe757680f0b7ef5ded015a8f</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/desert.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/desert.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/desert.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>7ce1ec00c5837d019be2d264d56e2fd9</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/desert_hills.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/desert_hills.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/desert_hills.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>1a31bd848dea3fa0ac513a7b68461861</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/extreme_hills.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/extreme_hills.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/extreme_hills.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>658f257a263659408265bb93a6da2209</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/extreme_hills_with_trees.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/extreme_hills_with_trees.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/extreme_hills_with_trees.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>658f257a263659408265bb93a6da2209</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/forest.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/forest.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/forest.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>a8b0db6fc0c3dd8386ff1bdc8d479124</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/forest_hills.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/forest_hills.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/forest_hills.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>b8fd11f96c373ad6e3f569644aebf623</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/hell.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/hell.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/hell.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>d6f6e1116848c7aa110cfc18b767d0fa</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/ice_flats.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/ice_flats.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/ice_flats.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>1244b68859a0ee52fe1a2b305db95efe</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/ice_mountains.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/ice_mountains.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/ice_mountains.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>1244b68859a0ee52fe1a2b305db95efe</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/jungle.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/jungle.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/jungle.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>1e0514c7d9efb7decc2b616e2ff30af3</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/jungle_hills.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/jungle_hills.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/jungle_hills.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>1e0514c7d9efb7decc2b616e2ff30af3</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/mesa.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/mesa.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/mesa.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>10eb03fb6d6d14eca596e9201241ae2c</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/mesa_clear_rock.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/mesa_clear_rock.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/mesa_clear_rock.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>10eb03fb6d6d14eca596e9201241ae2c</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/mushroom_island.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/mushroom_island.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/mushroom_island.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>23f9ac3d6be80c55ab7348d8ae346ef3</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/mutated_forest.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/mutated_forest.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/mutated_forest.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>94dbc7408a4fba0f8a9f89b36102ab2e</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/ocean.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/ocean.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/ocean.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>45377160147fc376ec0fe7d5186f12bc</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/plains.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/plains.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/plains.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>2493822102ab7103c163884fac4071a6</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/redwood_taiga.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/redwood_taiga.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/redwood_taiga.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>dc0c0c80534df7052c4f379e79f6e6c3</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/redwood_taiga_hills.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/redwood_taiga_hills.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/redwood_taiga_hills.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>dc0c0c80534df7052c4f379e79f6e6c3</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/roofed_forest.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/roofed_forest.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/roofed_forest.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>018c1afa62feb3bb4d91a545be787b71</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/savanna.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/savanna.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/savanna.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>bc155bedfa9b8e7fa79bb92d902e60e2</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/savanna_rock.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/savanna_rock.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/savanna_rock.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>aa5ff082ca7ca5b0f6bb4ee7515c9d70</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/sky.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/sky.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/sky.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>7e819abe295fd5e336b598b9f45543b3</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/swampland.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/swampland.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/swampland.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>3884000d354be40060400521d6e2937c</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/taiga.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/taiga.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/taiga.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>dc0c0c80534df7052c4f379e79f6e6c3</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/taiga_cold.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/taiga_cold.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/taiga_cold.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>e6ed1b374f13d03fc14fd11875e3fd52</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/taiga_cold_hills.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/taiga_cold_hills.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/taiga_cold_hills.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>e6ed1b374f13d03fc14fd11875e3fd52</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/defaults/vanilla/taiga_hills.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/defaults/vanilla/taiga_hills.json</URL>
 				<Path>config/biomesoplenty/biomes/defaults/vanilla/taiga_hills.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>dc0c0c80534df7052c4f379e79f6e6c3</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biomes/Put%20biome%20config%20files%20here</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biomes/Put%20biome%20config%20files%20here</URL>
 				<Path>config/biomesoplenty/biomes/Put biome config files here</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>d41d8cd98f00b204e9800998ecf8427e</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/biome_ids.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/biome_ids.json</URL>
 				<Path>config/biomesoplenty/biome_ids.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>911455659c8807600ccdc27595386f43</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/gameplay.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/gameplay.cfg</URL>
 				<Path>config/biomesoplenty/gameplay.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>3b208b049aa5572878d916339b4e9f37</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/biomesoplenty/misc.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/biomesoplenty/misc.cfg</URL>
 				<Path>config/biomesoplenty/misc.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>ad2000164dc84abd3d5e71abb700502b</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Blame The Community" id="blamethecommunity" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Mr_Hazard&apos;s%20Collection/Blame%20The%20Community.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Mr_Hazard&apos;s%20Collection/Blame%20The%20Community.tbl</URL>
 			<Size>1884</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>2142780e14356a4f5e3d5baea0d1e675</MD5>
 		</Module>
 		<Module name="Bowl Hat" id="bowlhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/DJFLuFFy_vs_joe&apos;s%20Collection/Bowl%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/DJFLuFFy_vs_joe&apos;s%20Collection/Bowl%20Hat.tbl</URL>
 			<Size>2743</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>f5013bbfe8f5c3684cfdc058179d511c</MD5>
 		</Module>
 		<Module name="Boy of Silence Hat" id="boyofsilencehat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Hat%20Pack%201/Boy%20of%20Silence%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Hat%20Pack%201/Boy%20of%20Silence%20Hat.tbl</URL>
 			<Size>9866</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>48f79db3667b1f40c30faf64766a32f6</MD5>
 		</Module>
 		<Module name="Breadfish Hat" id="breadfishhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Breadfish%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Breadfish%20Hat.tbl</URL>
 			<Size>1202</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>cbf8c182f8ddf7b96bf9375fa6e963f3</MD5>
 		</Module>
 		<Module name="BSOD" id="bsod" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/BSOD.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/BSOD.tbl</URL>
 			<Size>1093</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>cd231d28fd01b528ac883ff6733e1d97</MD5>
 		</Module>
 		<Module name="bspkrsCore" id="bspkrscore" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/[1.12]bspkrsCore-universal-7.6.0.1.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/[1.12]bspkrsCore-universal-7.6.0.1.jar</URL>
 			<Size>65907</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -1342,42 +1342,42 @@
 				<authors>DaftPVF, bspkrs, Lunatrius, BlueAnanas, ZenCoder, vrackfall, Rires_Magica</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/bspkrscore.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/bspkrscore.cfg</URL>
 				<Path>config/bspkrscore.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>485522bab62fc5867e5640aad5ec9cfa</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Cage Hat" id="cagehat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Cage%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Cage%20Hat.tbl</URL>
 			<Size>4062</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>ddbd07398acff4855fe8be018e275b18</MD5>
 		</Module>
 		<Module name="Cake Hat" id="cakehat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Cake%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Cake%20Hat.tbl</URL>
 			<Size>1523</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>0e10c6c5388cc1a1817a6cb53773cfc3</MD5>
 		</Module>
 		<Module name="Cap" id="cap" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Cap.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Cap.tbl</URL>
 			<Size>1119</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>9ce88f8a874af9959291a58d820d12f0</MD5>
 		</Module>
 		<Module name="Cat in the Hat" id="catinthehat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Cat%20in%20the%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Cat%20in%20the%20Hat.tbl</URL>
 			<Size>2103</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>3b1ec486f633c84de70199d1cf793221</MD5>
 		</Module>
 		<Module name="Chance Cubes" id="chancecubes" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/ChanceCubes-1.12.2-5.0.2.345.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/ChanceCubes-1.12.2-5.0.2.345.jar</URL>
 			<Size>926090</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -1390,46 +1390,46 @@
 				<authors>Turkey2349</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/ChanceCubes/chancecubes.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/ChanceCubes/chancecubes.cfg</URL>
 				<Path>config/ChanceCubes/chancecubes.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>93792b512d850f42eb64e9377f86435d</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/ChanceCubes/CustomRewards/Resourcepack/CustomSounds-Resourcepack.zip</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/ChanceCubes/CustomRewards/Resourcepack/CustomSounds-Resourcepack.zip</URL>
 				<Path>config/ChanceCubes/CustomRewards/Resourcepack/CustomSounds-Resourcepack.zip</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>4c28ae6dac0aae8569b95354e758299d</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/ChanceCubes/CustomRewards/Resourcepack/readme.txt</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/ChanceCubes/CustomRewards/Resourcepack/readme.txt</URL>
 				<Path>config/ChanceCubes/CustomRewards/Resourcepack/readme.txt</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>7079a2f00600a3f03f02968660766bef</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/ChanceCubes/CustomRewards/Sounds/sounds.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/ChanceCubes/CustomRewards/Sounds/sounds.json</URL>
 				<Path>config/ChanceCubes/CustomRewards/Sounds/sounds.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>99914b932bd37a50b983c5e7c90ae93b</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="CheeseHat" id="cheesehat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/CheeseHat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/CheeseHat.tbl</URL>
 			<Size>1935</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>e0f162ff46efacbd8cf47e5ecc9a7c8a</MD5>
 		</Module>
 		<Module name="Chest" id="chest" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Chest.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Chest.tbl</URL>
 			<Size>2505</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>a008f41ff709a36ba853ee53bbdc240d</MD5>
 		</Module>
 		<Module name="Chisel" id="chisel" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/Chisel-MC1.12.2-1.0.1.44.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/Chisel-MC1.12.2-1.0.1.44.jar</URL>
 			<Size>4754821</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -1445,35 +1445,35 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<authors>tterrag, Drullkus, minecreatr</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/chisel.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/chisel.cfg</URL>
 				<Path>config/chisel.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>07a1da072e347ccc6c60439199c6e0a8</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Clip on Rabbit Ears" id="cliponrabbitears" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/DJFLuFFy_vs_joe&apos;s%20Collection/Clip%20on%20Rabbit%20Ears.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/DJFLuFFy_vs_joe&apos;s%20Collection/Clip%20on%20Rabbit%20Ears.tbl</URL>
 			<Size>1754</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>254172e0a68866baf3ff4f437328f607</MD5>
 		</Module>
 		<Module name="Clip-On Halo" id="cliponhalo" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Clip-On%20Halo.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Clip-On%20Halo.tbl</URL>
 			<Size>927</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>0716a0fdce1e1fb11bfefa0bdb9e0732</MD5>
 		</Module>
 		<Module name="Computer" id="computer" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Computer.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Computer.tbl</URL>
 			<Size>1550</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>05fc29193d99717badd9c7239c0b4fc6</MD5>
 		</Module>
 		<Module name="CraftPresence" id="craftpresence" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/CraftPresence-1.12.2-1.6.1.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/CraftPresence-1.12.2-1.6.1.jar</URL>
 			<Size>405848</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -1486,21 +1486,21 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<authors>CDA_Gaming</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/craftpresence.properties</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/craftpresence.properties</URL>
 				<Path>config/craftpresence.properties</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>41b0a12eae6dfb2758a253f5e05a89a5</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Crown" id="crown" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Crown.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Crown.tbl</URL>
 			<Size>1195</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>5493fd1171415eeaca1cd487cd57b171</MD5>
 		</Module>
 		<Module name="CTM" id="ctm" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/CTM-MC1.12.2-1.0.1.30.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/CTM-MC1.12.2-1.0.1.30.jar</URL>
 			<Size>199047</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -1513,49 +1513,49 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<authors>tterrag, Drullkus, minecreatr</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/ctm.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/ctm.cfg</URL>
 				<Path>config/ctm.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>ca9092804c3d5576e34098746b2843ff</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Cute Ocelot Hat" id="cuteocelothat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/DJFLuFFy_vs_joe&apos;s%20Collection/Cute%20Ocelot%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/DJFLuFFy_vs_joe&apos;s%20Collection/Cute%20Ocelot%20Hat.tbl</URL>
 			<Size>4119</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>c1655637db120427e8da1a21b4e464b5</MD5>
 		</Module>
 		<Module name="Cute Walrus" id="cutewalrus" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Hat%20Pack%201/Cute%20Walrus.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Hat%20Pack%201/Cute%20Walrus.tbl</URL>
 			<Size>2054</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>036bafd193e6b2224f489988b68ba5b1</MD5>
 		</Module>
 		<Module name="Dalek Hat" id="dalekhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Dalek%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Dalek%20Hat.tbl</URL>
 			<Size>1453</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>25e0d75f1a4e2ff7d5eb55823ea8c0c6</MD5>
 		</Module>
 		<Module name="Encouragement" id="encouragement" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Encouragement.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Encouragement.tbl</URL>
 			<Size>1456</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>74211ec7f0b5af1e7bba20a58a04668a</MD5>
 		</Module>
 		<Module name="Ender Chest" id="enderchest" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Ender%20Chest.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Ender%20Chest.tbl</URL>
 			<Size>3590</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>866c9d3072fa7f0c3c56ea39e90b74b7</MD5>
 		</Module>
 		<Module name="Extra Utilities 2" id="extrautils2" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/extrautils2-1.12-1.9.9.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/extrautils2-1.12-1.9.9.jar</URL>
 			<Size>3226408</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -1568,119 +1568,119 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<authors>RWTema</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/extrautils2.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/extrautils2.cfg</URL>
 				<Path>config/extrautils2.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>8941f55ad950cf45ea80bc5cce630d42</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Facehugger" id="facehugger" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Facehugger.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Facehugger.tbl</URL>
 			<Size>2125</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>2dad5f631d634e5953b95236b8e49679</MD5>
 		</Module>
 		<Module name="Fez" id="fez" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Fez.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Fez.tbl</URL>
 			<Size>1078</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>777701041830f25ba560ded6efed024d</MD5>
 		</Module>
 		<Module name="Fez Sideways" id="fezsideways" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Fez%20Sideways.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Fez%20Sideways.tbl</URL>
 			<Size>1140</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>8b224ebb4227a4046195d691c3d8cb4e</MD5>
 		</Module>
 		<Module name="Flowers in a Hat" id="flowersinahat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Hat%20Pack%201/Flowers%20in%20a%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Hat%20Pack%201/Flowers%20in%20a%20Hat.tbl</URL>
 			<Size>1351</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>a56cde51bd764ee183bcd8c8abd17d84</MD5>
 		</Module>
 		<Module name="Flying Pig Hat" id="flyingpighat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Flying%20Pig%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Flying%20Pig%20Hat.tbl</URL>
 			<Size>4560</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>aab34c00639d87c6236a032305310bee</MD5>
 		</Module>
 		<Module name="Foam Finger" id="foamfinger" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Foam%20Finger.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Foam%20Finger.tbl</URL>
 			<Size>1412</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>dc316aa0857d24f8bcde9721c6351e83</MD5>
 		</Module>
 		<Module name="Frankenstein" id="frankenstein" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Frankenstein.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Frankenstein.tbl</URL>
 			<Size>750</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>a9f76969fa2b718d526fc398c3ac360a</MD5>
 		</Module>
 		<Module name="Fro Hat" id="frohat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Hat%20Pack%201/Fro%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Hat%20Pack%201/Fro%20Hat.tbl</URL>
 			<Size>30524</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>53dbb3dc9a154c7df1d735d3407ceaa3</MD5>
 		</Module>
 		<Module name="Frog Hat" id="froghat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Frog%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Frog%20Hat.tbl</URL>
 			<Size>2411</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>e54e2b9b1d3da2ef5c8fe96f380fddb3</MD5>
 		</Module>
 		<Module name="Ghastly Gibus" id="ghastlygibus" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Ghastly%20Gibus.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Ghastly%20Gibus.tbl</URL>
 			<Size>1494</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>7dce21b8e5060679c2a6f63d3d5a088e</MD5>
 		</Module>
 		<Module name="GlassHat" id="glasshat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Hat%20Pack%201/GlassHat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Hat%20Pack%201/GlassHat.tbl</URL>
 			<Size>828</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>d14e6563023020772b8ef9a24967ea84</MD5>
 		</Module>
 		<Module name="Glove World" id="gloveworld" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Glove%20World.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Glove%20World.tbl</URL>
 			<Size>3031</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>18d45d28ca3c6737ddca7d0ac0f1003f</MD5>
 		</Module>
 		<Module name="Googly Eyes" id="googlyeyes" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Googly%20Eyes.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Googly%20Eyes.tbl</URL>
 			<Size>1740</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>470874aaf089723f3557b96b9b75c327</MD5>
 		</Module>
 		<Module name="Hard Hat" id="hardhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Hard%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Hard%20Hat.tbl</URL>
 			<Size>1390</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>b37c17e6c4705f7c6af8265e31fe7ae8</MD5>
 		</Module>
 		<Module name="Hatpants" id="hatpants" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Hatpants.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Hatpants.tbl</URL>
 			<Size>1290</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>e5faa73467d04fcfa10544b948938593</MD5>
 		</Module>
 		<Module name="Hats" id="hats" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/Hats-1.12.2-7.1.0.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/Hats-1.12.2-7.1.0.jar</URL>
 			<Size>314009</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -1693,84 +1693,84 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<authors>iChun</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/hats.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/hats.cfg</URL>
 				<Path>config/hats.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>242c34ae929fcb8bd2e6f9beaf171f9d</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Haunted Hat" id="hauntedhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Mr_Hazard&apos;s%20Collection/Haunted%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Mr_Hazard&apos;s%20Collection/Haunted%20Hat.tbl</URL>
 			<Size>3178</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>0fa2487b2a702453568edae4529ad91a</MD5>
 		</Module>
 		<Module name="Headcrab" id="headcrab" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Headcrab.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Headcrab.tbl</URL>
 			<Size>2199</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>a3ba0e8cb12b62e3a546fe7108db2991</MD5>
 		</Module>
 		<Module name="Headphones" id="headphones" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Headphones.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Headphones.tbl</URL>
 			<Size>969</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>e48f876feaef27f00a31844ef3cc8bbd</MD5>
 		</Module>
 		<Module name="Headset" id="headset" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Hat%20Pack%201/Headset.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Hat%20Pack%201/Headset.tbl</URL>
 			<Size>1590</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>25d299bb25ec01db6a2ea8f5f10d4022</MD5>
 		</Module>
 		<Module name="Helicopter Hat" id="helicopterhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Helicopter%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Helicopter%20Hat.tbl</URL>
 			<Size>2398</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>15b723b95c05e61e89cf318da56bbe8b</MD5>
 		</Module>
 		<Module name="Hissing Hat" id="hissinghat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Hissing%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Hissing%20Hat.tbl</URL>
 			<Size>5305</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>f16fd3d5f86450788280db4ab4422e21</MD5>
 		</Module>
 		<Module name="Hot dogger" id="hotdogger" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Hat%20Pack%201/Hot%20dogger.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Hat%20Pack%201/Hot%20dogger.tbl</URL>
 			<Size>818</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>d0cfc58429a9fa094a5fe0e861faa6d3</MD5>
 		</Module>
 		<Module name="Hotdog Hotdog" id="hotdoghotdog" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Hat%20Pack%201/Hotdog%20Hotdog.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Hat%20Pack%201/Hotdog%20Hotdog.tbl</URL>
 			<Size>1541</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>b686a887e668e70de433e5147a5e037e</MD5>
 		</Module>
 		<Module name="HUD Hat" id="hudhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/DJFLuFFy_vs_joe&apos;s%20Collection/HUD%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/DJFLuFFy_vs_joe&apos;s%20Collection/HUD%20Hat.tbl</URL>
 			<Size>1667</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>2cfd2c5654b17864361d08fbf19b4b5c</MD5>
 		</Module>
 		<Module name="I&apos;m Different" id="imdifferent" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Mr_Hazard&apos;s%20Collection/I&apos;m%20Different.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Mr_Hazard&apos;s%20Collection/I&apos;m%20Different.tbl</URL>
 			<Size>1291</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>c643866b649e3d355a34788960afbd0e</MD5>
 		</Module>
 		<Module name="iChunUtil" id="ichunutil" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/iChunUtil-1.12.2-7.2.2.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/iChunUtil-1.12.2-7.2.2.jar</URL>
 			<Size>581963</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -1783,48 +1783,48 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<authors>iChun</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/ichunutil.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/ichunutil.cfg</URL>
 				<Path>config/ichunutil.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>ea588bef533e4d960e8a4f686fee9b66</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/ichunutil_keybinds.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/ichunutil_keybinds.cfg</URL>
 				<Path>config/ichunutil_keybinds.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>1ab134009e7ba6b32e6588e9a3171b18</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Inhaler" id="inhaler" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Mr_Hazard&apos;s%20Collection/Inhaler.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Mr_Hazard&apos;s%20Collection/Inhaler.tbl</URL>
 			<Size>3887</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>3d89b09cf2c600198f504f9a63c94c15</MD5>
 		</Module>
 		<Module name="Jar &apos;o Brain" id="jarobrain" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Jar%20&apos;o%20Brain.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Jar%20&apos;o%20Brain.tbl</URL>
 			<Size>1417</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>293201cd15568db1a8cf485475aac96c</MD5>
 		</Module>
 		<Module name="Jeremy" id="jeremy" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Jeremy.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Jeremy.tbl</URL>
 			<Size>4369</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>9f050682f96c57c4b97793a950fa9547</MD5>
 		</Module>
 		<Module name="Jester" id="jester" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Jester.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Jester.tbl</URL>
 			<Size>5251</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>f82c357a4a46e9280938d9106f069822</MD5>
 		</Module>
 		<Module name="JourneyMap" id="journeymap" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/journeymap-1.12.2-5.7.0.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/journeymap-1.12.2-5.7.0.jar</URL>
 			<Size>6990613</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -1837,48 +1837,48 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<authors>techbrew, mysticdrew</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/journeymap_ModInfo.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/journeymap_ModInfo.cfg</URL>
 				<Path>config/journeymap_ModInfo.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>39892b5d0fc3b283fd0717390c20e712</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/journeymap_server.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/journeymap_server.cfg</URL>
 				<Path>config/journeymap_server.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>ec1f450ddbf068d578328b97f5e50d1b</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Lego Hat" id="legohat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Lego%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Lego%20Hat.tbl</URL>
 			<Size>3136</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>ef5a038f2f0cf0f58575df882be4875f</MD5>
 		</Module>
 		<Module name="Leo&apos;s Modpack" id="leosmodpack" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/Leo&apos;s%20Modpack.zip</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/Leo&apos;s%20Modpack.zip</URL>
 			<Size>69513497</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>a9185d2533349defed881a4e11c99b0a</MD5>
 		</Module>
 		<Module name="Leprechaun Hat" id="leprechaunhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Leprechaun%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Leprechaun%20Hat.tbl</URL>
 			<Size>1170</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>3a2520ff779e9a575adb9112e826a9c0</MD5>
 		</Module>
 		<Module name="Literal Cat in the Hat hat" id="literalcatinthehathat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Hat%20Pack%201/Literal%20Cat%20in%20the%20Hat%20hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Hat%20Pack%201/Literal%20Cat%20in%20the%20Hat%20hat.tbl</URL>
 			<Size>3578</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>723c945715817f48794fc73375654048</MD5>
 		</Module>
 		<Module name="Mantle" id="mantle" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/Mantle-1.12-1.3.3.55.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/Mantle-1.12-1.3.3.55.jar</URL>
 			<Size>843486</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -1892,7 +1892,7 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 			</Meta>
 		</Module>
 		<Module name="Marx Glasses" id="marxglasses" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/The_Mushroomcow&apos;s%20Collection/Marx%20Glasses.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/The_Mushroomcow&apos;s%20Collection/Marx%20Glasses.tbl</URL>
 			<Size>1382</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -1903,54 +1903,61 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/forge.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/forge.cfg</URL>
 				<Path>config/forge.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>bee77d51b82699b95bf5c02788f654fb</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/forgeChunkLoading.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/forgeChunkLoading.cfg</URL>
 				<Path>config/forgeChunkLoading.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>95ba05ef01861ee260b40c95e9cc5aec</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/splash.properties</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/splash.properties</URL>
 				<Path>config/splash.properties</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>3c88cd3efe05657911d373a9c6e67d3f</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Miner Hat" id="minerhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Miner%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Miner%20Hat.tbl</URL>
 			<Size>1370</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>c2afd264637125f04a0ddb6b9c47d98e</MD5>
 		</Module>
 		<Module name="Mini Minecart" id="miniminecart" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Mini%20Minecart.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Mini%20Minecart.tbl</URL>
 			<Size>1578</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>9b55e982004b3f805d12452db610124d</MD5>
 		</Module>
 		<Module name="ModJam Hat" id="modjamhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/ModJam%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/ModJam%20Hat.tbl</URL>
 			<Size>1825</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>36aad21e40f2e835a5e5364c23dbf9d6</MD5>
 		</Module>
+		<Module name="mods" id="mods" depends="" side="BOTH">
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/mods.zip</URL>
+			<Size>31298175</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>05dcba8c02e874f4a64d1d1b89a5d91b</MD5>
+		</Module>
 		<Module name="Mooshroom Hat" id="mooshroomhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/The_Mushroomcow&apos;s%20Collection/Mooshroom%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/The_Mushroomcow&apos;s%20Collection/Mooshroom%20Hat.tbl</URL>
 			<Size>1670</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>54c5466dbc7f828e97b0feb52edacdaf</MD5>
 		</Module>
 		<Module name="Morph" id="morph" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/Morph-1.12.2-7.1.3.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/Morph-1.12.2-7.1.3.jar</URL>
 			<Size>1032048</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -1963,14 +1970,14 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<authors>iChun</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/morph.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/morph.cfg</URL>
 				<Path>config/morph.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>551e19a5ce5559a898f5ce17d7b1e6b1</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Morpheus" id="morpheus" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/Morpheus-1.12.2-3.5.106.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/Morpheus-1.12.2-3.5.106.jar</URL>
 			<Size>21508</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -1983,168 +1990,168 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<authors>Quetzi</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/morpheus.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/morpheus.cfg</URL>
 				<Path>config/morpheus.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>18502f550fb8d8eefc1bad1b9d9e5b94</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Moviemaker&apos;s Portable Setup" id="moviemakersportablesetup" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Portalcrafter51&apos;s%20Collection/Moviemaker&apos;s%20Portable%20Setup.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Portalcrafter51&apos;s%20Collection/Moviemaker&apos;s%20Portable%20Setup.tbl</URL>
 			<Size>3039</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>7aabb30eaf1c7eb2768b7762172fed6c</MD5>
 		</Module>
 		<Module name="Mr. Bubbles" id="mrbubbles" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Mr.%20Bubbles.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Mr.%20Bubbles.tbl</URL>
 			<Size>2967</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>4fbc950451ae03e658bb1eaed48c0f5f</MD5>
 		</Module>
 		<Module name="Mr. T" id="mrt" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Mr.%20T.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Mr.%20T.tbl</URL>
 			<Size>5271</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>265df5660bd24b63dad68ff8ca1d83af</MD5>
 		</Module>
 		<Module name="Mr.Hazard&apos;s mask" id="mrhazardsmask" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Mr_Hazard&apos;s%20Collection/Mr.Hazard&apos;s%20mask.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Mr_Hazard&apos;s%20Collection/Mr.Hazard&apos;s%20mask.tbl</URL>
 			<Size>2518</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>445952397e0e08264cbcf57d6ede2bc8</MD5>
 		</Module>
 		<Module name="Norwegian Flag" id="norwegianflag" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Norwegian%20Flag.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Norwegian%20Flag.tbl</URL>
 			<Size>760</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>8c7a1ef794059648dea44612d2f538f8</MD5>
 		</Module>
 		<Module name="Nyan Hat" id="nyanhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Nyan%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Nyan%20Hat.tbl</URL>
 			<Size>1344</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>acd6c3099ed05cc53cb312e5c910ab1b</MD5>
 		</Module>
 		<Module name="One Man Army" id="onemanarmy" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Mr_Hazard&apos;s%20Collection/One%20Man%20Army.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Mr_Hazard&apos;s%20Collection/One%20Man%20Army.tbl</URL>
 			<Size>4355</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>3953c95f314d86161e1f65c1fd7d524a</MD5>
 		</Module>
 		<Module name="OptiFine_1.12.2_HD_U_F5" id="optifine_" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/OptiFine_1.12.2_HD_U_F5.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/OptiFine_1.12.2_HD_U_F5.jar</URL>
 			<Size>2598821</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>043ac1db6f7441ea4cf31bcb621aff0b</MD5>
 		</Module>
 		<Module name="Overdose" id="overdose" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Overdose.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Overdose.tbl</URL>
 			<Size>2467</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>2186b61afc3b0534e759ab461e472a50</MD5>
 		</Module>
 		<Module name="PahiHat" id="pahihat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/PahiHat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/PahiHat.tbl</URL>
 			<Size>3031</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>770e0c2941131d548ad1fc2d0c28fd84</MD5>
 		</Module>
 		<Module name="Panda Ushanka" id="pandaushanka" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/The_Mushroomcow&apos;s%20Collection/Panda%20Ushanka.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/The_Mushroomcow&apos;s%20Collection/Panda%20Ushanka.tbl</URL>
 			<Size>2230</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>a5b6b8e1c1e14f6255008f3be76d28e9</MD5>
 		</Module>
 		<Module name="Party Hat (With Party Blower)" id="partyhatwithpartyblower" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/The_Mushroomcow&apos;s%20Collection/Party%20Hat%20(With%20Party%20Blower).tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/The_Mushroomcow&apos;s%20Collection/Party%20Hat%20(With%20Party%20Blower).tbl</URL>
 			<Size>1819</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>8d4795dc6511e608cd752bcd0c66ced8</MD5>
 		</Module>
 		<Module name="Pickaxe in Head" id="pickaxeinhead" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Pickaxe%20in%20Head.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Pickaxe%20in%20Head.tbl</URL>
 			<Size>2743</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>06fcea5a18756866e10d5b4a298176d5</MD5>
 		</Module>
 		<Module name="Pig Hat" id="pighat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Pig%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Pig%20Hat.tbl</URL>
 			<Size>4541</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>b12793bf53ed53fbf58ad04f12151f00</MD5>
 		</Module>
 		<Module name="Pillar Hat" id="pillarhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Hat%20Pack%201/Pillar%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Hat%20Pack%201/Pillar%20Hat.tbl</URL>
 			<Size>2275</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>e5d2c8dd234de58088cb8014b8ab0067</MD5>
 		</Module>
 		<Module name="Pistontop" id="pistontop" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Pistontop.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Pistontop.tbl</URL>
 			<Size>3107</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>df559194e6a49f255ef69067f0a3d6d3</MD5>
 		</Module>
 		<Module name="PlumbBob" id="plumbbob" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/PlumbBob.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/PlumbBob.tbl</URL>
 			<Size>18130</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>80603ddf53ada87ae539741b588e4c12</MD5>
 		</Module>
 		<Module name="Plunger Hat" id="plungerhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Plunger%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Plunger%20Hat.tbl</URL>
 			<Size>1098</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>e354e8e0a5c756ca4d64b8f3cd56efdc</MD5>
 		</Module>
 		<Module name="Ponytail" id="ponytail" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/The_Mushroomcow&apos;s%20Collection/Ponytail.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/The_Mushroomcow&apos;s%20Collection/Ponytail.tbl</URL>
 			<Size>1029</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>9369d1c00a03ac9b072b051997db45e8</MD5>
 		</Module>
 		<Module name="Pool Toy Hat" id="pooltoyhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Hat%20Pack%201/Pool%20Toy%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Hat%20Pack%201/Pool%20Toy%20Hat.tbl</URL>
 			<Size>2037</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>9a2da72b31985957d62d54d06d76f7e2</MD5>
 		</Module>
 		<Module name="Poolhat" id="poolhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Poolhat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Poolhat.tbl</URL>
 			<Size>1768</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>6716c00bd1aa5ad93a21ddc0189ad23e</MD5>
 		</Module>
 		<Module name="Portable Jukebox" id="portablejukebox" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Portalcrafter51&apos;s%20Collection/Portable%20Jukebox.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Portalcrafter51&apos;s%20Collection/Portable%20Jukebox.tbl</URL>
 			<Size>4219</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>3f296fd87cb3513d3c5fdf43b92f6006</MD5>
 		</Module>
 		<Module name="PortalGun" id="portalgun" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/PortalGun-1.12.2-7.1.0.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/PortalGun-1.12.2-7.1.0.jar</URL>
 			<Size>1717073</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -2157,21 +2164,21 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<authors>iChun</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/portalgun.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/portalgun.cfg</URL>
 				<Path>config/portalgun.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>75bcdf938dab3bfbc759de30c6802238</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Present Hat" id="presenthat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/The_Mushroomcow&apos;s%20Collection/Present%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/The_Mushroomcow&apos;s%20Collection/Present%20Hat.tbl</URL>
 			<Size>2439</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>c6ff3ed4e0d79b2478f10e2ff8f0fa1e</MD5>
 		</Module>
 		<Module name="Progressive Automation" id="progressiveautomation" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/ProgressiveAutomation-1.12.2-1.7.8.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/ProgressiveAutomation-1.12.2-1.7.8.jar</URL>
 			<Size>407810</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -2184,147 +2191,147 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<authors>Vanhal</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/progressiveautomation.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/progressiveautomation.cfg</URL>
 				<Path>config/progressiveautomation.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>769cc26472bc49a08bc3e85d68ad5728</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Pyro&apos;s Top Hat" id="pyrostophat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Mr_Hazard&apos;s%20Collection/Pyro&apos;s%20Top%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Mr_Hazard&apos;s%20Collection/Pyro&apos;s%20Top%20Hat.tbl</URL>
 			<Size>2075</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>fedacd335a71657b2a80355ef9937920</MD5>
 		</Module>
 		<Module name="Rabbit in a Hat" id="rabbitinahat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Hat%20Pack%201/Rabbit%20in%20a%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Hat%20Pack%201/Rabbit%20in%20a%20Hat.tbl</URL>
 			<Size>1328</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>f033c079d204f4a795eab6674d5d0a3d</MD5>
 		</Module>
 		<Module name="Raccoonhat" id="raccoonhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Raccoonhat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Raccoonhat.tbl</URL>
 			<Size>3861</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>4947a7eb44faf116da7d51e44fe09b21</MD5>
 		</Module>
 		<Module name="RainingHat" id="raininghat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/RainingHat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/RainingHat.tbl</URL>
 			<Size>1259</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>a9dbfb9476355ff3fd78ca66a130aee8</MD5>
 		</Module>
 		<Module name="Redstoner&apos;s Hat" id="redstonershat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Redstoner&apos;s%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Redstoner&apos;s%20Hat.tbl</URL>
 			<Size>2357</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>120af75858819405ba2689b2293c609b</MD5>
 		</Module>
 		<Module name="Safe N&apos; sound" id="safensound" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Hat%20Pack%201/Safe%20N&apos;%20sound.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Hat%20Pack%201/Safe%20N&apos;%20sound.tbl</URL>
 			<Size>977</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>bd250c7f39c9c6eec08febafced4a6b8</MD5>
 		</Module>
 		<Module name="Shady Baguette" id="shadybaguette" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Mr_Hazard&apos;s%20Collection/Shady%20Baguette.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Mr_Hazard&apos;s%20Collection/Shady%20Baguette.tbl</URL>
 			<Size>2821</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>bc9680f67942343d695b8acca18d102e</MD5>
 		</Module>
 		<Module name="Skycrane" id="skycrane" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Mr_Hazard&apos;s%20Collection/Skycrane.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Mr_Hazard&apos;s%20Collection/Skycrane.tbl</URL>
 			<Size>17572</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>85f6a2565a188de4904ab48606c83542</MD5>
 		</Module>
 		<Module name="Skyrim Hat" id="skyrimhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Skyrim%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Skyrim%20Hat.tbl</URL>
 			<Size>2213</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>d4aada8ab4dd3021fecc2eb592f0ac0e</MD5>
 		</Module>
 		<Module name="Slime Hat" id="slimehat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/The_Mushroomcow&apos;s%20Collection/Slime%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/The_Mushroomcow&apos;s%20Collection/Slime%20Hat.tbl</URL>
 			<Size>1114</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>6bd73d4d10ebbf829db7f6e18e7968fe</MD5>
 		</Module>
 		<Module name="Small Dog" id="smalldog" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Hat%20Pack%201/Small%20Dog.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Hat%20Pack%201/Small%20Dog.tbl</URL>
 			<Size>1699</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>f73b0b98839919a475e511c9e0899527</MD5>
 		</Module>
 		<Module name="Soda Top" id="sodatop" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Soda%20Top.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Soda%20Top.tbl</URL>
 			<Size>2528</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>0a0d77c8e643ea9db4924886290bd006</MD5>
 		</Module>
 		<Module name="Solar Helmet" id="solarhelmet" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Solar%20Helmet.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Solar%20Helmet.tbl</URL>
 			<Size>1567</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>1d8f9f98b7a3c6d07d5db2935a70bc52</MD5>
 		</Module>
 		<Module name="Sombero" id="sombero" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Sombero.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Sombero.tbl</URL>
 			<Size>1700</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>87cbd21c3aa80ee502a432e52d0d30e8</MD5>
 		</Module>
 		<Module name="Squid" id="squid" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Squid.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Squid.tbl</URL>
 			<Size>1789</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>f7f089efd55d6e043531f855ac2e216f</MD5>
 		</Module>
 		<Module name="Stainless Pot" id="stainlesspot" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Stainless%20Pot.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Stainless%20Pot.tbl</URL>
 			<Size>2644</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>380cd657855a37b5e034673fda65abf1</MD5>
 		</Module>
 		<Module name="Straw Hat" id="strawhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Straw%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Straw%20Hat.tbl</URL>
 			<Size>1275</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>0ec17889d2c4049a9290964fcb7cbaae</MD5>
 		</Module>
 		<Module name="Sunglasses" id="sunglasses" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/The_Mushroomcow&apos;s%20Collection/Sunglasses.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/The_Mushroomcow&apos;s%20Collection/Sunglasses.tbl</URL>
 			<Size>1024</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>b6c6aac8333f60e4d85ec265d1fd16a9</MD5>
 		</Module>
 		<Module name="Suspicious Hat" id="suspicioushat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Mr_Hazard&apos;s%20Collection/Suspicious%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Mr_Hazard&apos;s%20Collection/Suspicious%20Hat.tbl</URL>
 			<Size>1761</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>8a5380f1bc2f2819d89210cc04ad254b</MD5>
 		</Module>
 		<Module name="Sync" id="sync" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/Sync-1.12.2-7.1.0.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/Sync-1.12.2-7.1.0.jar</URL>
 			<Size>255432</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -2337,56 +2344,56 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<authors>iChun</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/sync.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/sync.cfg</URL>
 				<Path>config/sync.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>deff098769a48edec9c38ecf8db52d9e</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="T-Rex" id="trex" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Mr_Hazard&apos;s%20Collection/T-Rex.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Mr_Hazard&apos;s%20Collection/T-Rex.tbl</URL>
 			<Size>21472</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>32e8ef79145c3a0c788294ca7ed25105</MD5>
 		</Module>
 		<Module name="Tardis" id="tardis" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Tardis.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Tardis.tbl</URL>
 			<Size>87666</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>ddb82501b5bf4790c6c26643b6bb3880</MD5>
 		</Module>
 		<Module name="TentaCool" id="tentacool" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/TentaCool.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/TentaCool.tbl</URL>
 			<Size>1202</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>4c3d216ff9d264a28fed7aef4f477b1f</MD5>
 		</Module>
 		<Module name="The Chwannie" id="thechwannie" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/DJFLuFFy_vs_joe&apos;s%20Collection/The%20Chwannie.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/DJFLuFFy_vs_joe&apos;s%20Collection/The%20Chwannie.tbl</URL>
 			<Size>1694</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>41179585ffa16b10f929461a2715bb99</MD5>
 		</Module>
 		<Module name="The Crown of the Ice King" id="thecrownoftheiceking" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Hat%20Pack%201/The%20Crown%20of%20the%20Ice%20King.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Hat%20Pack%201/The%20Crown%20of%20the%20Ice%20King.tbl</URL>
 			<Size>1723</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>6bfb622b24ff8485cb0f1a82f4dfe8a0</MD5>
 		</Module>
 		<Module name="The Prick" id="theprick" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Portalcrafter51&apos;s%20Collection/The%20Prick.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Portalcrafter51&apos;s%20Collection/The%20Prick.tbl</URL>
 			<Size>2442</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>bfb9b077b974f8f4d0b6d6420e11607b</MD5>
 		</Module>
 		<Module name="Tinkers Tool Leveling" id="tinkertoolleveling" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/TinkerToolLeveling-1.12.2-1.1.0.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/TinkerToolLeveling-1.12.2-1.1.0.jar</URL>
 			<Size>95850</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -2399,20 +2406,20 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<authors>boni</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/TinkerModules.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/TinkerModules.cfg</URL>
 				<Path>config/TinkerModules.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>85a2f93b12064176c5b12cd2de6f0bf7</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/TinkerToolLeveling.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/TinkerToolLeveling.cfg</URL>
 				<Path>config/TinkerToolLeveling.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>3160fd154e7febd6a9c39ed1ad171a6d</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Tinkers&apos; Construct" id="tconstruct" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/TConstruct-1.12.2-2.13.0.179.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/TConstruct-1.12.2-2.13.0.179.jar</URL>
 			<Size>4023076</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -2425,35 +2432,35 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<authors>boni, KnightMiner</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/tconstruct.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/tconstruct.cfg</URL>
 				<Path>config/tconstruct.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>4546763bace39f233388dfccbf3a259e</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Top Hat" id="tophat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Top%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Top%20Hat.tbl</URL>
 			<Size>1044</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>ed78ad2083da48c426b9b0484b0bd72f</MD5>
 		</Module>
 		<Module name="Towering Pillar Of Hats" id="toweringpillarofhats" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Towering%20Pillar%20Of%20Hats.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Towering%20Pillar%20Of%20Hats.tbl</URL>
 			<Size>1211</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>beb2a079844757a38a1bdf652232a953</MD5>
 		</Module>
 		<Module name="Trail Mix Mascot" id="trailmixmascot" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Trail%20Mix%20Mascot.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Trail%20Mix%20Mascot.tbl</URL>
 			<Size>1950</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>98c5c91ac1643867158c07a4bf9599a7</MD5>
 		</Module>
 		<Module name="TreeCapitator" id="treecapitator" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/[1.12]TreeCapitator-client-1.43.0.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/[1.12]TreeCapitator-client-1.43.0.jar</URL>
 			<Size>101115</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -2466,63 +2473,63 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<authors>DaftPVF, bspkrs, jco2641, ZenCoder</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/treecapitator.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/treecapitator.cfg</URL>
 				<Path>config/treecapitator.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>51155d07133eed1658b1a273aab1c591</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Treehat" id="treehat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Treehat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Treehat.tbl</URL>
 			<Size>2416</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>5d5124d13077d4da5041c4b56d6ed8e7</MD5>
 		</Module>
 		<Module name="Troll" id="troll" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Troll.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Troll.tbl</URL>
 			<Size>3407</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>ff91aa0b2f437ed2977f1606f703dd20</MD5>
 		</Module>
 		<Module name="Turkey Hat" id="turkeyhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/The_Mushroomcow&apos;s%20Collection/Turkey%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/The_Mushroomcow&apos;s%20Collection/Turkey%20Hat.tbl</URL>
 			<Size>2736</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>fd752a1e5ca196a7d8b8a65f78a5fb75</MD5>
 		</Module>
 		<Module name="Turtle&apos;s Hideout" id="turtleshideout" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Mr_Hazard&apos;s%20Collection/Turtle&apos;s%20Hideout.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Mr_Hazard&apos;s%20Collection/Turtle&apos;s%20Hideout.tbl</URL>
 			<Size>3290</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>823f091db83a5bb469642e310a041a04</MD5>
 		</Module>
 		<Module name="Universe Pumpkin" id="universepumpkin" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/The_Mushroomcow&apos;s%20Collection/Universe%20Pumpkin.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/The_Mushroomcow&apos;s%20Collection/Universe%20Pumpkin.tbl</URL>
 			<Size>22524</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>0097fa876836b11b2dedb4a38c6026ae</MD5>
 		</Module>
 		<Module name="Ushanka" id="ushanka" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/The_Mushroomcow&apos;s%20Collection/Ushanka.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/The_Mushroomcow&apos;s%20Collection/Ushanka.tbl</URL>
 			<Size>2309</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>6d97933c504395e0f85a1227e4860cfe</MD5>
 		</Module>
 		<Module name="Viking Hat" id="vikinghat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Viking%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Viking%20Hat.tbl</URL>
 			<Size>2475</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>b66ab4e5be76fd5c9a3a7b8501f3a6e5</MD5>
 		</Module>
 		<Module name="Waila" id="waila" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/Hwyla-1.8.26-B41_1.12.2.jar</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/Hwyla-1.8.26-B41_1.12.2.jar</URL>
 			<Size>453778</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
@@ -2535,54 +2542,54 @@ This mod uses textures from the Painterly Pack: http://painterlypack.net/.</cred
 				<authors>ProfMobius, TehNut</authors>
 			</Meta>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/waila/theme/dark.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/waila/theme/dark.json</URL>
 				<Path>config/waila/theme/dark.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>91f7d992164fa6c216f5a23059b2137a</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/waila/theme/vanilla.json</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/waila/theme/vanilla.json</URL>
 				<Path>config/waila/theme/vanilla.json</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>93f67ec8cc14f861d01b4b930b49525b</MD5>
 			</ConfigFile>
 			<ConfigFile>
-				<URL priority="0">http://files.mcupdater.com/fptest/config/waila/waila.cfg</URL>
+				<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/config/waila/waila.cfg</URL>
 				<Path>config/waila/waila.cfg</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>243c353adbd7da176d45bcdc68b7fb1a</MD5>
 			</ConfigFile>
 		</Module>
 		<Module name="Welding Helmet" id="weldinghelmet" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Welding%20Helmet.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Welding%20Helmet.tbl</URL>
 			<Size>2515</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>390d3a7c1acd9522c5a7991ec1e6b1a9</MD5>
 		</Module>
 		<Module name="Winter Cap" id="wintercap" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Winter%20Cap.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Winter%20Cap.tbl</URL>
 			<Size>1160</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>437fc20ed596d6edde7146a904a8ab8a</MD5>
 		</Module>
 		<Module name="WitherBoss Skulls" id="witherbossskulls" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Hat%20Pack%201/WitherBoss%20Skulls.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Hat%20Pack%201/WitherBoss%20Skulls.tbl</URL>
 			<Size>1491</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>264a08dd3d9c8f30b47d2d61ab508129</MD5>
 		</Module>
 		<Module name="Wizard Hat" id="wizardhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Wizard%20Hat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Wizard%20Hat.tbl</URL>
 			<Size>1781</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
 			<MD5>bd985c2a7681b49123755597465e2a62</MD5>
 		</Module>
 		<Module name="Woodhat" id="woodhat" depends="" side="BOTH">
-			<URL priority="0">http://files.mcupdater.com/fptest/mods/hats/Woodhat.tbl</URL>
+			<URL priority="0">http://leotheleopard.github.io/Leo&apos;s Modpack/mods/hats/Woodhat.tbl</URL>
 			<Size>2794</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
