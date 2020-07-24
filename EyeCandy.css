@@ -61,5 +61,13 @@ html {
   } p {
     padding-left: 20px;
     padding-right: 20px;
-  } 
+  } button {
+    background-color: #D40D0D;
+    Border: 1px solid black;
+    color: black;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 10px;
+    transition-duration:0.5s;
+  }
 }  
