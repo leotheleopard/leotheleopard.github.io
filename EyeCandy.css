@@ -62,5 +62,7 @@ html {
   } p {
     padding-left: 20px;
     padding-right: 20px;
-  } 
+  } iframe {
+    border: 0px;
+  }
 }  
