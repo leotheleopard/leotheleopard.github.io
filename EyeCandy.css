@@ -26,6 +26,7 @@ html {
     p {
       padding-left: 40px;
       padding-right:40px;
+    }
   }   .row:after {
     content: "";
     display: table;
