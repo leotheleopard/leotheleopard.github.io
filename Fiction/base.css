@@ -1,3 +1,24 @@
 html {
     background-image: url(BGimage.png);
-};
+    background-attachment: scroll;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}; p {
+    padding: 20px;
+} @media screen and (max-width: 1000px) {
+    .column {
+      width: 100%;
+    } p {
+      padding-left: 20px;
+      padding-right: 20px;
+    } button {
+      background-color: #D40D0D;
+      Border: 1px solid black;
+      color: black;
+      padding: 5px 5px;
+      text-align: center;
+      font-size: 14px;
+      transition-duration:0.5s;
+    }
+  }  
+
