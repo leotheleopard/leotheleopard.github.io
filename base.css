@@ -37,5 +37,17 @@ html {
   font-size: 35px;
 } table {
   font-size: 30px;
+} button {
+  background-color: #D40D0D;
+  Border: 1px solid black;
+  color: black;
+  padding: 15px 12px;
+  text-align: center;
+  font-size: 25px;
+  transition-duration:0.5s;
+} button:hover {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #D40D0D;
 }
 } 
