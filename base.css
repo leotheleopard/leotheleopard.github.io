@@ -33,4 +33,9 @@ html {
 } p {
     padding-left: 20px;
     padding-right: 20px;
-} } 
+} body {
+  font-size: 35px;
+} table {
+  font-size: 30px;
+}
+} 
