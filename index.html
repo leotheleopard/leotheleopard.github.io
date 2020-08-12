@@ -14,5 +14,23 @@
         <a href="characters.html"><button>Characters</button></a>
         <a href="Locations.html"><button>Locations</button></a>
         <a href="AboutMe.html"><button>About Leo</button></a>
+        <hr>
+        <form>
+            <label for="pswd">Enter your password: </label>
+            <input type="password" id="pswd">
+            <input type="button" value="Submit" onclick="checkPswd();" />
+        </form>
+        <script type="text/javascript">
+            function checkPswd() {
+                var confirmPassword = "L305V!dPa55";
+                var password = document.getElementById("pswd").value;
+                if (password == confirmPassword) {
+                     window.location="Videos.html";
+                }
+                else{
+                    alert("Passwords do not match.");
+                }
+            }
+        </script>
     </body>
 </html>
