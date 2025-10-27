@@ -15,7 +15,7 @@
 	font-family:"Overseer", Chicago, sans-serif;
 	text-align:center;
 	font-size:24px;
-} body {
+} html {
 	background:url(BGimage.png);
 	background-attachment:fixed;
 	padding-left:100px;
