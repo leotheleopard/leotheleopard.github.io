@@ -18,8 +18,8 @@
 } html {
 	background:url(BGimage.png);
 	background-attachment:scroll;
-	padding-left:100px;
-	padding-right:100px;
+	padding-left:50px;
+	padding-right:50px;
 } ul {
 	font-family:"Overseer", Chicago, sans-serif;
 	text-align:center;
@@ -39,4 +39,6 @@
 } h3 {
 	text-align:center;
 	font-family: sans-serif;
+} iframe {
+	height: 32vw;
 }
