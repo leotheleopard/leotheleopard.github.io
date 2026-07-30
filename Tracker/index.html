@@ -346,6 +346,7 @@
   <section id="today-section">
     <div class="section-head"><span class="num">01</span><h2>Today</h2><span class="tag" id="entryCountTag">0 items</span></div>
     <div class="card">
+      <div class="search-hint" id="transferNote" style="display:none;"></div>
       <div class="hero-top">
         <div class="remaining-block">
           <div class="label" id="remainingLabel">Calories remaining</div>
@@ -541,6 +542,7 @@
   const el = {
     settingsBtn: document.getElementById('settingsBtn'),
     settingsModal: document.getElementById('settingsModal'),
+    transferNote: document.getElementById('transferNote'),
     targetInput: document.getElementById('targetInput'),
     maintInput: document.getElementById('maintInput'),
     saveSettings: document.getElementById('saveSettings'),
@@ -580,26 +582,28 @@
     historyRow: document.getElementById('historyRow'),
   };
 
+  const STORAGE_PREFIX = 'stackTracker_';
+
   async function loadSettings(){
     try{
-      const res = await window.storage.get('settings', false);
-      if(res && res.value){ settings = JSON.parse(res.value); }
-    }catch(e){ /* no settings saved yet */ }
+      const raw = localStorage.getItem(STORAGE_PREFIX + 'settings');
+      if(raw){ settings = JSON.parse(raw); }
+    }catch(e){ /* no settings saved yet, or storage unavailable */ }
   }
   async function saveSettingsToStorage(){
-    try{ await window.storage.set('settings', JSON.stringify(settings), false); }
+    try{ localStorage.setItem(STORAGE_PREFIX + 'settings', JSON.stringify(settings)); }
     catch(e){ console.error('Failed to save settings', e); }
   }
   async function loadEntries(){
-    const key = 'entries:' + todayKey();
+    const key = STORAGE_PREFIX + 'entries:' + todayKey();
     try{
-      const res = await window.storage.get(key, false);
-      entries = (res && res.value) ? JSON.parse(res.value) : [];
+      const raw = localStorage.getItem(key);
+      entries = raw ? JSON.parse(raw) : [];
     }catch(e){ entries = []; }
   }
   async function saveEntries(){
-    const key = 'entries:' + todayKey();
-    try{ await window.storage.set(key, JSON.stringify(entries), false); }
+    const key = STORAGE_PREFIX + 'entries:' + todayKey();
+    try{ localStorage.setItem(key, JSON.stringify(entries)); }
     catch(e){ console.error('Failed to save entries', e); }
   }
   async function loadHistory(){
@@ -611,10 +615,10 @@
       days.push(d);
     }
     for(const d of days){
-      const key = 'entries:' + todayKey(d);
+      const key = STORAGE_PREFIX + 'entries:' + todayKey(d);
       try{
-        const res = await window.storage.get(key, false);
-        const list = (res && res.value) ? JSON.parse(res.value) : [];
+        const raw = localStorage.getItem(key);
+        const list = raw ? JSON.parse(raw) : [];
         historyTotals[todayKey(d)] = list.reduce(function(s,i){ return s+Number(i.calories||0); },0);
       }catch(e){
         historyTotals[todayKey(d)] = 0;
@@ -891,12 +895,33 @@
     renderBuilder();
   });
 
+  function applyTransferParams(){
+    const params = new URLSearchParams(window.location.search);
+    const goal = params.get('goal');
+    const maint = params.get('maint');
+    if(!goal) return false;
+    settings.targetCalories = Number(goal) || settings.targetCalories;
+    if(maint){ settings.maintenanceCalories = Number(maint); }
+    saveSettingsToStorage();
+    const cleanUrl = new URL(window.location.href);
+    cleanUrl.searchParams.delete('goal');
+    cleanUrl.searchParams.delete('maint');
+    window.history.replaceState({}, '', cleanUrl.toString());
+    let msg = 'Loaded from Calculator — goal set to ' + Math.round(Number(goal)) + ' kcal/day';
+    if(maint){ msg += ', maintenance ' + Math.round(Number(maint)) + ' kcal/day'; }
+    msg += '.';
+    el.transferNote.textContent = msg;
+    el.transferNote.style.display = '';
+    return true;
+  }
+
   async function init(){
     await loadSettings();
     await loadEntries();
+    const transferred = applyTransferParams();
     renderAll();
     await loadHistory();
-    if(!settings.targetCalories){
+    if(!settings.targetCalories && !transferred){
       openSettings();
     }
   }

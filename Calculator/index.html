@@ -389,6 +389,8 @@
     <div class="pace-labels"><span>Lean &amp; slow</span><span>Steady</span><span>Aggressive</span></div>
     <p class="pace-note" id="pace-note"></p>
   </div>
+
+  <a href="/Tracker" class="btn-primary" id="send-to-tracker-btn" style="display:block;text-align:center;text-decoration:none;margin-top:24px;">Send these numbers to Tracker →</a>
 </section>
 
 <section>
@@ -462,6 +464,8 @@
 <script>
   const $ = id => document.getElementById(id);
   let unit = 'metric';
+  let lastDailyTarget = null;
+  let lastTdee = null;
 
   $('unit-metric').addEventListener('click', () => setUnit('metric'));
   $('unit-imperial').addEventListener('click', () => setUnit('imperial'));
@@ -611,6 +615,11 @@
       paceNote = `A very aggressive pace (~${weeklyPctBodyweight.toFixed(2)}% bodyweight/week) — this is a large surplus. Worth a quick check-in with a doctor, since gaining this fast can strain things like blood pressure and joints along the way.`;
     }
     $('pace-note').textContent = paceNote;
+
+    lastDailyTarget = dailyTarget;
+    lastTdee = tdee;
+    const transferParams = new URLSearchParams({ goal: Math.round(dailyTarget), maint: Math.round(tdee) });
+    $('send-to-tracker-btn').href = '/Tracker?' + transferParams.toString();
 
     $('results').style.display = 'block';
     $('results').scrollIntoView({behavior:'smooth', block:'start'});
