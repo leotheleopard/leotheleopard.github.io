@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>STACK — Calorie Surplus Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #121022;
+    --surface: #1D1832;
+    --surface-2: #292144;
+    --purple-900: #4A3572;
+    --purple-800: #5B3F8C;
+    --purple-700: #7C4FC2;
+    --purple-600: #9B72D9;
+    --purple-300: #C9AEE8;
+    --purple-100: #241E3B;
+    --yellow-500: #F2BF1D;
+    --yellow-600: #DDA800;
+    --yellow-100: #3A311C;
+    --text: #F0EAF9;
+    --text-muted: #988BAE;
+    --border: #362B54;
+    --danger: #E2827E;
+    --radius: 10px;
+    --shadow: 4px 4px 0 #000000;
+    --shadow-sm: 3px 3px 0 #000000;
+  }
+  *{ box-sizing: border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    padding: 20px 16px 60px;
+  }
+  .wrap{ max-width: 760px; margin: 0 auto; }
+
+  /* Header */
+  header{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    margin-bottom: 22px;
+    gap: 12px;
+  }
+  .brand{ display:flex; flex-direction:column; }
+  .brand .mark{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:700;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    color: var(--text);
+    line-height:1;
+  }
+  .brand .mark span{ color: var(--yellow-500); }
+  .brand .tagline{
+    font-size: 12.5px;
+    color: var(--text-muted);
+    margin-top: 4px;
+    font-weight:500;
+  }
+  .date-pill{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    background: var(--purple-900);
+    color: var(--yellow-500);
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-top:6px;
+    display:inline-block;
+    width: fit-content;
+  }
+  .icon-btn{
+    background: var(--surface);
+    border: 2px solid var(--purple-900);
+    box-shadow: var(--shadow-sm);
+    border-radius: 8px;
+    width: 42px; height: 42px;
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer;
+    flex-shrink:0;
+    transition: transform .08s ease;
+  }
+  .icon-btn:active{ transform: translate(2px,2px); box-shadow: 1px 1px 0 var(--purple-900); }
+  .icon-btn svg{ width:20px; height:20px; stroke: var(--purple-300); }
+
+  /* Cards */
+  .card{
+    background: var(--surface);
+    border: 2px solid var(--purple-900);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    margin-bottom: 18px;
+  }
+  .card h2{
+    font-family:'Space Grotesk', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--purple-600);
+    margin: 0 0 14px 0;
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .card h2 .num-tag{
+    background: var(--yellow-500);
+    color: var(--purple-900);
+    font-family:'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight:700;
+    padding: 1px 6px;
+    border-radius: 4px;
+  }
+
+  /* Hero / today */
+  .hero-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .remaining-block .label{
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  }
+  .remaining-block .value{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    line-height:1.05;
+    color: var(--text);
+  }
+  .remaining-block .value.over{ color: var(--yellow-500); }
+  .remaining-block .unit{ font-size: 18px; color: var(--text-muted); font-weight:600; margin-left:4px;}
+  .stat-mini{
+    text-align:right;
+    font-family:'IBM Plex Mono', monospace;
+  }
+  .stat-mini div:first-child{ font-size: 20px; font-weight:600; color: var(--text);}
+  .stat-mini div:last-child{ font-size: 11px; color: var(--text-muted); font-family:'Inter',sans-serif; font-weight:600; text-transform:uppercase;}
+
+  /* Block stack gauge */
+  .gauge{
+    display:flex;
+    gap: 4px;
+    align-items:flex-end;
+    height: 46px;
+    margin-bottom: 8px;
+  }
+  .gauge .seg{
+    flex:1;
+    height: 100%;
+    border-radius: 3px;
+    background: var(--purple-100);
+    border: 1.5px solid var(--purple-300);
+    position:relative;
+  }
+  .gauge .seg.filled{
+    background: var(--yellow-500);
+    border-color: var(--yellow-600);
+  }
+  .gauge .seg.over{
+    background: var(--purple-700);
+    border-color: var(--purple-900);
+  }
+  .gauge .seg.goal-line::after{
+    content:'';
+    position:absolute;
+    top:-6px; left:-2px;
+    width: calc(100% + 4px);
+    height: 2px;
+    background: var(--text);
+  }
+  .gauge-caption{
+    display:flex; justify-content:space-between;
+    font-size: 11px; color: var(--text-muted); font-family:'IBM Plex Mono', monospace;
+    margin-bottom: 2px;
+  }
+
+  /* Food log */
+  .add-row{
+    display:flex;
+    gap: 8px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+  }
+  input, select, textarea{
+    font-family:'Inter', sans-serif;
+    font-size: 14.5px;
+    padding: 10px 12px;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--text);
+    outline: none;
+  }
+  input:focus, select:focus, textarea:focus{ border-color: var(--purple-600); }
+  .add-row input[name="foodName"]{ flex: 2 1 140px; }
+  .add-row input[name="foodCals"]{ flex: 1 1 90px; }
+  .btn{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    background: var(--purple-700);
+    color: #fff;
+    border: 2px solid var(--purple-900);
+    border-radius: 8px;
+    padding: 10px 16px;
+    cursor:pointer;
+    box-shadow: var(--shadow-sm);
+    transition: transform .08s ease;
+  }
+  .btn:hover{ background: var(--purple-600); }
+  .btn:active{ transform: translate(2px,2px); box-shadow: none; }
+  .btn.secondary{
+    background: var(--yellow-500);
+    color: var(--purple-900);
+    border-color: var(--purple-900);
+  }
+  .btn.secondary:hover{ background: var(--yellow-600); }
+  .btn:focus-visible, .icon-btn:focus-visible, input:focus-visible{
+    outline: 3px solid var(--purple-600);
+    outline-offset: 2px;
+  }
+
+  /* Search tabs */
+  .tab-row{
+    display:flex;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .tab-btn{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:600;
+    font-size: 13px;
+    padding: 8px 14px;
+    border: 2px solid var(--purple-900);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--text);
+    cursor:pointer;
+  }
+  .tab-btn.active{
+    background: var(--purple-700);
+    color: #fff;
+  }
+  .search-status{
+    font-size: 12.5px;
+    color: var(--text-muted);
+    font-family:'IBM Plex Mono', monospace;
+    margin: 4px 0 12px;
+    min-height: 16px;
+  }
+  .search-status.loading::after{
+    content: '...';
+    animation: dots 1.2s steps(4,end) infinite;
+  }
+  @keyframes dots{
+    0%,20%{ content:'.'; } 40%{ content:'..'; } 60%,100%{ content:'...'; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .search-status.loading::after{ animation:none; content:'...'; }
+  }
+  .search-results{
+    display:flex;
+    flex-direction:column;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  .result-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap: 10px;
+    background: var(--purple-100);
+    border: 1.5px solid var(--purple-300);
+    border-radius: 8px;
+    padding: 10px 12px;
+  }
+  .result-card .rname{ font-weight:600; font-size: 13.5px; }
+  .result-card .rmeta{ font-size: 11px; color: var(--text-muted); font-family:'IBM Plex Mono', monospace; margin-top:2px; }
+  .result-card .rcal{ font-family:'IBM Plex Mono', monospace; font-weight:700; color: var(--yellow-500); white-space:nowrap; font-size: 13px; }
+  .result-add-btn{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:600;
+    font-size: 12px;
+    background: var(--yellow-500);
+    border: 2px solid var(--purple-900);
+    color: var(--purple-900);
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor:pointer;
+    flex-shrink:0;
+  }
+  .result-add-btn:hover{ background: var(--yellow-600); }
+  .result-add-btn:disabled{ opacity:.6; cursor:default; }
+  .result-right{
+    display:flex;
+    align-items:center;
+    gap: 8px;
+    flex-shrink:0;
+  }
+  .result-cal-col{ text-align:right; }
+  .qty-stepper{
+    display:flex;
+    align-items:center;
+    border: 2px solid var(--purple-900);
+    border-radius: 6px;
+    overflow:hidden;
+    background: var(--surface-2);
+  }
+  .qty-stepper button{
+    background: var(--surface-2);
+    border:none;
+    color: var(--text);
+    width: 24px;
+    height: 26px;
+    cursor:pointer;
+    font-size: 14px;
+    font-family:'IBM Plex Mono', monospace;
+    line-height:1;
+  }
+  .qty-stepper button:hover{ background: var(--purple-900); color: var(--yellow-500); }
+  .qty-stepper .qty-val{
+    width: 26px;
+    text-align:center;
+    font-family:'IBM Plex Mono', monospace;
+    font-size: 13px;
+    font-weight:600;
+    border-left: 1.5px solid var(--purple-900);
+    border-right: 1.5px solid var(--purple-900);
+    height: 26px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .unit-toggle{
+    display:flex;
+    border: 2px solid var(--purple-900);
+    border-radius: 8px;
+    overflow:hidden;
+    flex-shrink:0;
+  }
+  .unit-btn{
+    font-family:'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    font-weight:600;
+    padding: 0 12px;
+    background: var(--surface-2);
+    color: var(--text-muted);
+    border:none;
+    cursor:pointer;
+  }
+  .unit-btn.active{
+    background: var(--purple-700);
+    color: #fff;
+  }
+  .qty-input{
+    width: 58px;
+    flex: 0 0 58px;
+    text-align:center;
+  }
+  .search-error{
+    font-size: 12.5px;
+    color: var(--danger);
+    margin-bottom: 8px;
+  }
+  .search-hint{
+    font-size: 11.5px;
+    color: var(--text-muted);
+    margin-top: -6px;
+    margin-bottom: 12px;
+  }
+
+  /* Estimate a meal */
+  textarea#mealDescription{
+    width: 100%;
+    resize: vertical;
+    min-height: 44px;
+    margin-bottom: 10px;
+  }
+  .image-row{
+    display:flex;
+    align-items:center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .image-preview-wrap{
+    position:relative;
+    display:inline-flex;
+  }
+  .image-preview-wrap img{
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid var(--purple-900);
+    display:block;
+  }
+  .remove-image-btn{
+    position:absolute;
+    top:-7px; right:-7px;
+    width: 20px; height:20px;
+    border-radius: 50%;
+    background: var(--danger);
+    color:#fff;
+    border: 2px solid var(--surface);
+    font-size: 11px;
+    line-height:1;
+    cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .estimate-card{
+    background: var(--purple-100);
+    border: 1.5px solid var(--purple-300);
+    border-radius: 8px;
+    padding: 14px;
+    margin-top: 10px;
+  }
+  .estimate-card .ename{ font-weight:700; font-size: 14.5px; margin-bottom: 2px; }
+  .estimate-card .erange{
+    font-size: 11.5px;
+    color: var(--text-muted);
+    font-family:'IBM Plex Mono', monospace;
+    margin-bottom: 8px;
+  }
+  .estimate-card .eassumption{
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    line-height:1.4;
+  }
+  .confidence-tag{
+    display:inline-block;
+    font-size: 10px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing: .5px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin-left: 8px;
+    background: var(--surface-2);
+    color: var(--purple-300);
+  }
+  .estimate-controls{
+    display:flex;
+    align-items:center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .estimate-controls label{
+    font-size: 11.5px;
+    color: var(--text-muted);
+    font-weight:600;
+  }
+  #estimateCalInput{ width: 90px; }
+
+  .food-list{ display:flex; flex-direction:column; gap:8px; }
+  .food-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 10px 12px;
+    background: var(--bg);
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+  }
+  .food-item .fname{ font-weight:600; font-size:14px; }
+  .food-item .fmeta{ font-size: 11.5px; color: var(--text-muted); font-family:'IBM Plex Mono', monospace; }
+  .food-item .fright{ display:flex; align-items:center; gap:10px; }
+  .food-item .fcal{ font-family:'IBM Plex Mono', monospace; font-weight:600; color: var(--yellow-500); }
+  .del-btn{
+    background:none; border:none; cursor:pointer; color: var(--text-muted);
+    font-size: 16px; line-height:1; padding: 2px 4px;
+  }
+  .del-btn:hover{ color: var(--danger); }
+  .empty-note{
+    font-size: 13px; color: var(--text-muted); padding: 12px 0; text-align:center;
+  }
+
+  /* Projection */
+  .proj-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .proj-box{
+    background: var(--bg);
+    border: 1.5px solid var(--purple-900);
+    border-radius: 8px;
+    padding: 14px 16px;
+    color: #fff;
+  }
+  .proj-box .p-label{
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: var(--purple-300);
+    font-weight:600;
+  }
+  .proj-box .p-value{
+    font-family:'Space Grotesk', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--yellow-500);
+    margin-top: 4px;
+  }
+  .proj-box .p-value span{ font-size: 14px; color: #fff; font-weight:600; }
+  .proj-note{
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 12px;
+    line-height:1.5;
+  }
+  .proj-note button{
+    background:none; border:none; color: var(--purple-300); font-weight:700; cursor:pointer; padding:0; font-size:12px; text-decoration: underline;
+  }
+
+  /* History */
+  .history-row{
+    display:flex;
+    gap: 10px;
+    align-items:flex-end;
+    height: 90px;
+    overflow-x:auto;
+    padding-bottom: 4px;
+  }
+  .hist-col{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+    min-width: 42px;
+    height:100%;
+    justify-content:flex-end;
+  }
+  .hist-bar-track{
+    width: 22px;
+    flex:1;
+    background: var(--purple-100);
+    border: 1.5px solid var(--purple-300);
+    border-radius: 4px;
+    display:flex;
+    align-items:flex-end;
+    overflow:hidden;
+  }
+  .hist-bar-fill{
+    width:100%;
+    background: var(--yellow-500);
+    border-top: 1.5px solid var(--yellow-600);
+  }
+  .hist-bar-fill.over{ background: var(--purple-700); border-color: var(--purple-900); }
+  .hist-label{ font-size: 10px; color: var(--text-muted); font-family:'IBM Plex Mono', monospace; }
+
+  /* Modal */
+  .modal-overlay{
+    position:fixed; inset:0; background: rgba(0,0,0,0.65);
+    display:none; align-items:center; justify-content:center; padding: 20px; z-index: 50;
+  }
+  .modal-overlay.open{ display:flex; }
+  .modal{
+    background: var(--surface);
+    border: 2px solid var(--purple-900);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    padding: 22px;
+    width: 100%;
+    max-width: 380px;
+  }
+  .modal h3{
+    font-family:'Space Grotesk', sans-serif;
+    margin: 0 0 4px 0;
+    color: var(--text);
+  }
+  .modal p.sub{ font-size:12.5px; color: var(--text-muted); margin: 0 0 16px 0; }
+  .field{ margin-bottom: 14px; }
+  .field label{ display:block; font-size: 12.5px; font-weight:600; margin-bottom: 5px; color: var(--purple-300); }
+  .field input{ width: 100%; }
+  .field .hint{ font-size: 11px; color: var(--text-muted); margin-top: 4px; }
+  .modal-actions{ display:flex; gap: 10px; margin-top: 18px; }
+  .modal-actions .btn{ flex:1; text-align:center; }
+
+  @media (max-width: 480px){
+    .remaining-block .value{ font-size: 36px; }
+    .proj-grid{ grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <div class="mark">STA<span>CK</span>.</div>
+      <div class="tagline">Eat more. Track the build.</div>
+      <div class="date-pill" id="todayPill">—</div>
+    </div>
+    <button class="icon-btn" id="settingsBtn" aria-label="Open settings" title="Set your calorie goal">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+    </button>
+  </header>
+
+  <!-- TODAY / HERO -->
+  <div class="card">
+    <h2>Today <span class="num-tag" id="entryCountTag">0 items</span></h2>
+    <div class="hero-top">
+      <div class="remaining-block">
+        <div class="label" id="remainingLabel">Calories remaining</div>
+        <div class="value" id="remainingValue">0<span class="unit">kcal</span></div>
+      </div>
+      <div class="stat-mini">
+        <div id="eatenStat">0</div>
+        <div>eaten of <span id="goalStat">0</span></div>
+      </div>
+    </div>
+    <div class="gauge-caption">
+      <span>0</span>
+      <span id="goalCaption">Goal: 0</span>
+    </div>
+    <div class="gauge" id="gauge"></div>
+  </div>
+
+  <!-- ADD FOOD -->
+  <div class="card">
+    <h2>Log Food</h2>
+    <div class="tab-row">
+      <button class="tab-btn active" id="tabSearchBtn" data-tab="search">Search the web</button>
+      <button class="tab-btn" id="tabManualBtn" data-tab="manual">Enter manually</button>
+      <button class="tab-btn" id="tabEstimateBtn" data-tab="estimate">Estimate a meal</button>
+    </div>
+
+    <div id="panelSearch">
+      <div class="add-row">
+        <input type="text" id="searchQuery" placeholder="e.g. McDonald's Big Mac, Chipotle chicken bowl" autocomplete="off">
+        <button class="btn" id="searchBtn">Search</button>
+      </div>
+      <div class="search-hint">Looks up real nutrition info from the web — good for restaurant items and packaged products.</div>
+      <div class="search-status" id="searchStatus"></div>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <div id="panelManual" style="display:none;">
+      <div class="add-row">
+        <input type="text" name="foodName" id="foodName" placeholder="e.g. Peanut butter toast" autocomplete="off">
+        <input type="number" name="foodCals" id="foodCals" placeholder="amount" min="0" inputmode="numeric">
+        <div class="unit-toggle" id="unitToggle">
+          <button type="button" class="unit-btn active" data-unit="kcal">kcal</button>
+          <button type="button" class="unit-btn" data-unit="kJ">kJ</button>
+        </div>
+        <input type="number" id="foodQty" class="qty-input" min="1" step="1" value="1" title="Quantity" inputmode="numeric">
+        <button class="btn" id="addFoodBtn">Add</button>
+      </div>
+      <div class="search-hint" id="kjHint" style="display:none;">Kilojoules convert automatically — 1 kcal ≈ 4.184 kJ.</div>
+    </div>
+
+    <div id="panelEstimate" style="display:none;">
+      <textarea id="mealDescription" placeholder="Describe the meal — e.g. 'large bowl of beef stir fry with rice' — a photo alone works too" rows="2"></textarea>
+      <div class="image-row">
+        <input type="file" id="mealImage" accept="image/*" style="display:none;">
+        <button type="button" class="btn secondary" id="chooseImageBtn">📷 Add a photo</button>
+        <div class="image-preview-wrap" id="imagePreviewWrap" style="display:none;">
+          <img id="imagePreview" alt="Meal photo preview">
+          <button type="button" class="remove-image-btn" id="removeImageBtn" aria-label="Remove photo">✕</button>
+        </div>
+      </div>
+      <button class="btn" id="estimateBtn" style="margin-top:10px;">Estimate calories</button>
+      <div class="search-hint">A best guess based on typical portions and ingredients — treat it as a ballpark, not a lab result.</div>
+      <div class="search-status" id="estimateStatus"></div>
+      <div id="estimateResultWrap"></div>
+    </div>
+
+    <div class="food-list" id="foodList">
+      <div class="empty-note">Nothing logged yet today — add your first item above.</div>
+    </div>
+  </div>
+
+  <!-- PROJECTION -->
+  <div class="card">
+    <h2>If You Ate Like This Every Day</h2>
+    <div class="proj-grid">
+      <div class="proj-box">
+        <div class="p-label">In 1 week</div>
+        <div class="p-value" id="weekProj">0.0<span> lb</span></div>
+      </div>
+      <div class="proj-box">
+        <div class="p-label">In 1 month</div>
+        <div class="p-value" id="monthProj">0.0<span> lb</span></div>
+      </div>
+    </div>
+    <div class="proj-note" id="projNote"></div>
+  </div>
+
+  <!-- HISTORY -->
+  <div class="card">
+    <h2>Last 7 Days</h2>
+    <div class="history-row" id="historyRow"></div>
+  </div>
+
+</div>
+
+<!-- SETTINGS MODAL -->
+<div class="modal-overlay" id="settingsModal">
+  <div class="modal">
+    <h3>Your goal</h3>
+    <p class="sub">This drives your daily target and gain projections.</p>
+    <div class="field">
+      <label for="targetInput">Daily calorie goal (kcal)</label>
+      <input type="number" id="targetInput" placeholder="e.g. 3200" min="0" inputmode="numeric">
+    </div>
+    <div class="field">
+      <label for="maintInput">Maintenance calories (optional)</label>
+      <input type="number" id="maintInput" placeholder="e.g. 2600" min="0" inputmode="numeric">
+      <div class="hint">Your estimated calories to stay the same weight (TDEE). Used to project gain more accurately. Leave blank to project from your goal instead.</div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn" id="cancelSettings" style="background:var(--surface); color:var(--text); border-color:var(--purple-900);">Cancel</button>
+      <button class="btn secondary" id="saveSettings">Save</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const KCAL_PER_LB = 3500;
+  const KJ_PER_KCAL = 4.184;
+  const SEGMENTS = 10;
+  let currentUnit = 'kcal';
+
+  function todayKey(d){
+    d = d || new Date();
+    return d.toISOString().slice(0,10);
+  }
+  function fmtDate(d){
+    return d.toLocaleDateString(undefined, { weekday:'short', month:'short', day:'numeric' });
+  }
+  function dayLabel(d){
+    return d.toLocaleDateString(undefined, { weekday:'short' }).slice(0,3);
+  }
+
+  let settings = { targetCalories: null, maintenanceCalories: null };
+  let entries = []; // today's entries: {id, name, calories}
+  let historyTotals = {}; // dateKey -> total kcal
+
+  const el = {
+    todayPill: document.getElementById('todayPill'),
+    settingsBtn: document.getElementById('settingsBtn'),
+    settingsModal: document.getElementById('settingsModal'),
+    targetInput: document.getElementById('targetInput'),
+    maintInput: document.getElementById('maintInput'),
+    saveSettings: document.getElementById('saveSettings'),
+    cancelSettings: document.getElementById('cancelSettings'),
+    remainingValue: document.getElementById('remainingValue'),
+    remainingLabel: document.getElementById('remainingLabel'),
+    eatenStat: document.getElementById('eatenStat'),
+    goalStat: document.getElementById('goalStat'),
+    goalCaption: document.getElementById('goalCaption'),
+    gauge: document.getElementById('gauge'),
+    entryCountTag: document.getElementById('entryCountTag'),
+    foodName: document.getElementById('foodName'),
+    foodCals: document.getElementById('foodCals'),
+    foodQty: document.getElementById('foodQty'),
+    unitToggle: document.getElementById('unitToggle'),
+    kjHint: document.getElementById('kjHint'),
+    addFoodBtn: document.getElementById('addFoodBtn'),
+    foodList: document.getElementById('foodList'),
+    tabSearchBtn: document.getElementById('tabSearchBtn'),
+    tabManualBtn: document.getElementById('tabManualBtn'),
+    tabEstimateBtn: document.getElementById('tabEstimateBtn'),
+    panelSearch: document.getElementById('panelSearch'),
+    panelManual: document.getElementById('panelManual'),
+    panelEstimate: document.getElementById('panelEstimate'),
+    searchQuery: document.getElementById('searchQuery'),
+    searchBtn: document.getElementById('searchBtn'),
+    searchStatus: document.getElementById('searchStatus'),
+    searchResults: document.getElementById('searchResults'),
+    mealDescription: document.getElementById('mealDescription'),
+    mealImage: document.getElementById('mealImage'),
+    chooseImageBtn: document.getElementById('chooseImageBtn'),
+    imagePreviewWrap: document.getElementById('imagePreviewWrap'),
+    imagePreview: document.getElementById('imagePreview'),
+    removeImageBtn: document.getElementById('removeImageBtn'),
+    estimateBtn: document.getElementById('estimateBtn'),
+    estimateStatus: document.getElementById('estimateStatus'),
+    estimateResultWrap: document.getElementById('estimateResultWrap'),
+    weekProj: document.getElementById('weekProj'),
+    monthProj: document.getElementById('monthProj'),
+    projNote: document.getElementById('projNote'),
+    historyRow: document.getElementById('historyRow'),
+  };
+
+  let pendingImage = null; // { base64, mediaType }
+
+  async function loadSettings(){
+    try{
+      const res = await window.storage.get('settings', false);
+      if(res && res.value){ settings = JSON.parse(res.value); }
+    }catch(e){ /* no settings saved yet */ }
+  }
+  async function saveSettingsToStorage(){
+    try{
+      await window.storage.set('settings', JSON.stringify(settings), false);
+    }catch(e){ console.error('Failed to save settings', e); }
+  }
+  async function loadEntries(){
+    const key = 'entries:' + todayKey();
+    try{
+      const res = await window.storage.get(key, false);
+      entries = (res && res.value) ? JSON.parse(res.value) : [];
+    }catch(e){ entries = []; }
+  }
+  async function saveEntries(){
+    const key = 'entries:' + todayKey();
+    try{
+      await window.storage.set(key, JSON.stringify(entries), false);
+    }catch(e){ console.error('Failed to save entries', e); }
+  }
+  async function loadHistory(){
+    historyTotals = {};
+    const days = [];
+    for(let i=0;i<7;i++){
+      const d = new Date();
+      d.setDate(d.getDate()-i);
+      days.push(d);
+    }
+    for(const d of days){
+      const key = 'entries:' + todayKey(d);
+      try{
+        const res = await window.storage.get(key, false);
+        const list = (res && res.value) ? JSON.parse(res.value) : [];
+        historyTotals[todayKey(d)] = list.reduce((s,i)=>s+Number(i.calories||0),0);
+      }catch(e){
+        historyTotals[todayKey(d)] = 0;
+      }
+    }
+    renderHistory(days);
+  }
+
+  function renderHistory(days){
+    el.historyRow.innerHTML = '';
+    const target = settings.targetCalories || 1;
+    const maxVal = Math.max(target, ...Object.values(historyTotals), 1);
+    days.slice().reverse().forEach(d=>{
+      const key = todayKey(d);
+      const total = historyTotals[key] || 0;
+      const pct = Math.min(100, (total/maxVal)*100);
+      const over = settings.targetCalories && total > settings.targetCalories;
+      const col = document.createElement('div');
+      col.className = 'hist-col';
+      col.innerHTML = `
+        <div class="hist-bar-track">
+          <div class="hist-bar-fill ${over?'over':''}" style="height:${pct}%"></div>
+        </div>
+        <div class="hist-label">${dayLabel(d)}</div>
+      `;
+      el.historyRow.appendChild(col);
+    });
+  }
+
+  function totalEaten(){
+    return entries.reduce((s,i)=>s+Number(i.calories||0), 0);
+  }
+
+  function renderGauge(eaten, target){
+    el.gauge.innerHTML = '';
+    if(!target){ return; }
+    const filledSegs = Math.min(SEGMENTS, Math.round((eaten/target)*SEGMENTS));
+    const overflowSegs = eaten > target ? Math.min(SEGMENTS, Math.round(((eaten-target)/target)*SEGMENTS)) : 0;
+    for(let i=0;i<SEGMENTS;i++){
+      const seg = document.createElement('div');
+      let cls = 'seg';
+      if(overflowSegs > 0 && i >= SEGMENTS-overflowSegs){
+        cls += ' over';
+      } else if(i < filledSegs){
+        cls += ' filled';
+      }
+      if(i === SEGMENTS-1){ cls += ' goal-line'; }
+      seg.className = cls;
+      el.gauge.appendChild(seg);
+    }
+  }
+
+  function renderFoodList(){
+    if(entries.length === 0){
+      el.foodList.innerHTML = '<div class="empty-note">Nothing logged yet today — add your first item above.</div>';
+      el.entryCountTag.textContent = '0 items';
+      return;
+    }
+    el.entryCountTag.textContent = entries.length + (entries.length===1 ? ' item' : ' items');
+    el.foodList.innerHTML = '';
+    entries.forEach(item=>{
+      const row = document.createElement('div');
+      row.className = 'food-item';
+      row.innerHTML = `
+        <div>
+          <div class="fname">${escapeHtml(item.name)}</div>
+        </div>
+        <div class="fright">
+          <div class="fcal">${item.calories} kcal</div>
+          <button class="del-btn" data-id="${item.id}" aria-label="Remove ${escapeHtml(item.name)}">✕</button>
+        </div>
+      `;
+      el.foodList.appendChild(row);
+    });
+    el.foodList.querySelectorAll('.del-btn').forEach(btn=>{
+      btn.addEventListener('click', async ()=>{
+        entries = entries.filter(e=>e.id !== btn.dataset.id);
+        await saveEntries();
+        renderAll();
+        loadHistory();
+      });
+    });
+  }
+
+  function escapeHtml(str){
+    const d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
+  }
+
+  function renderProjection(eaten){
+    const target = settings.targetCalories;
+    const maintenance = settings.maintenanceCalories;
+    const baseline = (maintenance !== null && maintenance !== undefined && maintenance !== '') ? Number(maintenance) : target;
+    if(!baseline){
+      el.weekProj.innerHTML = '—';
+      el.monthProj.innerHTML = '—';
+      el.projNote.textContent = 'Set your daily calorie goal to see projections.';
+      return;
+    }
+    const surplus = eaten - baseline;
+    const weekLb = (surplus * 7) / KCAL_PER_LB;
+    const monthLb = (surplus * 30) / KCAL_PER_LB;
+    const sign = (v)=> v >= 0 ? '+' : '−';
+    el.weekProj.innerHTML = sign(weekLb) + Math.abs(weekLb).toFixed(1) + '<span> lb</span>';
+    el.monthProj.innerHTML = sign(monthLb) + Math.abs(monthLb).toFixed(1) + '<span> lb</span>';
+
+    const usingMaintenance = (maintenance !== null && maintenance !== undefined && maintenance !== '');
+    let note = `Estimate based on eating ${eaten} kcal every day, against a baseline of ${baseline} kcal`;
+    note += usingMaintenance ? ' (your maintenance calories).' : ' (your daily goal — set maintenance calories for a more precise projection).';
+    note += ' Uses the common approximation that ~3,500 kcal surplus ≈ 1 lb gained; actual results vary by person.';
+    el.projNote.innerHTML = note + (usingMaintenance ? '' : ' <button id="openSettingsFromNote">Set maintenance calories</button>');
+    const noteBtn = document.getElementById('openSettingsFromNote');
+    if(noteBtn){ noteBtn.addEventListener('click', openSettings); }
+  }
+
+  function renderAll(){
+    const eaten = totalEaten();
+    const target = settings.targetCalories || 0;
+    const remaining = target - eaten;
+    el.eatenStat.textContent = eaten;
+    el.goalStat.textContent = target || '—';
+    el.goalCaption.textContent = 'Goal: ' + (target || '—');
+    if(remaining >= 0){
+      el.remainingValue.innerHTML = remaining + '<span class="unit">kcal</span>';
+      el.remainingValue.classList.remove('over');
+      el.remainingLabel.textContent = 'Calories remaining';
+    } else {
+      el.remainingValue.innerHTML = Math.abs(remaining) + '<span class="unit">kcal over</span>';
+      el.remainingValue.classList.add('over');
+      el.remainingLabel.textContent = 'Past your goal by';
+    }
+    renderGauge(eaten, target);
+    renderFoodList();
+    renderProjection(eaten);
+  }
+
+  function openSettings(){
+    el.targetInput.value = settings.targetCalories || '';
+    el.maintInput.value = settings.maintenanceCalories || '';
+    el.settingsModal.classList.add('open');
+    el.targetInput.focus();
+  }
+  function closeSettings(){
+    el.settingsModal.classList.remove('open');
+  }
+
+  el.settingsBtn.addEventListener('click', openSettings);
+  el.cancelSettings.addEventListener('click', closeSettings);
+  el.settingsModal.addEventListener('click', (e)=>{ if(e.target === el.settingsModal) closeSettings(); });
+
+  el.saveSettings.addEventListener('click', async ()=>{
+    const t = Number(el.targetInput.value);
+    const m = el.maintInput.value === '' ? null : Number(el.maintInput.value);
+    settings.targetCalories = t > 0 ? t : null;
+    settings.maintenanceCalories = m;
+    await saveSettingsToStorage();
+    closeSettings();
+    renderAll();
+    loadHistory();
+  });
+
+  el.addFoodBtn.addEventListener('click', addFood);
+  el.foodCals.addEventListener('keydown', (e)=>{ if(e.key === 'Enter') addFood(); });
+  el.foodName.addEventListener('keydown', (e)=>{ if(e.key === 'Enter') addFood(); });
+
+  // --- Tabs ---
+  function setTab(tab){
+    el.tabSearchBtn.classList.toggle('active', tab === 'search');
+    el.tabManualBtn.classList.toggle('active', tab === 'manual');
+    el.tabEstimateBtn.classList.toggle('active', tab === 'estimate');
+    el.panelSearch.style.display = tab === 'search' ? '' : 'none';
+    el.panelManual.style.display = tab === 'manual' ? '' : 'none';
+    el.panelEstimate.style.display = tab === 'estimate' ? '' : 'none';
+  }
+  el.tabSearchBtn.addEventListener('click', ()=>setTab('search'));
+  el.tabManualBtn.addEventListener('click', ()=>setTab('manual'));
+  el.tabEstimateBtn.addEventListener('click', ()=>setTab('estimate'));
+
+  // --- Web nutrition lookup ---
+  el.searchBtn.addEventListener('click', runSearch);
+  el.searchQuery.addEventListener('keydown', (e)=>{ if(e.key === 'Enter') runSearch(); });
+
+  async function runSearch(){
+    const query = el.searchQuery.value.trim();
+    if(!query) { el.searchQuery.focus(); return; }
+    el.searchResults.innerHTML = '';
+    el.searchStatus.textContent = 'Searching the web';
+    el.searchStatus.classList.add('loading');
+    el.searchBtn.disabled = true;
+
+    try{
+      const results = await lookupNutrition(query);
+      el.searchStatus.classList.remove('loading');
+      if(!results.length){
+        el.searchStatus.textContent = '';
+        el.searchResults.innerHTML = '<div class="search-error">No reliable match found — try a more specific name, or enter it manually.</div>';
+      } else {
+        el.searchStatus.textContent = `${results.length} match${results.length>1?'es':''} found:`;
+        renderSearchResults(results);
+      }
+    }catch(err){
+      console.error(err);
+      el.searchStatus.classList.remove('loading');
+      el.searchStatus.textContent = '';
+      el.searchResults.innerHTML = '<div class="search-error">Couldn\'t fetch results right now. Try again, or enter the item manually.</div>';
+    }finally{
+      el.searchBtn.disabled = false;
+    }
+  }
+
+  async function lookupNutrition(query){
+    const systemPrompt = `You are a nutrition data lookup assistant. Given a food, restaurant menu item, or packaged product name, use web search to find its official or highly reliable nutrition information (calories and serving size). Respond with ONLY a raw JSON array, no markdown fences, no prose, no explanation, in exactly this shape:
+[{"name": "string - product name including brand", "serving": "string - serving size/description", "calories": number, "source": "string - short source name like 'mcdonalds.com'"}]
+Include up to 5 items. If the query is ambiguous (e.g. a fast food item with multiple sizes), include the distinct size/variant options as separate entries. If you cannot find reliable data for the query, return exactly: []`;
+
+    const response = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model: "claude-sonnet-4-6",
+        max_tokens: 1000,
+        system: systemPrompt,
+        messages: [{ role: "user", content: query }],
+        tools: [{ type: "web_search_20250305", name: "web_search" }]
+      })
+    });
+
+    if(!response.ok){ throw new Error('API error ' + response.status); }
+    const data = await response.json();
+    const textBlocks = (data.content || []).filter(b => b.type === 'text').map(b => b.text);
+    const raw = textBlocks.join('\n').trim();
+    const cleaned = raw.replace(/^```(json)?/i, '').replace(/```$/,'').trim();
+    let parsed;
+    try{
+      parsed = JSON.parse(cleaned);
+    }catch(e){
+      const match = cleaned.match(/\[[\s\S]*\]/);
+      if(match){ parsed = JSON.parse(match[0]); } else { throw e; }
+    }
+    if(!Array.isArray(parsed)) return [];
+    return parsed.filter(item => item && item.name && Number(item.calories) > 0).map(item => ({
+      name: String(item.name),
+      serving: item.serving ? String(item.serving) : '',
+      calories: Math.round(Number(item.calories)),
+      source: item.source ? String(item.source) : ''
+    }));
+  }
+
+  function renderSearchResults(results){
+    el.searchResults.innerHTML = '';
+    const qtyState = results.map(()=>1);
+    results.forEach((item, idx)=>{
+      const card = document.createElement('div');
+      card.className = 'result-card';
+      const metaParts = [item.serving, item.source].filter(Boolean).join(' · ');
+      card.innerHTML = `
+        <div>
+          <div class="rname">${escapeHtml(item.name)}</div>
+          <div class="rmeta">${escapeHtml(metaParts)}</div>
+        </div>
+        <div class="result-right">
+          <div class="result-cal-col">
+            <div class="rcal" data-idx="${idx}">${item.calories} kcal</div>
+          </div>
+          <div class="qty-stepper">
+            <button type="button" data-action="dec" data-idx="${idx}">−</button>
+            <span class="qty-val" data-idx="${idx}">1</span>
+            <button type="button" data-action="inc" data-idx="${idx}">+</button>
+          </div>
+          <button class="result-add-btn" data-idx="${idx}">Add</button>
+        </div>
+      `;
+      el.searchResults.appendChild(card);
+    });
+
+    function updateCard(idx){
+      const qty = qtyState[idx];
+      el.searchResults.querySelector(`.qty-val[data-idx="${idx}"]`).textContent = qty;
+      el.searchResults.querySelector(`.rcal[data-idx="${idx}"]`).textContent = (results[idx].calories * qty) + ' kcal';
+    }
+
+    el.searchResults.querySelectorAll('.qty-stepper button').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        const idx = Number(btn.dataset.idx);
+        if(btn.dataset.action === 'inc'){ qtyState[idx] = Math.min(20, qtyState[idx] + 1); }
+        else{ qtyState[idx] = Math.max(1, qtyState[idx] - 1); }
+        updateCard(idx);
+      });
+    });
+
+    el.searchResults.querySelectorAll('.result-add-btn').forEach(btn=>{
+      btn.addEventListener('click', async ()=>{
+        const idx = Number(btn.dataset.idx);
+        const item = results[idx];
+        const qty = qtyState[idx];
+        const totalCal = item.calories * qty;
+        const displayName = qty > 1 ? `${item.name} (×${qty})` : item.name;
+        btn.disabled = true;
+        btn.textContent = 'Added';
+        entries.push({ id: Date.now().toString(36) + Math.random().toString(36).slice(2,6), name: displayName, calories: totalCal });
+        await saveEntries();
+        renderAll();
+        loadHistory();
+      });
+    });
+  }
+
+  el.unitToggle.querySelectorAll('.unit-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      currentUnit = btn.dataset.unit;
+      el.unitToggle.querySelectorAll('.unit-btn').forEach(b=>b.classList.toggle('active', b === btn));
+      el.foodCals.placeholder = currentUnit;
+      el.kjHint.style.display = currentUnit === 'kJ' ? '' : 'none';
+    });
+  });
+
+  async function addFood(){
+    const name = el.foodName.value.trim();
+    const rawAmount = Number(el.foodCals.value);
+    const qty = Math.max(1, Math.round(Number(el.foodQty.value)) || 1);
+    if(!name || !rawAmount || rawAmount <= 0){
+      if(!name){ el.foodName.focus(); } else { el.foodCals.focus(); }
+      return;
+    }
+    const perServingKcal = currentUnit === 'kJ' ? rawAmount / KJ_PER_KCAL : rawAmount;
+    const totalKcal = Math.round(perServingKcal * qty);
+    const displayName = qty > 1 ? `${name} (×${qty})` : name;
+    entries.push({ id: Date.now().toString(36) + Math.random().toString(36).slice(2,6), name: displayName, calories: totalKcal });
+    el.foodName.value = '';
+    el.foodCals.value = '';
+    el.foodQty.value = '1';
+    el.foodName.focus();
+    await saveEntries();
+    renderAll();
+    loadHistory();
+  }
+
+  // --- Estimate a meal (text and/or photo) ---
+  el.chooseImageBtn.addEventListener('click', ()=> el.mealImage.click());
+  el.mealImage.addEventListener('change', async ()=>{
+    const file = el.mealImage.files[0];
+    if(!file) return;
+    try{
+      pendingImage = await resizeImageToBase64(file);
+      el.imagePreview.src = 'data:' + pendingImage.mediaType + ';base64,' + pendingImage.base64;
+      el.imagePreviewWrap.style.display = '';
+      el.chooseImageBtn.style.display = 'none';
+    }catch(e){
+      console.error('Image read failed', e);
+    }
+  });
+  el.removeImageBtn.addEventListener('click', ()=>{
+    pendingImage = null;
+    el.mealImage.value = '';
+    el.imagePreviewWrap.style.display = 'none';
+    el.chooseImageBtn.style.display = '';
+  });
+
+  function resizeImageToBase64(file){
+    return new Promise((resolve, reject)=>{
+      const reader = new FileReader();
+      reader.onerror = () => reject(new Error('read failed'));
+      reader.onload = () => {
+        const img = new Image();
+        img.onerror = () => reject(new Error('decode failed'));
+        img.onload = () => {
+          const maxDim = 1024;
+          let width = img.width;
+          let height = img.height;
+          if(width > maxDim || height > maxDim){
+            const scale = maxDim / Math.max(width, height);
+            width = Math.round(width * scale);
+            height = Math.round(height * scale);
+          }
+          const canvas = document.createElement('canvas');
+          canvas.width = width; canvas.height = height;
+          canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+          const dataUrl = canvas.toDataURL('image/jpeg', 0.85);
+          resolve({ base64: dataUrl.split(',')[1], mediaType: 'image/jpeg' });
+        };
+        img.src = reader.result;
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+
+  el.estimateBtn.addEventListener('click', runEstimate);
+
+  async function runEstimate(){
+    const description = el.mealDescription.value.trim();
+    if(!description && !pendingImage){
+      el.mealDescription.focus();
+      return;
+    }
+    el.estimateResultWrap.innerHTML = '';
+    el.estimateStatus.textContent = 'Estimating';
+    el.estimateStatus.classList.add('loading');
+    el.estimateBtn.disabled = true;
+
+    try{
+      const est = await estimateMealCalories(description, pendingImage);
+      el.estimateStatus.classList.remove('loading');
+      el.estimateStatus.textContent = '';
+      renderEstimateResult(est);
+    }catch(err){
+      console.error(err);
+      el.estimateStatus.classList.remove('loading');
+      el.estimateStatus.textContent = '';
+      el.estimateResultWrap.innerHTML = '<div class="search-error">Could not generate an estimate right now. Try again, or log it manually.</div>';
+    }finally{
+      el.estimateBtn.disabled = false;
+    }
+  }
+
+  async function estimateMealCalories(description, image){
+    const systemPrompt = "You are a careful, practical nutrition estimator. The user will describe a meal in words and/or share a photo of it. There is no way to know the exact calorie count without weighing the food, so give your best-effort estimate using typical ingredients, preparation methods, and portion sizes (using the photo for portion/ingredient cues if provided). Respond with ONLY a raw JSON object, no markdown fences, no prose, in exactly this shape: {\"name\": \"short label for the meal\", \"calories_low\": number, \"calories_mid\": number, \"calories_high\": number, \"confidence\": \"low or medium or high\", \"assumptions\": \"one short sentence on the portion size and ingredients you assumed\"}. calories_mid should be your single best-guess number. Keep the range realistic, not absurdly wide. If there is not enough information, still make a reasonable assumption and note it in assumptions rather than refusing.";
+
+    const contentBlocks = [];
+    if(image){
+      contentBlocks.push({ type: 'image', source: { type: 'base64', media_type: image.mediaType, data: image.base64 } });
+    }
+    contentBlocks.push({ type: 'text', text: description || 'Estimate the calories of the meal shown in the photo.' });
+
+    const response = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model: "claude-sonnet-4-6",
+        max_tokens: 1000,
+        system: systemPrompt,
+        messages: [{ role: "user", content: contentBlocks }]
+      })
+    });
+
+    if(!response.ok){ throw new Error('API error ' + response.status); }
+    const data = await response.json();
+    const textBlocks = (data.content || []).filter(function(b){ return b.type === 'text'; }).map(function(b){ return b.text; });
+    const raw = textBlocks.join('\n').trim();
+    const cleaned = raw.replace(/^```(json)?/i, '').replace(/```$/,'').trim();
+    let parsed;
+    try{
+      parsed = JSON.parse(cleaned);
+    }catch(e){
+      const match = cleaned.match(/\{[\s\S]*\}/);
+      if(match){ parsed = JSON.parse(match[0]); } else { throw e; }
+    }
+    return {
+      name: parsed.name ? String(parsed.name) : (description || 'Estimated meal'),
+      low: Math.round(Number(parsed.calories_low) || 0),
+      mid: Math.round(Number(parsed.calories_mid) || 0),
+      high: Math.round(Number(parsed.calories_high) || 0),
+      confidence: parsed.confidence || 'medium',
+      assumptions: parsed.assumptions ? String(parsed.assumptions) : ''
+    };
+  }
+
+  function renderEstimateResult(est){
+    let qty = 1;
+    const card = document.createElement('div');
+    card.className = 'estimate-card';
+    card.innerHTML =
+      '<div class="ename">' + escapeHtml(est.name) + '<span class="confidence-tag">' + escapeHtml(est.confidence) + ' confidence</span></div>' +
+      '<div class="erange">Range: ' + est.low + '&ndash;' + est.high + ' kcal</div>' +
+      (est.assumptions ? '<div class="eassumption">' + escapeHtml(est.assumptions) + '</div>' : '') +
+      '<div class="estimate-controls"><label for="estimateCalInput">Calories (edit if you like)</label></div>' +
+      '<div class="add-row" style="margin-top:6px;">' +
+        '<input type="number" id="estimateCalInput" min="0" value="' + est.mid + '">' +
+        '<div class="qty-stepper">' +
+          '<button type="button" id="estQtyDec">\u2212</button>' +
+          '<span class="qty-val" id="estQtyVal">1</span>' +
+          '<button type="button" id="estQtyInc">+</button>' +
+        '</div>' +
+        '<button class="btn" id="estimateAddBtn">Add to log</button>' +
+      '</div>';
+    el.estimateResultWrap.innerHTML = '';
+    el.estimateResultWrap.appendChild(card);
+
+    const calInput = card.querySelector('#estimateCalInput');
+    const qtyValEl = card.querySelector('#estQtyVal');
+    card.querySelector('#estQtyDec').addEventListener('click', function(){
+      qty = Math.max(1, qty - 1);
+      qtyValEl.textContent = qty;
+    });
+    card.querySelector('#estQtyInc').addEventListener('click', function(){
+      qty = Math.min(20, qty + 1);
+      qtyValEl.textContent = qty;
+    });
+    card.querySelector('#estimateAddBtn').addEventListener('click', async function(){
+      const perServing = Number(calInput.value) || 0;
+      if(perServing <= 0){ calInput.focus(); return; }
+      const total = Math.round(perServing * qty);
+      const displayName = qty > 1 ? (est.name + ' (\u00d7' + qty + ', estimated)') : (est.name + ' (estimated)');
+      entries.push({ id: Date.now().toString(36) + Math.random().toString(36).slice(2,6), name: displayName, calories: total });
+      await saveEntries();
+      renderAll();
+      loadHistory();
+      el.mealDescription.value = '';
+      pendingImage = null;
+      el.mealImage.value = '';
+      el.imagePreviewWrap.style.display = 'none';
+      el.chooseImageBtn.style.display = '';
+      el.estimateResultWrap.innerHTML = '';
+    });
+  }
+
+  async function init(){
+    el.todayPill.textContent = fmtDate(new Date());
+    await loadSettings();
+    await loadEntries();
+    renderAll();
+    await loadHistory();
+    if(!settings.targetCalories){
+      openSettings();
+    }
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>
