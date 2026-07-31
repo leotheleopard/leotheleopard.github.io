@@ -9,13 +9,6 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="site-nav">
-  <div class="site-nav-inner">
-    <a href="#calc-section" class="site-nav-link">Calculator</a>
-    <a href="#tracker-today-section" class="site-nav-link">Tracker</a>
-  </div>
-</nav>
-
 <div class="hero">
   <div class="hero-inner">
     <div class="eyebrow">// for the gainers</div>
@@ -28,7 +21,8 @@
   </div>
 </div>
 
-<div class="wrap">
+<div class="split-layout">
+<div class="panel panel-calc">
 
 <section id="calc-section">
   <div class="section-head"><span class="num">01</span><h2>Your numbers</h2></div>
@@ -141,7 +135,7 @@
     <p class="pace-note" id="pace-note"></p>
   </div>
 
-  <a href="#tracker-today-section" class="btn-primary" id="send-to-tracker-btn" style="margin-top:24px;">Send these numbers to my tracker ↓</a>
+  <a href="#tracker-today-section" class="btn-primary" id="send-to-tracker-btn" style="margin-top:24px;">Send these numbers to my tracker →</a>
 </section>
 
 <section>
@@ -205,6 +199,9 @@
   </div>
   <p class="geo-note" id="geo-note">Links open Google Maps. Click one to allow location access, or they'll fall back to a general search.</p>
 </section>
+
+</div>
+<div class="panel panel-tracker">
 
 <section id="tracker-today-section">
   <div class="section-head">
@@ -296,10 +293,28 @@
 </section>
 
 <section id="tracker-history-section">
-  <div class="section-head"><span class="num">09</span><h2>Last 7 days</h2></div>
-  <div class="history-row" id="historyRow"></div>
+  <div class="section-head"><span class="num">09</span><h2>This week</h2></div>
+  <div class="card">
+    <div class="history-row" id="historyRow"></div>
+    <div class="week-stats">
+      <div class="stat-line"><span>Total eaten this week</span><span id="weekTotalStat">0 kcal</span></div>
+      <div class="stat-line"><span>Average per day</span><span id="weekAvgStat">No days logged yet this week</span></div>
+    </div>
+    <div class="proj-grid" style="margin-top:18px;">
+      <div class="proj-box">
+        <div class="p-label">At that average, in 1 week</div>
+        <div class="p-value" id="weekAvgProjWeek">—</div>
+      </div>
+      <div class="proj-box">
+        <div class="p-label">At that average, in 1 month</div>
+        <div class="p-value" id="weekAvgProjMonth">—</div>
+      </div>
+    </div>
+    <div class="proj-note" id="weekAvgNote"></div>
+  </div>
 </section>
 
+</div>
 </div>
 
 <footer>

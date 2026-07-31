@@ -372,6 +372,7 @@
   let settings = { targetCalories: null, maintenanceCalories: null };
   let entries = [];
   let historyTotals = {};
+  let historyHasData = {};
   let builderItems = [];
 
   const el = {
@@ -415,6 +416,11 @@
     monthProj: $('monthProj'),
     projNote: $('projNote'),
     historyRow: $('historyRow'),
+    weekTotalStat: $('weekTotalStat'),
+    weekAvgStat: $('weekAvgStat'),
+    weekAvgProjWeek: $('weekAvgProjWeek'),
+    weekAvgProjMonth: $('weekAvgProjMonth'),
+    weekAvgNote: $('weekAvgNote'),
   };
 
   async function loadSettings(){
@@ -441,6 +447,7 @@
   }
   async function loadHistory(){
     historyTotals = {};
+    historyHasData = {};
     const days = [];
     for(let i=0;i<7;i++){
       const d = new Date();
@@ -453,11 +460,50 @@
         const raw = localStorage.getItem(key);
         const list = raw ? JSON.parse(raw) : [];
         historyTotals[todayKey(d)] = list.reduce(function(s,i){ return s+Number(i.calories||0); },0);
+        historyHasData[todayKey(d)] = list.length > 0;
       }catch(e){
         historyTotals[todayKey(d)] = 0;
+        historyHasData[todayKey(d)] = false;
       }
     }
     renderHistory(days);
+    renderWeekStats(days);
+  }
+
+  function renderWeekStats(days){
+    const weekTotal = Object.values(historyTotals).reduce(function(a,b){ return a+b; }, 0);
+    const daysWithData = days.filter(function(d){ return historyHasData[todayKey(d)]; }).length;
+    const weekAvg = daysWithData > 0 ? Math.round(weekTotal / daysWithData) : 0;
+
+    el.weekTotalStat.textContent = weekTotal + ' kcal';
+    el.weekAvgStat.textContent = daysWithData > 0
+      ? (weekAvg + ' kcal/day (' + daysWithData + ' day' + (daysWithData===1?'':'s') + ' logged)')
+      : 'No days logged yet this week';
+
+    const target = settings.targetCalories;
+    const maintenance = settings.maintenanceCalories;
+    const usingMaintenance = (maintenance !== null && maintenance !== undefined && maintenance !== '');
+    const baseline = usingMaintenance ? Number(maintenance) : target;
+
+    if(daysWithData === 0 || !baseline){
+      el.weekAvgProjWeek.innerHTML = '—';
+      el.weekAvgProjMonth.innerHTML = '—';
+      el.weekAvgNote.textContent = daysWithData === 0
+        ? 'Log at least one day this week to see your average and a projection based on it.'
+        : 'Set your daily calorie goal to see a projection based on your weekly average.';
+      return;
+    }
+
+    const surplus = weekAvg - baseline;
+    const weekLb = (surplus * 7) / KCAL_PER_LB;
+    const monthLb = (surplus * 30) / KCAL_PER_LB;
+    function sign(v){ return v >= 0 ? '+' : '\u2212'; }
+    el.weekAvgProjWeek.innerHTML = sign(weekLb) + Math.abs(weekLb).toFixed(1) + '<span> lb</span>';
+    el.weekAvgProjMonth.innerHTML = sign(monthLb) + Math.abs(monthLb).toFixed(1) + '<span> lb</span>';
+
+    let note = 'Based on averaging ' + weekAvg + ' kcal/day over the ' + daysWithData + ' day' + (daysWithData===1?'':'s') + ' you\'ve logged this week, against a baseline of ' + baseline + ' kcal';
+    note += usingMaintenance ? ' (your maintenance calories).' : ' (your daily goal).';
+    el.weekAvgNote.textContent = note;
   }
 
   function renderHistory(days){
