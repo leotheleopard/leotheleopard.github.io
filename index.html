@@ -6,7 +6,7 @@
 <title>Confused Collective Game Awards — Ballot</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href"tccga.css">
+<link rel="stylesheet" href="tccga.css">
 <link rel="icon" type="image/x-icon" href="icon.png">
 </head>
 <body>
@@ -98,9 +98,6 @@
   form.addEventListener('submit', function () {
     submitBtn.disabled = true;
     submitLabel.textContent = 'Submitting...';
-    // Real browser POST to Google's endpoint, targeted at the hidden iframe
-    // above so the page never navigates away. Google's response can't be
-    // read cross-origin, so we optimistically confirm after a short delay.
     setTimeout(function () {
       form.classList.add('hidden');
       donePanel.classList.add('visible');
