@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Confused Collective Game Awards — Ballot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #14112B;
+    --panel: #1E1A40;
+    --panel-2: #241F49;
+    --text: #F5F2FF;
+    --muted: #B4ADD9;
+    --magenta: #FF3EA5;
+    --cyan: #45E8D6;
+    --gold: #FFC93C;
+    --line: rgba(245,242,255,0.12);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 32px 16px 56px;
+  }
+
+  .ccga-root {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 12px 8px 24px;
+  }
+
+  .marquee {
+    font-family: 'Bungee', system-ui, sans-serif;
+    font-size: clamp(26px, 6vw, 40px);
+    line-height: 1.15;
+    margin: 0;
+    transform: skewX(-3deg);
+    background: linear-gradient(90deg, var(--cyan), var(--magenta));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+  }
+
+  .hero-sub {
+    color: var(--muted);
+    margin: 14px 0 0;
+    font-size: 14px;
+  }
+
+  .ballot {
+    background: var(--panel);
+    border-radius: 12px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .field label {
+    font-size: 13.5px;
+    font-weight: 600;
+  }
+
+  .field input {
+    background: var(--panel-2);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 10px 12px;
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+  }
+
+  .field input:focus {
+    outline: 2px solid var(--cyan);
+    outline-offset: 1px;
+  }
+
+  .submit-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 6px;
+    flex-wrap: wrap;
+  }
+
+  .progress {
+    color: var(--muted);
+    font-size: 12.5px;
+  }
+
+  .submit-btn {
+    background: var(--magenta);
+    color: #14112B;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .submit-btn:hover:not(:disabled) {
+    filter: brightness(1.08);
+  }
+
+  .submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  .done-panel {
+    background: var(--panel);
+    border-radius: 12px;
+    padding: 40px 22px;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .done-panel.visible {
+    display: flex;
+  }
+
+  .ballot.hidden {
+    display: none;
+  }
+
+  .done-panel h2 {
+    font-family: 'Bungee', system-ui, sans-serif;
+    font-size: 18px;
+    margin: 6px 0 0;
+    font-weight: normal;
+  }
+
+  .done-panel p {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0 0 14px;
+  }
+
+  .add-btn {
+    background: var(--cyan);
+    color: #14112B;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-weight: 700;
+    font-size: 13.5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .icon {
+    font-size: 15px;
+    line-height: 1;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="ccga-root">
+  <iframe name="hidden_iframe" title="hidden" style="display:none"></iframe>
+
+  <header class="hero">
+    <h1 class="marquee">Confused Collective<br>Game Awards</h1>
+    <p class="hero-sub">Cast your ballot. Skip anything you're not sure about.</p>
+  </header>
+
+  <form
+    id="ballotForm"
+    class="ballot"
+    action="https://docs.google.com/forms/d/e/1FAIpQLSdP1SqwT_LZkaZEC4wekmADkqsQTwuGgPCVzoh1elGLeNWS2g/formResponse"
+    method="POST"
+    target="hidden_iframe"
+  >
+    <div class="field">
+      <label for="goty">Game Of The Year</label>
+      <input id="goty" name="entry.1600279626" type="text" placeholder="Your pick for game of the year">
+    </div>
+    <div class="field">
+      <label for="dlc">DLC Of The Year</label>
+      <input id="dlc" name="entry.222006332" type="text" placeholder="Your pick for DLC of the year">
+    </div>
+    <div class="field">
+      <label for="soundtrack">Best Game Soundtrack</label>
+      <input id="soundtrack" name="entry.405372087" type="text" placeholder="The one still stuck in your head">
+    </div>
+    <div class="field">
+      <label for="replayed">Game You Replayed... Again.</label>
+      <input id="replayed" name="entry.1628886905" type="text" placeholder="The one you went back to">
+    </div>
+    <div class="field">
+      <label for="cant-stop">Game You Can't Stop Playing</label>
+      <input id="cant-stop" name="entry.569795080" type="text" placeholder="Still installed, still open">
+    </div>
+    <div class="field">
+      <label for="upcoming">Best Upcoming</label>
+      <input id="upcoming" name="entry.2120554982" type="text" placeholder="Not out yet, already hyped">
+    </div>
+    <div class="field">
+      <label for="multiplayer">Best Multiplayer</label>
+      <input id="multiplayer" name="entry.1987240120" type="text" placeholder="Better with other people">
+    </div>
+    <div class="field">
+      <label for="hidden-gem">Best Hidden Gem</label>
+      <input id="hidden-gem" name="entry.1520204588" type="text" placeholder="The one you keep recommending">
+    </div>
+
+    <div class="submit-row">
+      <span class="progress" id="progress">0 of 8 answered</span>
+      <button type="submit" class="submit-btn" id="submitBtn">
+        <span class="icon">➤</span>
+        <span id="submitLabel">Submit ballot</span>
+      </button>
+    </div>
+  </form>
+
+  <section class="done-panel" id="donePanel">
+    <div style="font-size:30px;">🏆</div>
+    <h2>Ballot submitted</h2>
+    <p>Thanks for voting — your picks are in.</p>
+    <button class="add-btn" id="startOverBtn">
+      <span class="icon">↺</span>
+      Submit another ballot
+    </button>
+  </section>
+</div>
+
+<script>
+  const form = document.getElementById('ballotForm');
+  const donePanel = document.getElementById('donePanel');
+  const progressEl = document.getElementById('progress');
+  const submitBtn = document.getElementById('submitBtn');
+  const submitLabel = document.getElementById('submitLabel');
+  const startOverBtn = document.getElementById('startOverBtn');
+  const inputs = Array.from(form.querySelectorAll('input'));
+
+  function updateProgress() {
+    const filled = inputs.filter((i) => i.value.trim().length > 0).length;
+    progressEl.textContent = filled + ' of ' + inputs.length + ' answered';
+  }
+
+  inputs.forEach((input) => input.addEventListener('input', updateProgress));
+
+  form.addEventListener('submit', function () {
+    submitBtn.disabled = true;
+    submitLabel.textContent = 'Submitting...';
+    // Real browser POST to Google's endpoint, targeted at the hidden iframe
+    // above so the page never navigates away. Google's response can't be
+    // read cross-origin, so we optimistically confirm after a short delay.
+    setTimeout(function () {
+      form.classList.add('hidden');
+      donePanel.classList.add('visible');
+    }, 900);
+  });
+
+  startOverBtn.addEventListener('click', function () {
+    inputs.forEach((i) => (i.value = ''));
+    updateProgress();
+    submitBtn.disabled = false;
+    submitLabel.textContent = 'Submit ballot';
+    donePanel.classList.remove('visible');
+    form.classList.remove('hidden');
+  });
+</script>
+
+</body>
+</html>
