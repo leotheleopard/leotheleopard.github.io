@@ -26,10 +26,11 @@ function attempt(W,H,pool){
   if(bs)put(e,br,bc,bd)}
  return P;
 }
-function generate(W,H,bank,theme,ms){
- const m=Math.min(W,H),pool=bank.filter(e=>e.w.length<=m);
+function generate(W,H,bank,theme,ms,extra){
+ const m=Math.min(W,H),ok=e=>e.w.length<=m,pool=bank.filter(ok),ex=(extra||[]).filter(ok),T=e=>e.t===theme;
  let best=null;const t0=Date.now();
- do{const p=attempt(W,H,shuffle(pool.filter(e=>e.t===theme)).concat(shuffle(pool.filter(e=>e.t!==theme))));
+ do{const s=shuffle(ex).slice(0,1500),
+  p=attempt(W,H,[...shuffle(pool.filter(T)),...shuffle(s.filter(T)),...shuffle(pool.filter(e=>!T(e))),...shuffle(s.filter(e=>!T(e)))]);
   if(!best||p.length>best.length)best=p}while(Date.now()-t0<ms);
  return best;
 }

@@ -32,13 +32,13 @@ main{flex:1;min-height:0;display:flex}
 <button class="p" id="new">New</button><button id="chk">Check</button><button id="rev">Reveal word</button>
 </header>
 <main><div id="left"><div id="gw"><div id="grid"></div></div><div id="bar"></div><div id="kb"></div></div><div id="lists"></div></main>
-<script src="gen.js"></script><script src="words.js"></script>
+<script src="gen.js"></script><script src="words.js"></script><script src="words_wn.js"></script>
 <script>
-const $=s=>document.querySelector(s),BANK=parseBank(WORDS);
+const $=s=>document.querySelector(s),BANK=parseBank(WORDS),BANK2=parseBank(WORDS_WN);
 let Pz,F,X,EA,cell=[],cur={y:0,x:0,d:0};
 function newPuzzle(){
  const v=$('#size').value,n=v==='r'?9+Math.random()*22|0:+v;
- setPz(build(generate(n,n,BANK,$('#theme').value,n>17?900:500)));
+ setPz(build(generate(n,n,BANK,$('#theme').value,n>17?900:500,BANK2)));
 }
 function setPz(pz,fill){
  Pz=pz;F=fill||pz.S.map(r=>r.map(()=>''));X=pz.S.map(r=>r.map(()=>0));
