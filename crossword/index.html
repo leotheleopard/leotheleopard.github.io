@@ -1,0 +1,90 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#1b2a41">
+<title>Crossword</title>
+<style>
+:root{--bg:#e8edf2;--fg:#14213d;--cell:#fff;--blk:#1b2a41;--sel:#ffc857;--word:#bfe6e0;--acc:#0f766e;--onacc:#fff;--line:#9aa8b8}
+@media(prefers-color-scheme:dark){:root{--bg:#10151d;--fg:#e6ebf2;--cell:#222b38;--blk:#05070a;--sel:#b7791f;--word:#25525a;--acc:#2aa198;--onacc:#06121a;--line:#47566b}}
+*{box-sizing:border-box}html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--fg);font:16px system-ui,sans-serif;display:flex;flex-direction:column;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+header{display:flex;flex-wrap:wrap;gap:6px;padding:6px}
+select,button{font:inherit;padding:7px 11px;border-radius:8px;border:1px solid var(--line);background:var(--cell);color:var(--fg)}
+button.p{background:var(--acc);color:var(--onacc);border-color:var(--acc);font-weight:600}
+button:focus-visible,select:focus-visible{outline:3px solid var(--sel)}
+main{flex:1;min-height:0;display:flex}
+#left{flex:1;display:flex;flex-direction:column;min-width:0;min-height:0}
+#gw{flex:1;min-height:0;overflow:auto;padding:8px;display:flex}
+#grid{display:grid;margin:auto;border:2px solid var(--blk);width:max-content;font-family:Georgia,serif}
+.c{position:relative;background:var(--cell);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-weight:600;user-select:none}
+.c.b{background:var(--blk)}.c.w{background:var(--word)}.c.s{background:var(--sel);color:#14213d}.c.x{color:#d32f2f}
+.n{position:absolute;top:1px;left:2px;font:400 .5em system-ui,sans-serif}
+#bar{padding:10px 12px;background:var(--blk);color:#fff;min-height:3em;font-size:1.05em}
+#kb{display:grid;grid-template-columns:repeat(10,1fr);gap:4px;padding:6px}
+#kb button{padding:12px 0;font-weight:600}
+#lists{display:none;width:36%;overflow:auto;padding:6px 10px}
+#lists h3{margin:.6em 0 .2em}#lists ul{margin:0;padding:0;list-style:none}
+#lists li{padding:5px 6px;border-radius:6px;cursor:pointer}#lists li.on{background:var(--word)}
+@media(min-aspect-ratio:1/1) and (min-width:700px){#lists{display:block}}
+</style></head><body>
+<header>
+<select id="size" aria-label="Grid size"><option value="r">Random size</option><option value="9">Small (9)</option><option value="13" selected>Medium (13)</option><option value="17">Large (17)</option><option value="21">21</option><option value="25">25</option><option value="30">Huge (30)</option></select>
+<select id="theme" aria-label="Theme"><option value="">Mixed</option><option value="s">Science</option><option value="g">Geography</option><option value="f">Food</option><option value="h">History</option><option value="m">Myth &amp; arts</option><option value="l">Words</option><option value="n">Nature</option><option value="o">Everyday</option></select>
+<button class="p" id="new">New</button><button id="chk">Check</button><button id="rev">Reveal word</button>
+</header>
+<main><div id="left"><div id="gw"><div id="grid"></div></div><div id="bar"></div><div id="kb"></div></div><div id="lists"></div></main>
+<script src="gen.js"></script><script src="words.js"></script>
+<script>
+const $=s=>document.querySelector(s),BANK=parseBank(WORDS);
+let Pz,F,X,EA,cell=[],cur={y:0,x:0,d:0};
+function newPuzzle(){
+ const v=$('#size').value,n=v==='r'?9+Math.random()*22|0:+v;
+ setPz(build(generate(n,n,BANK,$('#theme').value,n>17?900:500)));
+}
+function setPz(pz,fill){
+ Pz=pz;F=fill||pz.S.map(r=>r.map(()=>''));X=pz.S.map(r=>r.map(()=>0));
+ EA=pz.S.map(r=>r.map(()=>[null,null]));
+ for(const e of pz.E)for(let i=0;i<e.w.length;i++)EA[e.r+(e.d?i:0)][e.c+(e.d?0:i)][e.d]=e;
+ const f=pz.E[0];cur={y:f.r,x:f.c,d:f.d};render();
+}
+function render(){
+ const{W,H,S,N}=Pz,g=$('#grid'),gw=$('#gw');
+ const sz=Math.max(28,Math.min(56,Math.floor(Math.min((gw.clientWidth-18)/W,(gw.clientHeight-18)/H))));
+ g.style.gridTemplateColumns=`repeat(${W},${sz}px)`;g.style.gridAutoRows=sz+'px';g.style.fontSize=sz*.55+'px';
+ g.innerHTML='';cell=[];
+ for(let y=0;y<H;y++){cell[y]=[];for(let x=0;x<W;x++){
+  const d=document.createElement('div');d.className='c'+(S[y][x]?'':' b');
+  if(S[y][x]){d.dataset.y=y;d.dataset.x=x;d.innerHTML=(N[y+','+x]?'<span class="n">'+N[y+','+x]+'</span>':'')+'<span class="l"></span>'}
+  g.append(d);cell[y][x]=d}}
+ $('#lists').innerHTML=[0,1].map(d=>`<h3>${d?'Down':'Across'}</h3><ul>`+Pz.E.filter(e=>e.d===d).map(e=>`<li data-k="${e.n}-${d}">${e.n}. ${e.k} (${e.w.length})</li>`).join('')+'</ul>').join('');
+ paint();
+}
+function paint(){
+ const{W,H,S}=Pz,e=EA[cur.y][cur.x][cur.d];
+ for(let y=0;y<H;y++)for(let x=0;x<W;x++)if(S[y][x]){const c=cell[y][x];c.className='c'+(X[y][x]?' x':'');c.querySelector('.l').textContent=F[y][x]}
+ if(e)for(let i=0;i<e.w.length;i++)cell[e.r+(e.d?i:0)][e.c+(e.d?0:i)].classList.add('w');
+ cell[cur.y][cur.x].classList.add('s');
+ $('#bar').textContent=e?`${e.n} ${e.d?'Down':'Across'}: ${e.k} (${e.w.length})`:'';
+ document.querySelectorAll('#lists li').forEach(li=>li.classList.toggle('on',!!e&&li.dataset.k===e.n+'-'+e.d));
+ try{localStorage.setItem('xw',JSON.stringify({Pz,F}))}catch(_){}
+ if(S.every((r,y)=>r.every((v,x)=>!v||F[y][x]===v)))$('#bar').textContent='Solved! Nicely done.';
+}
+function typ(ch){const e=EA[cur.y][cur.x][cur.d];if(!e)return;F[cur.y][cur.x]=ch;X[cur.y][cur.x]=0;
+ const i=cur.d?cur.y-e.r:cur.x-e.c;if(i+1<e.w.length){cur.d?cur.y++:cur.x++}paint()}
+function back(){const e=EA[cur.y][cur.x][cur.d];
+ if(F[cur.y][cur.x])F[cur.y][cur.x]='';
+ else{const i=cur.d?cur.y-e.r:cur.x-e.c;if(i>0){cur.d?cur.y--:cur.x--;F[cur.y][cur.x]=''}}
+ X[cur.y][cur.x]=0;paint()}
+$('#grid').onclick=ev=>{const c=ev.target.closest('.c');if(!c||!c.dataset.y)return;
+ const y=+c.dataset.y,x=+c.dataset.x,A=EA[y][x];
+ if(cur.y===y&&cur.x===x){if(A[1-cur.d])cur.d=1-cur.d}else cur={y,x,d:A[cur.d]?cur.d:1-cur.d};paint()};
+$('#lists').onclick=ev=>{const li=ev.target.closest('li');if(!li)return;const[n,d]=li.dataset.k.split('-'),e=Pz.E.find(e=>e.n==n&&e.d==d);cur={y:e.r,x:e.c,d:+d};paint()};
+$('#kb').innerHTML=[...'QWERTYUIOPASDFGHJKLZXCVBNM'].map(k=>`<button data-k="${k}">${k}</button>`).join('')+'<button data-k="-" aria-label="Delete">⌫</button>';
+$('#kb').onclick=ev=>{const k=ev.target.dataset.k;if(k)k==='-'?back():typ(k)};
+onkeydown=ev=>{if(ev.ctrlKey||ev.metaKey||ev.altKey)return;if(/^[a-z]$/i.test(ev.key))typ(ev.key.toUpperCase());else if(ev.key==='Backspace')back()};
+$('#new').onclick=newPuzzle;
+$('#chk').onclick=()=>{Pz.S.forEach((r,y)=>r.forEach((v,x)=>X[y][x]=v&&F[y][x]&&F[y][x]!==v?1:0));paint()};
+$('#rev').onclick=()=>{const e=EA[cur.y][cur.x][cur.d];if(!e)return;for(let i=0;i<e.w.length;i++){F[e.r+(e.d?i:0)][e.c+(e.d?0:i)]=e.w[i]}paint()};
+onresize=()=>Pz&&render();
+try{const s=JSON.parse(localStorage.getItem('xw'));s?setPz(s.Pz,s.F):newPuzzle()}catch(_){newPuzzle()}
+if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');
+</script></body></html>
