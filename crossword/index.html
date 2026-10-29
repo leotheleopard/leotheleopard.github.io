@@ -8,6 +8,7 @@
 *{box-sizing:border-box}html,body{height:100%;margin:0}
 body{background:var(--bg);color:var(--fg);font:16px system-ui,sans-serif;display:flex;flex-direction:column;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
 header{display:flex;flex-wrap:wrap;gap:6px;padding:6px}
+#st{margin-left:auto;align-self:center;font-size:.8em;opacity:.8}
 select,button{font:inherit;padding:7px 11px;border-radius:8px;border:1px solid var(--line);background:var(--cell);color:var(--fg)}
 button.p{background:var(--acc);color:var(--onacc);border-color:var(--acc);font-weight:600}
 button:focus-visible,select:focus-visible{outline:3px solid var(--sel)}
@@ -29,12 +30,13 @@ main{flex:1;min-height:0;display:flex}
 <header>
 <select id="size" aria-label="Grid size"><option value="r">Random size</option><option value="9">Small (9)</option><option value="13" selected>Medium (13)</option><option value="17">Large (17)</option><option value="21">21</option><option value="25">25</option><option value="30">Huge (30)</option></select>
 <select id="theme" aria-label="Theme"><option value="">Mixed</option><option value="s">Science</option><option value="g">Geography</option><option value="f">Food</option><option value="h">History</option><option value="m">Myth &amp; arts</option><option value="l">Words</option><option value="n">Nature</option><option value="o">Everyday</option></select>
-<button class="p" id="new">New</button><button id="chk">Check</button><button id="rev">Reveal word</button>
+<button class="p" id="new">New</button><button id="chk">Check</button><button id="rev">Reveal word</button><span id="st"></span>
 </header>
 <main><div id="left"><div id="gw"><div id="grid"></div></div><div id="bar"></div><div id="kb"></div></div><div id="lists"></div></main>
 <script src="gen.js"></script><script src="words.js"></script><script src="words_wn.js"></script>
 <script>
-if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');
+const st=document.getElementById('st');
+if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').then(()=>navigator.serviceWorker.ready).then(()=>{st.textContent='Offline ready'}).catch(e=>{st.textContent='Offline failed: '+e.message});else st.textContent='No service worker support';
 const $=s=>document.querySelector(s),BANK=parseBank(WORDS),BANK2=parseBank(WORDS_WN);
 let Pz,F,X,EA,cell=[],cur={y:0,x:0,d:0};
 function newPuzzle(){
