@@ -1,4 +1,4 @@
-// word|clue|tag   tags: s science, g geography, f food, h history, m myth & arts, l words, n nature, o everyday
+// word|clue|tag   tags: s science, g geography, f food, h history, m myth & arts, l words, n nature, o everyday, t technology, w Doctor Who
 const WORDS=`
 OXYGEN|Element 8, needed for breathing and burning|s
 PHOTON|Quantum of light|s
@@ -161,4 +161,161 @@ PUZZLE|Brain teaser|o
 MARATHON|26.2 miles|o
 OLYMPICS|Games held every four years|o
 ARCH|Curved span|o
+ANTONYM|Word opposite in meaning|l
+HOMONYM|Same spelling or sound as another word, different meaning|l
+ACRONYM|NASA or laser, for example|l
+PUN|Joke that plays on a word’s double meaning|l
+LIMERICK|Five-line comic verse|l
+HAIKU|Three-line poem of 5, 7 and 5 syllables|l
+METAPHOR|“Time is a thief”, say|l
+SIMILE|Comparison using “like” or “as”|l
+ALLITERATION|Repeated opening sounds, as in “silly snakes”|l
+ONOMATOPOEIA|Word that sounds like what it names, such as “buzz”|l
+SYLLABLE|One beat of a word|l
+CONSONANT|Letter that isn’t a vowel|l
+PREFIX|Added to the front of a word|l
+SUFFIX|Added to the end of a word|l
+ADJECTIVE|Describing word|l
+ADVERB|Word that modifies a verb|l
+PRONOUN|“She” or “they”|l
+GRAMMAR|Rules of a language|l
+DIALECT|Regional variety of a language|l
+ACCENT|Way of pronouncing, or a mark above a letter|l
+VOCABULARY|All the words you know|l
+ETYMOLOGY|Study of where words come from|l
+THESAURUS|Book of synonyms|l
+DICTIONARY|Where definitions live|l
+TRANSLATE|Convert into another language|l
+PROVERB|Short saying of old wisdom|l
+SLOGAN|Catchy advertising phrase|l
+RHYME|Words that end alike|l
+CRYPTIC|Crossword style full of wordplay|l
+CIPHER|Secret code|l
+TYPO|Slip of the finger on a keyboard|l
+EUPHEMISM|Mild word for something blunt|l
+OXYMORON|“Jumbo shrimp”, for instance|l
+HYPHEN|Short dash joining words|l
+COLON|Mark that often introduces a list|l
+APOSTROPHE|Mark showing possession or a missing letter|l
+SEMICOLON|Mark linking two related clauses|l
+ELLIPSIS|Three dots showing omitted words|l
+CLICHE|Overused phrase|l
+JARGON|Specialist talk|l
+SPOONERISM|Swapping sounds, as in “a well-boiled icicle”|l
+ENIGMA|Puzzling mystery|l
+CHARADES|Party game of acting out words|l
+SCRABBLE|Tile game of making words|l
+HANGMAN|Word-guessing game with a gallows|l
+ALGORITHM|Step-by-step procedure for solving a problem|t
+BROWSER|Program for visiting web pages|t
+CURSOR|Blinking marker showing where typing appears|t
+KERNEL|Core of an operating system|t
+COMPILER|Translates source code into machine code|t
+BINARY|Base-2 number system|t
+PIXEL|Smallest dot on a screen|t
+BYTE|Eight bits|t
+BIT|Binary digit|t
+ROUTER|Directs traffic between networks|t
+MODEM|Links a computer to a phone or cable line|t
+SERVER|Computer that answers requests|t
+CLOUD|Remote servers that store your files|t
+FIREWALL|Network gatekeeper blocking unwanted traffic|t
+PASSWORD|Secret word for logging in|t
+ENCRYPT|Scramble data so only keyholders can read it|t
+CACHE|Fast store of recently used data|t
+BUFFER|Temporary holding area for data in transit|t
+SOFTWARE|Programs, as opposed to hardware|t
+HARDWARE|The physical parts of a computer|t
+KEYBOARD|Home of QWERTY|t
+LAPTOP|Portable computer|t
+SENSOR|Detects light, heat or motion|t
+BATTERY|Phone’s power store|t
+TOUCHSCREEN|Display you operate with your fingers|t
+PROCESSOR|Chip that runs instructions|t
+LINUX|Open-source kernel named after its creator Linus|t
+PYTHON|Programming language named after a comedy troupe|t
+ROBOT|Machine that automates tasks|t
+DRONE|Unmanned flying machine|t
+LASER|Beam of coherent light|t
+CODE|What programmers write|t
+DEBUG|Hunt down the errors in a program|t
+LOOP|Code that repeats|t
+VARIABLE|Named container for a value in a program|t
+FUNCTION|Reusable block of code|t
+DATABASE|Organised store of records|t
+NETWORK|Linked computers|t
+EMAIL|Digital letter|t
+WEBSITE|Collection of pages at one address|t
+EMOJI|Small picture used in messages|t
+PODCAST|Downloadable audio show|t
+WIFI|Wireless networking|t
+BLUETOOTH|Short-range wireless tech named after a Danish king|t
+USB|Common port for plugging in peripherals|t
+GIGABYTE|A billion bytes, roughly|t
+SPREADSHEET|Grid of cells with formulas|t
+SCREENSHOT|Picture of what’s on your display|t
+PRINTER|Puts a document on paper|t
+MOUSE|Pointing device, or small rodent|t
+ABACUS|Ancient counting frame|t
+TURING|Alan ___, codebreaker and computing pioneer|t
+LOVELACE|Ada ___, early programmer|t
+TARDIS|Time machine that’s bigger on the inside|w
+DALEK|Rolling armoured menace who shouts “Exterminate!”|w
+CYBERMAN|Metal-clad former human with emotions removed|w
+SONTARAN|Clone warrior race at war with the Rutans|w
+SILURIAN|Reptilian race woken from hibernation beneath Earth|w
+SKARO|Home planet of the Daleks|w
+GALLIFREY|Home planet of the Time Lords|w
+MONDAS|Original home of the Cybermen|w
+TELOS|Planet where Cybermen lay in tombs|w
+TRENZALORE|Planet where the Doctor’s grave was foretold|w
+DAVROS|Creator of the Daleks|w
+MASTER|The Doctor’s arch-enemy, a fellow Time Lord|w
+MISSY|Female incarnation of the Master|w
+RASSILON|Legendary founder of Time Lord society|w
+OOD|Servile alien race with tentacled faces|w
+ANGEL|Weeping ___, statue that moves when unseen|w
+ADIPOSE|Cute white aliens made from human fat|w
+SLITHEEN|Family of green aliens wearing human skin suits|w
+UNIT|Military body that investigates alien threats|w
+BRIGADIER|Lethbridge-Stewart’s rank|w
+VORTEX|Time ___, the swirling path the TARDIS travels|w
+CHAMELEON|___ circuit, stuck on a police box|w
+SCARF|Very long knitted item worn by the Fourth Doctor|w
+JELLYBABIES|Sweets the Fourth Doctor offers around|w
+CELERY|Fifth Doctor’s lapel vegetable|w
+BOWTIE|Eleventh Doctor insisted these are cool|w
+SCREWDRIVER|Sonic tool the Doctor carries|w
+DIMENSION|Time And Relative ___ In Space|w
+WHOVIAN|Devoted fan of the show|w
+ROSE|Companion Tyler, first of the revived series|w
+DONNA|Companion Noble, a temp from Chiswick|w
+MARTHA|Companion Jones, a medical student|w
+RORY|Amy’s husband, known as the Last Centurion|w
+CLARA|Companion Oswald, the Impossible Girl|w
+HARTNELL|William ___, the first Doctor|w
+TROUGHTON|Patrick ___, the second Doctor|w
+PERTWEE|Jon ___, the third Doctor|w
+BAKER|Tom ___, fourth Doctor and longest-serving actor in the role|w
+DAVISON|Peter ___, the fifth Doctor|w
+MCCOY|Sylvester ___, the seventh Doctor|w
+MCGANN|Paul ___, the eighth Doctor|w
+HURT|John ___, the War Doctor|w
+ECCLESTON|Christopher ___, the ninth Doctor|w
+TENNANT|David ___, the tenth Doctor|w
+SMITH|Matt ___, the eleventh Doctor|w
+CAPALDI|Peter ___, the twelfth Doctor|w
+WHITTAKER|Jodie ___, first woman to play the Doctor|w
+NATION|Terry ___, writer who created the Daleks|w
+CUSICK|Raymond ___, designer of the Daleks|w
+NEWMAN|Sydney ___, BBC drama head behind the show’s creation|w
+LAMBERT|Verity ___, the show’s first producer|w
+GRAINER|Ron ___, composer of the original theme|w
+DERBYSHIRE|Delia ___, who realised the original theme|w
+RADIOPHONIC|___ Workshop, home of the show’s electronic sound|w
+HODGSON|Brian ___, who made the TARDIS’s wheezing sound|w
+DAVIES|Russell T ___, who revived the show in 2005|w
+MOFFAT|Steven ___, showrunner after Davies|w
+CHIBNALL|Chris ___, showrunner during Whittaker’s era|w
+CARDIFF|Welsh capital where the revived series is made|w
 `;
