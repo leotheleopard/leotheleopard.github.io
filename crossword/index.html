@@ -34,6 +34,7 @@ main{flex:1;min-height:0;display:flex}
 <main><div id="left"><div id="gw"><div id="grid"></div></div><div id="bar"></div><div id="kb"></div></div><div id="lists"></div></main>
 <script src="gen.js"></script><script src="words.js"></script><script src="words_wn.js"></script>
 <script>
+if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');
 const $=s=>document.querySelector(s),BANK=parseBank(WORDS),BANK2=parseBank(WORDS_WN);
 let Pz,F,X,EA,cell=[],cur={y:0,x:0,d:0};
 function newPuzzle(){
@@ -86,5 +87,4 @@ $('#chk').onclick=()=>{Pz.S.forEach((r,y)=>r.forEach((v,x)=>X[y][x]=v&&F[y][x]&&
 $('#rev').onclick=()=>{const e=EA[cur.y][cur.x][cur.d];if(!e)return;for(let i=0;i<e.w.length;i++){F[e.r+(e.d?i:0)][e.c+(e.d?0:i)]=e.w[i]}paint()};
 onresize=()=>Pz&&render();
 try{const s=JSON.parse(localStorage.getItem('xw'));s?setPz(s.Pz,s.F):newPuzzle()}catch(_){newPuzzle()}
-if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');
 </script></body></html>
