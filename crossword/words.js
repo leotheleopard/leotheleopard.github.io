@@ -423,7 +423,7 @@ ALAN CUMMING|Scottish actor who played Mr Ring-A-Ding|w
 COLE|Tosin ___, who played Ryan|w
 XTONIC|The type of star that soaked that planet Midnight in galvanic radiation|w
 STET|The type of radiation that filled the couplings room on the Utopia rocket|w
-KNINE|Sarah Jane Smith's metal dog|w
+K-NINE|Sarah Jane Smith's metal dog|w
 ADIPOSE|Children made of fat, also a company|w
 JAGRAFESS|Editor in chief of Satellite Five|w
 TECTEUN|Adoptive parent to the Doctor and geneticist|w
@@ -443,4 +443,10 @@ BLACK ARCHIVE|A vault for information and alien artefacts related to The Doctor|
 VINDICATOR|The tool used by the Fifteenth Doctor to get Belinda home|w
 KASTERBOROUS|The star system Gallifrey is in|w
 KARN|A Planet near Gallifrey holding a Sisterhood of non-Time Lord female Gallifreyans|w
+GAME STATION|What Satellite Five became after the Jagrafess died|w
+LYNDA|___ Moss, contestant on Big Brother aboard the Game Station|w
+MONKS|A species of aliens who take over planets and control them as if they had always been in their history.|w
+ASHILDR|A 9th century girl, played by Maisie Williams who can't die|w
+ME|Ashildr in the 21st Century|w
+ADAM|___ Mitchell, very temporary companion of the Ninth Doctor|w
 `;
