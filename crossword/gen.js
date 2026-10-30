@@ -1,5 +1,7 @@
 function shuffle(a){a=a.slice();for(let i=a.length;i>1;){const j=Math.random()*i--|0;[a[i],a[j]]=[a[j],a[i]]}return a}
-function parseBank(s){return s.trim().split('\n').map(l=>{const[w,k,t]=l.split('|');return{w:(w||'').trim().toUpperCase(),k:(k||'').trim(),t:(t||'o').trim()}}).filter(e=>/^[A-Z]{3,}$/.test(e.w)&&e.k)}
+function lab(raw){let o='';for(const x of raw.split(/([ -])/))o+=x===' '?',':x==='-'?'-':x.length;return o}
+function parseBank(s){return s.trim().split('\n').map(l=>{const[r,k,t]=l.split('|'),raw=(r||'').trim().toUpperCase(),o=lab(raw);
+ return{w:raw.replace(/[^A-Z]/g,''),k:(k||'').trim(),t:(t||'o').trim(),l:/[,-]/.test(o)?o:'',ok:/^[A-Z]+([ -][A-Z]+)*$/.test(raw)}}).filter(e=>e.ok&&e.w.length>=3&&e.k)}
 function fit(g,u,W,H,w,r,c,d){
  const dr=d,dc=1-d,n=w.length,er=r+dr*n,ec=c+dc*n;
  if(r<0||c<0||r+dr*(n-1)>=H||c+dc*(n-1)>=W)return 0;
@@ -14,7 +16,7 @@ function fit(g,u,W,H,w,r,c,d){
 function attempt(W,H,pool){
  const mk=v=>[...Array(H)].map(()=>Array(W).fill(v));
  const g=mk(''),u=mk(0),L={},P=[],used=new Set();
- const put=(e,r,c,d)=>{for(let i=0;i<e.w.length;i++){const y=r+(d?i:0),x=c+(d?0:i),ch=e.w[i];if(!g[y][x]){g[y][x]=ch;(L[ch]=L[ch]||[]).push([y,x])}u[y][x]|=1<<d}P.push({w:e.w,k:e.k,r,c,d});used.add(e.w)};
+ const put=(e,r,c,d)=>{for(let i=0;i<e.w.length;i++){const y=r+(d?i:0),x=c+(d?0:i),ch=e.w[i];if(!g[y][x]){g[y][x]=ch;(L[ch]=L[ch]||[]).push([y,x])}u[y][x]|=1<<d}P.push({w:e.w,k:e.k,l:e.l,r,c,d});used.add(e.w)};
  const seed=pool.slice(0,6).reduce((a,b)=>b.w.length>a.w.length?b:a);
  put(seed,H>>1,(W-seed.w.length)>>1,0);
  for(let pass=0;pass<3;pass++)for(const e of pool){

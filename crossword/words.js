@@ -248,7 +248,7 @@ EMAIL|Digital letter|t
 WEBSITE|Collection of pages at one address|t
 EMOJI|Small picture used in messages|t
 PODCAST|Downloadable audio show|t
-WIFI|Wireless networking|t
+WI-FI|Wireless networking|t
 BLUETOOTH|Short-range wireless tech named after a Danish king|t
 USB|Common port for plugging in peripherals|t
 GIGABYTE|A billion bytes, roughly|t
@@ -281,7 +281,7 @@ BRIGADIER|Lethbridge-Stewart’s rank|w
 VORTEX|Time ___, the swirling path the TARDIS travels|w
 CHAMELEON|___ circuit, stuck on a police box|w
 SCARF|Very long knitted item worn by the Fourth Doctor|w
-JELLYBABIES|Sweets the Fourth Doctor offers around (5,6)|w
+JELLY BABIES|Sweets the Fourth Doctor offers around|w
 CELERY|Fifth Doctor’s lapel vegetable|w
 BOWTIE|Eleventh Doctor insisted these are cool|w
 SCREWDRIVER|Sonic tool the Doctor carries|w
@@ -312,7 +312,7 @@ CARDIFF|Welsh capital where the revived series is made|w
 AMY|Companion Pond, the Girl Who Waited|w
 AMELIA|Amy Pond’s full first name as a little girl|w
 RIVER|Professor ___ Song, archaeologist and the Doctor’s wife|w
-SARAHJANE|Journalist companion Smith, star of her own spin-off series (5,4)|w
+SARAH JANE|Journalist companion Smith, star of her own spin-off series|w
 ADVENTURES|The Sarah Jane ___, children’s spin-off series|w
 MEL|Computer programmer companion Bush|w
 ACE|Teenage companion who made her own explosives|w
@@ -340,7 +340,7 @@ RIFT|Crack in time and space that runs through Cardiff|w
 MIRACLE|Torchwood series where nobody can die: ___ Day|w
 BARROWMAN|John ___, who plays Captain Jack|w
 MYLES|Eve ___, who plays Gwen Cooper|w
-COALHILL|School in the spin-off Class|w
+COAL HILL|School in the spin-off Class|w
 ZYGON|Shapeshifting alien that copies humans|w
 AUTON|Living plastic shop dummy|w
 NESTENE|Consciousness that controls the Autons|w
@@ -360,9 +360,9 @@ SHADA|Time Lord prison planet in a famously unfinished story|w
 TRAKEN|Peaceful planet guarded by the Keeper|w
 VOGA|Planet made of gold|w
 MIDNIGHT|Diamond planet where something knocks on the walls|w
-TIMELORD|Gallifreyan with two hearts|w
+TIME LORD|Gallifreyan with two hearts|w
 REGENERATION|How a Time Lord renews their body|w
-BADWOLF|Phrase that scattered itself across time and space|w
+BAD WOLF|Phrase that scattered itself across time and space|w
 EXTERMINATE|What Daleks shout when they attack|w
 GERONIMO|Eleventh Doctor’s battle cry|w
 ALLONSY|Tenth Doctor’s French-sounding exclamation|w
@@ -372,7 +372,7 @@ STETSON|Eleventh Doctor’s cowboy hat|w
 FEZ|Hat the eleventh Doctor insisted was cool|w
 UMBRELLA|Seventh Doctor’s question-mark-handled accessory|w
 BLINK|Acclaimed 2007 episode that introduced the Weeping Angels|w
-BIGFINISH|Company producing officially licensed audio adventures (3,6)|w
+BIG FINISH|Company producing officially licensed audio adventures|w
 BBC|Network that broadcasts the show|w
 SLADEN|Elisabeth ___, who played Sarah Jane Smith|w
 PIPER|Billie ___, who played Rose|w
@@ -396,7 +396,7 @@ GARDNER|Julie ___, executive producer in the Davies era|w
 COLLINSON|Phil ___, producer of the 2005 series|w
 GAIMAN|Neil ___, author who wrote The Doctor’s Wife|w
 GATISS|Mark ___, writer and actor in the revival|w
-MELODYPOND|Amy and Rory's daughter, born on a meteor (6,4)|w
+MELODY POND|Amy and Rory's daughter, born on a meteor|w
 KARABRAXOS|An impenetrable bank|w
 YANA|The professor at the end of the universe|w
 ARKANGEL|Hypnotic satellite network made by The Master|w
@@ -410,19 +410,19 @@ DOUBT|Type of thought that broke Wish World|w
 ASYLUM|Where The Doctor first meets Clara, surrounded by Daleks|w
 SOUFFLE|What Clara makes in the Dalek Asylum, without milk|w
 KOVARIAN|Woman who abduts Amy and raises River|w
-TIMEAGENT|Captain Jack Harkness' job before Torchwood (4,5)|w
+TIME AGENT|Captain Jack Harkness' job before Torchwood|w
 MATHESON|Rex ___, an FBI Agent who can't die after Miracle Day ends|w
 DANES|Oswald ___, A Secondary antagonist in Miracle Day|w
 FROBISHER|Permanent Secretary of the Home Office, Peter Capaldi|w
 JUAREZ|Dr. Vera ___, A temporary Torchwood member in Miracle Day|w
 HARRIS|Neil Patrick ___, who played the Toymaker|w
-NOTTHINGS|The ___, near perfect duplicants from outside the universe (3,6)|w
+NOT THINGS|The ___, near perfect duplicants from outside the universe|w
 RIGSY|Local knowledge, falsely accused of crime by Mayor Me|w
 COLEMAN|Olivia ___, the main human form of Prisoner Zero|w
 ATRAXI|The race of aliens looking for Prisoner Zero|w
 DRUMMOND|Esther ___, An FBI analyst and temporary member of Torchwood in Miracle Day|w
-JINXMONSOON|American actor who played Maestro, god of Music (4,7)|w
-ALANCUMMING|Scottish actor who played Mr Ring-A-Ding (4,7)|w
+JINX MONSOON|American actor who played Maestro, god of Music|w
+ALAN CUMMING|Scottish actor who played Mr Ring-A-Ding|w
 COLE|Tosin ___, who played Ryan|w
 XTONIC|The type of star that soaked that planet Midnight in galvanic radiation|w
 STET|The type of radiation that filled the couplings room on the Utopia rocket|w
@@ -438,9 +438,9 @@ GRANT|Richard E. ---, The Tenth Doctor in The Curse of Fatal Death|w
 BROADBENT|Jim ___, The Eleventh Doctor in The Curse of Fatal Death|w
 GRANT|Hugh ___, The Twelfth Doctor in The Curse of Fatal Death|w
 LUMLEY|Joanna ___, The Thirteenth Doctor in The Curse of Fatal Death|w
-SANFRANCISCO|US City, setting for the 1996 Doctor Who movie (3,9)|w
+SAN FRANCISCO|US City, setting for the 1996 Doctor Who movie|w
 CLOM|The twin planet of Raxicoricofallapatorius|w
 REDGRAVE|Jemma ___, who played Kate Lethbridge-Stewart|w
 OSGOOD|UNIT Scientific Advisor under Kate Stewart in 2015|w
-BLACKARCHIVE|Location for storage and record of The Doctor and other alien lifeforms and technology for UNIT (5,7)|w
+BLACK ARCHIVE|Location for storage and record of The Doctor and other alien lifeforms and technology for UNIT|w
 `;

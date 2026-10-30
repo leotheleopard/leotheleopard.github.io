@@ -35,7 +35,7 @@ function render(){
   const d=document.createElement('div');d.className='c'+(S[y][x]?'':' b');
   if(S[y][x]){d.dataset.y=y;d.dataset.x=x;d.innerHTML=(N[y+','+x]?'<span class="n">'+N[y+','+x]+'</span>':'')+'<span class="l"></span>'}
   g.append(d);cell[y][x]=d}}
- $('#lists').innerHTML=[0,1].map(d=>`<h3>${d?'Down':'Across'}</h3><ul>`+Pz.E.filter(e=>e.d===d).map(e=>`<li data-k="${e.n}-${d}">${e.n}. ${e.k} (${e.w.length})</li>`).join('')+'</ul>').join('');
+ $('#lists').innerHTML=[0,1].map(d=>`<h3>${d?'Down':'Across'}</h3><ul>`+Pz.E.filter(e=>e.d===d).map(e=>`<li data-k="${e.n}-${d}">${e.n}. ${e.k} (${e.l||e.w.length})</li>`).join('')+'</ul>').join('');
  paint();
 }
 function paint(){
@@ -43,7 +43,7 @@ function paint(){
  for(let y=0;y<H;y++)for(let x=0;x<W;x++)if(S[y][x]){const c=cell[y][x];c.className='c'+(X[y][x]?' x':'');c.querySelector('.l').textContent=F[y][x]}
  if(e)for(let i=0;i<e.w.length;i++)cell[e.r+(e.d?i:0)][e.c+(e.d?0:i)].classList.add('w');
  cell[cur.y][cur.x].classList.add('s');cell[cur.y][cur.x].scrollIntoView({block:'nearest',inline:'nearest'});
- $('#bar').textContent=e?`${e.n} ${e.d?'Down':'Across'}: ${e.k} (${e.w.length})`:'';
+ $('#bar').textContent=e?`${e.n} ${e.d?'Down':'Across'}: ${e.k} (${e.l||e.w.length})`:'';
  document.querySelectorAll('#lists li').forEach(li=>li.classList.toggle('on',!!e&&li.dataset.k===e.n+'-'+e.d));
  try{localStorage.setItem('xw',JSON.stringify({Pz,F}))}catch(_){}
  if(S.every((r,y)=>r.every((v,x)=>!v||F[y][x]===v)))$('#bar').textContent='Solved! Nicely done.';
