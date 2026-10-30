@@ -9,7 +9,7 @@
 <button class="p" id="new">New</button><button id="chk">Check</button><button id="rev">Reveal word</button><span id="st"></span>
 </header>
 <main><div id="left"><div id="gw"><div id="grid"></div></div><div id="bar"></div></div><div id="lists"></div></main>
-<input id="in" type="text" autocomplete="off" autocapitalize="characters" autocorrect="off" spellcheck="false" enterkeyhint="done" aria-label="Type your letters">
+<input id="in" type="text" autocomplete="off" autocapitalize="characters" autocorrect="off" spellcheck="false" enterkeyhint="next" aria-label="Type your letters">
 <script src="gen.js"></script><script src="words.js"></script><script src="words_wn.js"></script>
 <script>
 const st=document.getElementById('st');
@@ -62,6 +62,12 @@ onkeydown=ev=>{if(ev.target===inp||ev.ctrlKey||ev.metaKey||ev.altKey)return;if(/
 const inp=$('#in'),S='\u200b';
 function focusIn(){inp.value=S;inp.blur();inp.focus()}
 inp.oninput=()=>{const v=inp.value;if(!v)back();else for(const ch of v.replace(S,'').toUpperCase())if(/[A-Z]/.test(ch))typ(ch);inp.value=S};
+function nextClue(){
+ const L=[0,1].flatMap(d=>Pz.E.filter(e=>e.d===d)),e=L[(L.indexOf(EA[cur.y][cur.x][cur.d])+1)%L.length];
+ let y=e.r,x=e.c;
+ for(let k=0;k<e.w.length;k++){const yy=e.r+(e.d?k:0),xx=e.c+(e.d?0:k);if(!F[yy][xx]){y=yy;x=xx;break}}
+ cur={y,x,d:e.d};paint();focusIn()}
+inp.onkeydown=ev=>{if(ev.key==='Enter'){ev.preventDefault();nextClue()}};
 $('#new').onclick=newPuzzle;
 $('#chk').onclick=()=>{Pz.S.forEach((r,y)=>r.forEach((v,x)=>X[y][x]=v&&F[y][x]&&F[y][x]!==v?1:0));paint()};
 $('#rev').onclick=()=>{const e=EA[cur.y][cur.x][cur.d];if(!e)return;for(let i=0;i<e.w.length;i++){F[e.r+(e.d?i:0)][e.c+(e.d?0:i)]=e.w[i]}paint()};

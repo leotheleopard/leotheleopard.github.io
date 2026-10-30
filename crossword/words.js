@@ -456,5 +456,9 @@ ALANCUMMING|Scottish actor who played Mr Ring-A-Ding|w
 COLE|Tosin ___, who played Ryan|w
 XTONIC|The type of star that soaked that planet Midnight in galvanic radiation|w
 STET|The type of radiation that filled the couplings room on the Utopia rocket|w
-MIGHTYJAGRAFESSOFTHEHOLYHADROJASSICMAXARODENFOE|The editor in chief|w
+KNINE|Sarah Jane Smith's metal dog|w
+ADIPOSE|Children made of fat, also a company|w
+JAGRAFESS|Editor in chief of Satellite Five|w
+TECTEUN|Adoptive parent to the Doctor and geneticist|w
+CLAYTON|Ruth ___, the human identity of the Fugitive Doctor|w
 `;
