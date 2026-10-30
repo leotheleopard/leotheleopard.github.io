@@ -449,4 +449,16 @@ MONKS|A species of aliens who take over planets and control them as if they had 
 ASHILDR|A 9th century girl, played by Maisie Williams who can't die|w
 ME|Ashildr in the 21st Century|w
 ADAM|___ Mitchell, very temporary companion of the Ninth Doctor|w
+VLINX|A cyborg that works at UNIT during 2023-2025|w
+WASP|Shape taken by the half-Vespiform son of Lady Clemency Eddison|w
+BOE|Face Of ___, potentially Captain Jack in the Year 5 billion|w
+CAT|___kind, the species of Senator, formerly Novice, Hame|w
+SPARROW|Sally ___, photographer and rare book and DVD store owner|w
+ZERO|The alien prisoner that escaped through Amy's crack in the wall|w
+EARTH|The Human Residence the Atraxi would incinerate if he did not vacate|w
+LUKE|The name of Sarah Jane Smith's son|w
+TESSELECTA|Time travelling robot filled with miniature people who punished criminals in history|w
+MALDOVAR|Dorium ___|Blue man beheaded by the MONKS during the Battle of Demon's Run|w
+RUNAWAY|The nickname The Doctor gave to Colnel Manton during the Battle of Demon's Run|w
+RUN|Demon's ___, the asteroid where MELODY POND was born|w
 `;
