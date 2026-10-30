@@ -1,14 +1,15 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,interactive-widget=resizes-content">
 <link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#1b2a41">
 <title>Crossword</title>
 <link rel="stylesheet" href="styles.css"></head><body>
 <header>
 <select id="size" aria-label="Grid size"><option value="r">Random size</option><option value="9">Small (9)</option><option value="13" selected>Medium (13)</option><option value="17">Large (17)</option><option value="21">21</option><option value="25">25</option><option value="30">Huge (30)</option></select>
-<select id="theme" aria-label="Theme"><option value="">Mixed</option><option value="s">Science</option><option value="g">Geography</option><option value="f">Food</option><option value="h">History</option><option value="m">Myth &amp; arts</option><option value="l">Language &amp; wordplay</option><option value="t">Technology</option><option value="w">Doctor Who</option><option value="n">Nature</option><option value="o">Everyday</option></select>
+<select id="theme" aria-label="Theme"><option value="">Mixed</option><option value="s">Science</option><option value="g">Geography</option><option value="f">Food</option><option value="h">History</option><option value="m">Myth &amp; arts</option><option value="l">Language &amp; wordplay</option><option value="t">Technology</option><option value="w">Doctor Who &amp; Torchwood</option><option value="n">Nature</option><option value="o">Everyday</option></select>
 <button class="p" id="new">New</button><button id="chk">Check</button><button id="rev">Reveal word</button><span id="st"></span>
 </header>
-<main><div id="left"><div id="gw"><div id="grid"></div></div><div id="bar"></div><div id="kb"></div></div><div id="lists"></div></main>
+<main><div id="left"><div id="gw"><div id="grid"></div></div><div id="bar"></div></div><div id="lists"></div></main>
+<input id="in" type="text" autocomplete="off" autocapitalize="characters" autocorrect="off" spellcheck="false" enterkeyhint="done" aria-label="Type your letters">
 <script src="gen.js"></script><script src="words.js"></script><script src="words_wn.js"></script>
 <script>
 const st=document.getElementById('st');
@@ -28,7 +29,7 @@ function setPz(pz,fill){
 function render(){
  const{W,H,S,N}=Pz,g=$('#grid'),gw=$('#gw');
  const sz=Math.max(28,Math.min(56,Math.floor(Math.min((gw.clientWidth-18)/W,(gw.clientHeight-18)/H))));
- g.style.gridTemplateColumns=`repeat(${W},${sz}px)`;g.style.gridAutoRows=sz+'px';g.style.fontSize=sz*.62+'px';
+ g.style.gridTemplateColumns=`repeat(${W},${sz}px)`;g.style.gridAutoRows=sz+'px';g.style.fontSize=sz*.5+'px';
  g.innerHTML='';cell=[];
  for(let y=0;y<H;y++){cell[y]=[];for(let x=0;x<W;x++){
   const d=document.createElement('div');d.className='c'+(S[y][x]?'':' b');
@@ -41,7 +42,7 @@ function paint(){
  const{W,H,S}=Pz,e=EA[cur.y][cur.x][cur.d];
  for(let y=0;y<H;y++)for(let x=0;x<W;x++)if(S[y][x]){const c=cell[y][x];c.className='c'+(X[y][x]?' x':'');c.querySelector('.l').textContent=F[y][x]}
  if(e)for(let i=0;i<e.w.length;i++)cell[e.r+(e.d?i:0)][e.c+(e.d?0:i)].classList.add('w');
- cell[cur.y][cur.x].classList.add('s');
+ cell[cur.y][cur.x].classList.add('s');cell[cur.y][cur.x].scrollIntoView({block:'nearest',inline:'nearest'});
  $('#bar').textContent=e?`${e.n} ${e.d?'Down':'Across'}: ${e.k} (${e.w.length})`:'';
  document.querySelectorAll('#lists li').forEach(li=>li.classList.toggle('on',!!e&&li.dataset.k===e.n+'-'+e.d));
  try{localStorage.setItem('xw',JSON.stringify({Pz,F}))}catch(_){}
@@ -55,11 +56,12 @@ function back(){const e=EA[cur.y][cur.x][cur.d];
  X[cur.y][cur.x]=0;paint()}
 $('#grid').onclick=ev=>{const c=ev.target.closest('.c');if(!c||!c.dataset.y)return;
  const y=+c.dataset.y,x=+c.dataset.x,A=EA[y][x];
- if(cur.y===y&&cur.x===x){if(A[1-cur.d])cur.d=1-cur.d}else cur={y,x,d:A[cur.d]?cur.d:1-cur.d};paint()};
-$('#lists').onclick=ev=>{const li=ev.target.closest('li');if(!li)return;const[n,d]=li.dataset.k.split('-'),e=Pz.E.find(e=>e.n==n&&e.d==d);cur={y:e.r,x:e.c,d:+d};paint()};
-$('#kb').innerHTML=[...'QWERTYUIOPASDFGHJKLZXCVBNM'].map(k=>`<button data-k="${k}">${k}</button>`).join('')+'<button data-k="-" aria-label="Delete">⌫</button>';
-$('#kb').onclick=ev=>{const k=ev.target.dataset.k;if(k)k==='-'?back():typ(k)};
-onkeydown=ev=>{if(ev.ctrlKey||ev.metaKey||ev.altKey)return;if(/^[a-z]$/i.test(ev.key))typ(ev.key.toUpperCase());else if(ev.key==='Backspace')back()};
+ if(cur.y===y&&cur.x===x){if(A[1-cur.d])cur.d=1-cur.d}else cur={y,x,d:A[cur.d]?cur.d:1-cur.d};paint();focusIn()};
+$('#lists').onclick=ev=>{const li=ev.target.closest('li');if(!li)return;const[n,d]=li.dataset.k.split('-'),e=Pz.E.find(e=>e.n==n&&e.d==d);cur={y:e.r,x:e.c,d:+d};paint();focusIn()};
+onkeydown=ev=>{if(ev.target===inp||ev.ctrlKey||ev.metaKey||ev.altKey)return;if(/^[a-z]$/i.test(ev.key))typ(ev.key.toUpperCase());else if(ev.key==='Backspace')back()};
+const inp=$('#in'),S='\u200b';
+function focusIn(){inp.value=S;inp.blur();inp.focus()}
+inp.oninput=()=>{const v=inp.value;if(!v)back();else for(const ch of v.replace(S,'').toUpperCase())if(/[A-Z]/.test(ch))typ(ch);inp.value=S};
 $('#new').onclick=newPuzzle;
 $('#chk').onclick=()=>{Pz.S.forEach((r,y)=>r.forEach((v,x)=>X[y][x]=v&&F[y][x]&&F[y][x]!==v?1:0));paint()};
 $('#rev').onclick=()=>{const e=EA[cur.y][cur.x][cur.d];if(!e)return;for(let i=0;i<e.w.length;i++){F[e.r+(e.d?i:0)][e.c+(e.d?0:i)]=e.w[i]}paint()};

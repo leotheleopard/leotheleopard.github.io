@@ -318,4 +318,143 @@ DAVIES|Russell T ___, who revived the show in 2005|w
 MOFFAT|Steven ___, showrunner after Davies|w
 CHIBNALL|Chris ___, showrunner during Whittaker’s era|w
 CARDIFF|Welsh capital where the revived series is made|w
+AMY|Companion Pond, the Girl Who Waited|w
+AMELIA|Amy Pond’s full first name as a little girl|w
+RIVER|Professor ___ Song, archaeologist and the Doctor’s wife|w
+SARAHJANE|Journalist companion Smith, star of her own spin-off series|w
+ADVENTURES|The Sarah Jane ___, children’s spin-off series|w
+LEELA|Savage warrior companion of the Fourth Doctor|w
+ROMANA|Time Lady companion of the Fourth Doctor|w
+ADRIC|Mathematical boy companion who died in Earthshock|w
+TEGAN|Australian companion Jovanka|w
+NYSSA|Companion from the planet Traken|w
+TURLOUGH|Schoolboy companion hiding an alien secret|w
+PERI|American student companion of the Sixth Doctor|w
+MEL|Computer programmer companion Bush|w
+ACE|Teenage companion who made her own explosives|w
+SUSAN|The first Doctor’s granddaughter|w
+BARBARA|History teacher companion Wright|w
+IAN|Science teacher companion Chesterton|w
+VICKI|Companion from the 25th century who joined the first Doctor|w
+STEVEN|Astronaut companion Taylor|w
+DODO|Nickname of companion Dorothea Chaplet|w
+POLLY|Companion who travelled with sailor Ben|w
+BEN|Sailor companion Jackson|w
+JAMIE|Highlander companion McCrimmon|w
+ZOE|Astrophysicist companion Heriot|w
+LIZ|Scientist companion Shaw, who worked with UNIT|w
+JO|Companion Grant, the third Doctor’s assistant|w
+HARRY|Naval surgeon Sullivan, companion of the fourth Doctor|w
+MICKEY|Rose’s boyfriend Smith, who became a companion|w
+JACKIE|Rose’s mother, Tyler|w
+WILF|Donna’s grandfather, Mott|w
+GRAHAM|Retired bus driver O’Brien, a companion in Whittaker’s era|w
+RYAN|Companion Sinclair, Graham’s step-grandson|w
+YASMIN|Police officer companion known as “Yaz”|w
+BILL|Companion Potts, a canteen worker turned traveller|w
+NARDOLE|Matt Lucas’s character, companion to the twelfth Doctor|w
+STRAX|Sontaran nurse who serves Madame Vastra|w
+VASTRA|Madame ___, Silurian detective in Victorian London|w
+JACK|Captain Harkness, who can’t stay dead|w
+HARKNESS|Captain Jack ___, leader of Torchwood|w
+TORCHWOOD|Spin-off whose title is an anagram of “Doctor Who”|w
+GWEN|Cooper, the police officer turned Torchwood agent|w
+IANTO|Jones, Torchwood’s coffee-making agent|w
+OWEN|Harper, Torchwood’s medical officer|w
+TOSHIKO|___ Sato, Torchwood’s technology expert|w
+RIFT|Crack in time and space that runs through Cardiff|w
+MIRACLE|Torchwood series where nobody can die: ___ Day|w
+BARROWMAN|John ___, who plays Captain Jack|w
+MYLES|Eve ___, who plays Gwen Cooper|w
+COALHILL|School in the spin-off Class|w
+ZYGON|Shapeshifting alien that copies humans|w
+AUTON|Living plastic shop dummy|w
+NESTENE|Consciousness that controls the Autons|w
+YETI|Robotic abominable snowman servant|w
+SILENCE|Aliens you forget as soon as you look away|w
+JUDOON|Rhinoceros-headed galactic police|w
+RACNOSS|Spider-like Empress who attacked a wedding|w
+SYCORAX|Skull-masked alien warriors who invaded at Christmas|w
+KRILLITANE|Bat-like creatures who infiltrated a school|w
+PYROVILE|Fiery stone creatures beneath Pompeii|w
+RUTAN|Shapeshifting jellyfish-like enemy of the Sontarans|w
+SAXON|Harold ___, the Master’s alias as prime minister|w
+VALEYARD|Sinister distillation of the Doctor’s dark side|w
+OMEGA|Time Lord stellar engineer of legend|w
+CITADEL|Capital city of Gallifrey|w
+SHADA|Time Lord prison planet in a famously unfinished story|w
+TRAKEN|Peaceful planet guarded by the Keeper|w
+VOGA|Planet made of gold|w
+MIDNIGHT|Diamond planet where something knocks on the walls|w
+TIMELORD|Gallifreyan with two hearts|w
+REGENERATION|How a Time Lord renews their body|w
+BADWOLF|Phrase that scattered itself across time and space|w
+EXTERMINATE|What Daleks shout when they attack|w
+GERONIMO|Eleventh Doctor’s battle cry|w
+ALLONSY|Tenth Doctor’s French-sounding exclamation|w
+FANTASTIC|Ninth Doctor’s one-word catchphrase|w
+SPOILERS|River Song’s catchphrase|w
+STETSON|Eleventh Doctor’s cowboy hat|w
+FEZ|Hat the eleventh Doctor insisted was cool|w
+UMBRELLA|Seventh Doctor’s question-mark-handled accessory|w
+BLINK|Acclaimed 2007 episode that introduced the Weeping Angels|w
+BIGFINISH|Company producing officially licensed audio adventures|w
+BBC|Network that broadcasts the show|w
+SLADEN|Elisabeth ___, who played Sarah Jane Smith|w
+MANNING|Katy ___, who played Jo Grant|w
+COURTNEY|Nicholas ___, who played the Brigadier|w
+JAMESON|Louise ___, who played Leela|w
+PIPER|Billie ___, who played Rose|w
+TATE|Catherine ___, who played Donna|w
+AGYEMAN|Freema ___, who played Martha|w
+GILLAN|Karen ___, who played Amy Pond|w
+DARVILL|Arthur ___, who played Rory|w
+COLEMAN|Jenna ___, who played Clara|w
+MACKIE|Pearl ___, who played Bill|w
+KINGSTON|Alex ___, who played River Song|w
+GOMEZ|Michelle ___, who played Missy|w
+SIMM|John ___, who played the Master|w
+AINLEY|Anthony ___, who played the Master in the 1980s|w
+DELGADO|Roger ___, the first actor to play the Master|w
+DHAWAN|Sacha ___, who played the Master in Spyfall|w
+WALSH|Bradley ___, who played Graham|w
+GILL|Mandip ___, who played Yaz|w
+LUCAS|Matt ___, who played Nardole|w
+CRIBBINS|Bernard ___, who played Wilf|w
+GOLD|Murray ___, composer of the revived series’ music|w
+GARDNER|Julie ___, executive producer in the Davies era|w
+COLLINSON|Phil ___, producer of the 2005 series|w
+GAIMAN|Neil ___, author who wrote The Doctor’s Wife|w
+GATISS|Mark ___, writer and actor in the revival|w
+MELODYPOND|Amy's daughter|w
+KARABRAXOS|An impenetrable bank|w
+YANA|The professor at the end of the universe|w
+ARKANGEL|Hypnotic satellite network made by The Master|w
+POPPY|Space baby and Belinda's daughter|w
+GATWA|Ncuti ___, the fifteenth Doctor|w
+RUBY|___ Sunday, named after a road on Christmas|w
+BIGENERATION|What happened when the Toymaker shot the fourteenth Doctor|w
+RANI|Renegade Time Lady portrayed by Archie Panjabi|w
+FLOOD|Incarnation of The Rani portrayed by Anita Dobson|w
+DOUBT|Type of thought that broke Wish World|w
+ASYLUM|Where The Doctor first meets Clara, surrounded by Daleks|w
+SOUFFLE|What Clara makes in the Dalek Asylum, without milk|w
+KOVARIAN|Woman who abduts Amy and raises River|w
+TIMEAGENT|Captain Jack Harkness' job before Torchwood|w
+MATHESON|Rex ___, an FBI Agent who can't die after Miracle Day ends|w
+DANES|Oswald ___, A Secondary antagonist in Miracle Day|w
+FROBISHER|Permanent Secretary of the Home Office, Peter Capaldi|w
+JUAREZ|Dr. Vera ___, A temporary Torchwood member in Miracle Day|w
+HARRIS|Neil Patrick ___, who played the Toymaker|w
+NOTTHINGS|The ___, near perfect duplicants from outside the universe|w
+RIGSY|Local knowledge, falsely accused of crime by Mayor Me|w
+COLEMAN|Olivia ___, the main human form of Prisoner Zero|w
+ATRAXI|The race of aliens looking for Prisoner Zero|w
+DRUMMOND|Esther ___, An FBI analyst and temporary member of Torchwood in Miracle Day|w
+JINXMONSOON|American actor who played Maestro, god of Music|w
+ALANCUMMING|Scottish actor who played Mr Ring-A-Ding|w
+COLE|Tosin ___, who played Ryan|w
+XTONIC|The type of star that soaked that planet Midnight in galvanic radiation|w
+STET|The type of radiation that filled the couplings room on the Utopia rocket|w
+MIGHTYJAGRAFESSOFTHEHOLYHADROJASSICMAXARODENFOE|The editor in chief|w
 `;
