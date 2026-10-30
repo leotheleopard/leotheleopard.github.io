@@ -356,9 +356,6 @@ SAXON|Harold ___, the Master’s alias as prime minister|w
 VALEYARD|Sinister distillation of the Doctor’s dark side|w
 OMEGA|Time Lord stellar engineer of legend|w
 CITADEL|Capital city of Gallifrey|w
-SHADA|Time Lord prison planet in a famously unfinished story|w
-TRAKEN|Peaceful planet guarded by the Keeper|w
-VOGA|Planet made of gold|w
 MIDNIGHT|Diamond planet where something knocks on the walls|w
 TIME LORD|Gallifreyan with two hearts|w
 REGENERATION|How a Time Lord renews their body|w
@@ -444,4 +441,6 @@ REDGRAVE|Jemma ___, who played Kate Lethbridge-Stewart|w
 OSGOOD|UNIT Scientific Advisor under Kate Stewart in 2015|w
 BLACK ARCHIVE|A vault for information and alien artefacts related to The Doctor|w
 VINDICATOR|The tool used by the Fifteenth Doctor to get Belinda home|w
+KASTERBOROUS|The star system Gallifrey is in|w
+KARN|A Planet near Gallifrey holding a Sisterhood of non-Time Lord female Gallifreyans|w
 `;
