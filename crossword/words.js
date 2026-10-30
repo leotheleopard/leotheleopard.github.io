@@ -267,7 +267,6 @@ SILURIAN|Reptilian race woken from hibernation beneath Earth|w
 SKARO|Home planet of the Daleks|w
 GALLIFREY|Home planet of the Time Lords|w
 MONDAS|Original home of the Cybermen|w
-TELOS|Planet where Cybermen lay in tombs|w
 TRENZALORE|Planet where the Doctor’s grave was foretold|w
 DAVROS|Creator of the Daleks|w
 MASTER|The Doctor’s arch-enemy, a fellow Time Lord|w
@@ -282,7 +281,7 @@ BRIGADIER|Lethbridge-Stewart’s rank|w
 VORTEX|Time ___, the swirling path the TARDIS travels|w
 CHAMELEON|___ circuit, stuck on a police box|w
 SCARF|Very long knitted item worn by the Fourth Doctor|w
-JELLYBABIES|Sweets the Fourth Doctor offers around|w
+JELLYBABIES|Sweets the Fourth Doctor offers around (5,6)|w
 CELERY|Fifth Doctor’s lapel vegetable|w
 BOWTIE|Eleventh Doctor insisted these are cool|w
 SCREWDRIVER|Sonic tool the Doctor carries|w
@@ -306,14 +305,6 @@ TENNANT|David ___, the tenth Doctor|w
 SMITH|Matt ___, the eleventh Doctor|w
 CAPALDI|Peter ___, the twelfth Doctor|w
 WHITTAKER|Jodie ___, first woman to play the Doctor|w
-NATION|Terry ___, writer who created the Daleks|w
-CUSICK|Raymond ___, designer of the Daleks|w
-NEWMAN|Sydney ___, BBC drama head behind the show’s creation|w
-LAMBERT|Verity ___, the show’s first producer|w
-GRAINER|Ron ___, composer of the original theme|w
-DERBYSHIRE|Delia ___, who realised the original theme|w
-RADIOPHONIC|___ Workshop, home of the show’s electronic sound|w
-HODGSON|Brian ___, who made the TARDIS’s wheezing sound|w
 DAVIES|Russell T ___, who revived the show in 2005|w
 MOFFAT|Steven ___, showrunner after Davies|w
 CHIBNALL|Chris ___, showrunner during Whittaker’s era|w
@@ -321,30 +312,13 @@ CARDIFF|Welsh capital where the revived series is made|w
 AMY|Companion Pond, the Girl Who Waited|w
 AMELIA|Amy Pond’s full first name as a little girl|w
 RIVER|Professor ___ Song, archaeologist and the Doctor’s wife|w
-SARAHJANE|Journalist companion Smith, star of her own spin-off series|w
+SARAHJANE|Journalist companion Smith, star of her own spin-off series (5,4)|w
 ADVENTURES|The Sarah Jane ___, children’s spin-off series|w
-LEELA|Savage warrior companion of the Fourth Doctor|w
-ROMANA|Time Lady companion of the Fourth Doctor|w
-ADRIC|Mathematical boy companion who died in Earthshock|w
-TEGAN|Australian companion Jovanka|w
-NYSSA|Companion from the planet Traken|w
-TURLOUGH|Schoolboy companion hiding an alien secret|w
-PERI|American student companion of the Sixth Doctor|w
 MEL|Computer programmer companion Bush|w
 ACE|Teenage companion who made her own explosives|w
 SUSAN|The first Doctor’s granddaughter|w
 BARBARA|History teacher companion Wright|w
 IAN|Science teacher companion Chesterton|w
-VICKI|Companion from the 25th century who joined the first Doctor|w
-STEVEN|Astronaut companion Taylor|w
-DODO|Nickname of companion Dorothea Chaplet|w
-POLLY|Companion who travelled with sailor Ben|w
-BEN|Sailor companion Jackson|w
-JAMIE|Highlander companion McCrimmon|w
-ZOE|Astrophysicist companion Heriot|w
-LIZ|Scientist companion Shaw, who worked with UNIT|w
-JO|Companion Grant, the third Doctor’s assistant|w
-HARRY|Naval surgeon Sullivan, companion of the fourth Doctor|w
 MICKEY|Rose’s boyfriend Smith, who became a companion|w
 JACKIE|Rose’s mother, Tyler|w
 WILF|Donna’s grandfather, Mott|w
@@ -398,12 +372,9 @@ STETSON|Eleventh Doctor’s cowboy hat|w
 FEZ|Hat the eleventh Doctor insisted was cool|w
 UMBRELLA|Seventh Doctor’s question-mark-handled accessory|w
 BLINK|Acclaimed 2007 episode that introduced the Weeping Angels|w
-BIGFINISH|Company producing officially licensed audio adventures|w
+BIGFINISH|Company producing officially licensed audio adventures (3,6)|w
 BBC|Network that broadcasts the show|w
 SLADEN|Elisabeth ___, who played Sarah Jane Smith|w
-MANNING|Katy ___, who played Jo Grant|w
-COURTNEY|Nicholas ___, who played the Brigadier|w
-JAMESON|Louise ___, who played Leela|w
 PIPER|Billie ___, who played Rose|w
 TATE|Catherine ___, who played Donna|w
 AGYEMAN|Freema ___, who played Martha|w
@@ -414,7 +385,6 @@ MACKIE|Pearl ___, who played Bill|w
 KINGSTON|Alex ___, who played River Song|w
 GOMEZ|Michelle ___, who played Missy|w
 SIMM|John ___, who played the Master|w
-AINLEY|Anthony ___, who played the Master in the 1980s|w
 DELGADO|Roger ___, the first actor to play the Master|w
 DHAWAN|Sacha ___, who played the Master in Spyfall|w
 WALSH|Bradley ___, who played Graham|w
@@ -426,7 +396,7 @@ GARDNER|Julie ___, executive producer in the Davies era|w
 COLLINSON|Phil ___, producer of the 2005 series|w
 GAIMAN|Neil ___, author who wrote The Doctor’s Wife|w
 GATISS|Mark ___, writer and actor in the revival|w
-MELODYPOND|Amy's daughter|w
+MELODYPOND|Amy and Rory's daughter, born on a meteor (6,4)|w
 KARABRAXOS|An impenetrable bank|w
 YANA|The professor at the end of the universe|w
 ARKANGEL|Hypnotic satellite network made by The Master|w
@@ -440,19 +410,19 @@ DOUBT|Type of thought that broke Wish World|w
 ASYLUM|Where The Doctor first meets Clara, surrounded by Daleks|w
 SOUFFLE|What Clara makes in the Dalek Asylum, without milk|w
 KOVARIAN|Woman who abduts Amy and raises River|w
-TIMEAGENT|Captain Jack Harkness' job before Torchwood|w
+TIMEAGENT|Captain Jack Harkness' job before Torchwood (4,5)|w
 MATHESON|Rex ___, an FBI Agent who can't die after Miracle Day ends|w
 DANES|Oswald ___, A Secondary antagonist in Miracle Day|w
 FROBISHER|Permanent Secretary of the Home Office, Peter Capaldi|w
 JUAREZ|Dr. Vera ___, A temporary Torchwood member in Miracle Day|w
 HARRIS|Neil Patrick ___, who played the Toymaker|w
-NOTTHINGS|The ___, near perfect duplicants from outside the universe|w
+NOTTHINGS|The ___, near perfect duplicants from outside the universe (3,6)|w
 RIGSY|Local knowledge, falsely accused of crime by Mayor Me|w
 COLEMAN|Olivia ___, the main human form of Prisoner Zero|w
 ATRAXI|The race of aliens looking for Prisoner Zero|w
 DRUMMOND|Esther ___, An FBI analyst and temporary member of Torchwood in Miracle Day|w
-JINXMONSOON|American actor who played Maestro, god of Music|w
-ALANCUMMING|Scottish actor who played Mr Ring-A-Ding|w
+JINXMONSOON|American actor who played Maestro, god of Music (4,7)|w
+ALANCUMMING|Scottish actor who played Mr Ring-A-Ding (4,7)|w
 COLE|Tosin ___, who played Ryan|w
 XTONIC|The type of star that soaked that planet Midnight in galvanic radiation|w
 STET|The type of radiation that filled the couplings room on the Utopia rocket|w
@@ -461,4 +431,16 @@ ADIPOSE|Children made of fat, also a company|w
 JAGRAFESS|Editor in chief of Satellite Five|w
 TECTEUN|Adoptive parent to the Doctor and geneticist|w
 CLAYTON|Ruth ___, the human identity of the Fugitive Doctor|w
+CHAMELEON|___ Arch, a device used to rewrite Time Lord DNA to disguise them|w
+SHALKA|Scream of the ___, an animated serial featuring Richard E. Grant as the 9th Doctor|w
+ATKINSON|Rowan ___, The Ninth Doctor in The Curse of Fatal Death|w
+GRANT|Richard E. ---, The Tenth Doctor in The Curse of Fatal Death|w
+BROADBENT|Jim ___, The Eleventh Doctor in The Curse of Fatal Death|w
+GRANT|Hugh ___, The Twelfth Doctor in The Curse of Fatal Death|w
+LUMLEY|Joanna ___, The Thirteenth Doctor in The Curse of Fatal Death|w
+SANFRANCISCO|US City, setting for the 1996 Doctor Who movie (3,9)|w
+CLOM|The twin planet of Raxicoricofallapatorius|w
+REDGRAVE|Jemma ___, who played Kate Lethbridge-Stewart|w
+OSGOOD|UNIT Scientific Advisor under Kate Stewart in 2015|w
+BLACKARCHIVE|Location for storage and record of The Doctor and other alien lifeforms and technology for UNIT (5,7)|w
 `;
