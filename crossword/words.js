@@ -431,7 +431,7 @@ CLAYTON|Ruth ___, the human identity of the Fugitive Doctor|w
 CHAMELEON|___ Arch, a device used to rewrite Time Lord DNA to disguise them|w
 SHALKA|Scream of the ___, an animated serial featuring Richard E. Grant as the 9th Doctor|w
 ATKINSON|Rowan ___, The Ninth Doctor in The Curse of Fatal Death|w
-GRANT|Richard E. ---, The Tenth Doctor in The Curse of Fatal Death|w
+GRANT|Richard E. ___, The Tenth Doctor in The Curse of Fatal Death|w
 BROADBENT|Jim ___, The Eleventh Doctor in The Curse of Fatal Death|w
 GRANT|Hugh ___, The Twelfth Doctor in The Curse of Fatal Death|w
 LUMLEY|Joanna ___, The Thirteenth Doctor in The Curse of Fatal Death|w
