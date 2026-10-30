@@ -396,13 +396,13 @@ GARDNER|Julie ___, executive producer in the Davies era|w
 COLLINSON|Phil ___, producer of the 2005 series|w
 GAIMAN|Neil ___, author who wrote The Doctor’s Wife|w
 GATISS|Mark ___, writer and actor in the revival|w
-MELODY POND|Amy and Rory's daughter, born on a meteor|w
+MELODY POND|Amy and Rory's daughter, born on an asteroid|w
 KARABRAXOS|An impenetrable bank|w
 YANA|The professor at the end of the universe|w
-ARKANGEL|Hypnotic satellite network made by The Master|w
+ARCHANGEL|Hypnotic satellite network made by The Master|w
 POPPY|Space baby and Belinda's daughter|w
 GATWA|Ncuti ___, the fifteenth Doctor|w
-RUBY|___ Sunday, named after a road on Christmas|w
+RUBY|___ Sunday, companion found as a baby on Christmas|w
 BIGENERATION|What happened when the Toymaker shot the fourteenth Doctor|w
 RANI|Renegade Time Lady portrayed by Archie Panjabi|w
 FLOOD|Incarnation of The Rani portrayed by Anita Dobson|w
@@ -442,5 +442,6 @@ SAN FRANCISCO|US City, setting for the 1996 Doctor Who movie|w
 CLOM|The twin planet of Raxicoricofallapatorius|w
 REDGRAVE|Jemma ___, who played Kate Lethbridge-Stewart|w
 OSGOOD|UNIT Scientific Advisor under Kate Stewart in 2015|w
-BLACK ARCHIVE|Location for storage and record of The Doctor and other alien lifeforms and technology for UNIT|w
+BLACK ARCHIVE|A vault for information and alien artefacts related to The Doctor|w
+VINDICATOR|The tool used by the Fifteenth Doctor to get Belinda home|w
 `;
