@@ -58,16 +58,29 @@ $('#grid').onclick=ev=>{const c=ev.target.closest('.c');if(!c||!c.dataset.y)retu
  const y=+c.dataset.y,x=+c.dataset.x,A=EA[y][x];
  if(cur.y===y&&cur.x===x){if(A[1-cur.d])cur.d=1-cur.d}else cur={y,x,d:A[cur.d]?cur.d:1-cur.d};paint();focusIn()};
 $('#lists').onclick=ev=>{const li=ev.target.closest('li');if(!li)return;const[n,d]=li.dataset.k.split('-'),e=Pz.E.find(e=>e.n==n&&e.d==d);cur={y:e.r,x:e.c,d:+d};paint();focusIn()};
-onkeydown=ev=>{if(ev.target===inp||ev.ctrlKey||ev.metaKey||ev.altKey)return;if(/^[a-z]$/i.test(ev.key))typ(ev.key.toUpperCase());else if(ev.key==='Backspace')back()};
+onkeydown=ev=>{if(ev.target===inp||ev.target.closest('button,select')||ev.ctrlKey||ev.metaKey||ev.altKey)return;if(nav(ev))return;if(/^[a-z]$/i.test(ev.key))typ(ev.key.toUpperCase());else if(ev.key==='Backspace')back()};
 const inp=$('#in'),S='\u200b';
 function focusIn(){inp.value=S;inp.blur();inp.focus()}
-inp.oninput=()=>{const v=inp.value;if(!v)back();else for(const ch of v.replace(S,'').toUpperCase())if(/[A-Z]/.test(ch))typ(ch);inp.value=S};
+inp.oninput=()=>{const v=inp.value;if(!v)back();else for(const ch of v.replace(S,'').toUpperCase())if(ch===' ')flip();else if(/[A-Z]/.test(ch))typ(ch);inp.value=S};
 function nextClue(){
  const L=[0,1].flatMap(d=>Pz.E.filter(e=>e.d===d)),e=L[(L.indexOf(EA[cur.y][cur.x][cur.d])+1)%L.length];
  let y=e.r,x=e.c;
  for(let k=0;k<e.w.length;k++){const yy=e.r+(e.d?k:0),xx=e.c+(e.d?0:k);if(!F[yy][xx]){y=yy;x=xx;break}}
  cur={y,x,d:e.d};paint();focusIn()}
-inp.onkeydown=ev=>{if(ev.key==='Enter'){ev.preventDefault();nextClue()}};
+function arrow(dy,dx){
+ let y=cur.y+dy,x=cur.x+dx;
+ while(y>=0&&x>=0&&y<Pz.H&&x<Pz.W&&!Pz.S[y][x]){y+=dy;x+=dx}
+ if(y<0||x<0||y>=Pz.H||x>=Pz.W)return;
+ const d=dy?1:0;cur={y,x,d:EA[y][x][d]?d:1-d};paint()}
+function flip(){if(EA[cur.y][cur.x][1-cur.d]){cur.d=1-cur.d;paint()}}
+const AR={ArrowUp:[-1,0],ArrowDown:[1,0],ArrowLeft:[0,-1],ArrowRight:[0,1]};
+function nav(ev){
+ if(ev.ctrlKey||ev.metaKey||ev.altKey)return false;
+ if(AR[ev.key]){ev.preventDefault();arrow(...AR[ev.key]);return true}
+ if(ev.key===' '){ev.preventDefault();flip();return true}
+ if(ev.key==='Enter'){ev.preventDefault();nextClue();return true}
+ return false}
+inp.onkeydown=ev=>{nav(ev)};
 $('#new').onclick=newPuzzle;
 $('#chk').onclick=()=>{Pz.S.forEach((r,y)=>r.forEach((v,x)=>X[y][x]=v&&F[y][x]&&F[y][x]!==v?1:0));paint()};
 $('#rev').onclick=()=>{const e=EA[cur.y][cur.x][cur.d];if(!e)return;for(let i=0;i<e.w.length;i++){F[e.r+(e.d?i:0)][e.c+(e.d?0:i)]=e.w[i]}paint()};
