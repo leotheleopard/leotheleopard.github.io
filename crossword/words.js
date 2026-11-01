@@ -428,7 +428,7 @@ ADIPOSE|Children made of fat, also a company|w
 JAGRAFESS|Editor in chief of Satellite Five|w
 TECTEUN|Adoptive parent to the Doctor and geneticist|w
 CLAYTON|Ruth ___, the human identity of the Fugitive Doctor|w
-CHAMELEON|___ Arch, a device used to rewrite Time Lord DNA to disguise them|w
+ARCH|Chameleon ___, a device used to rewrite Time Lord DNA to disguise them|w
 SHALKA|Scream of the ___, an animated serial featuring Richard E. Grant as the 9th Doctor|w
 ATKINSON|Rowan ___, The Ninth Doctor in The Curse of Fatal Death|w
 GRANT|Richard E. ___, The Tenth Doctor in The Curse of Fatal Death|w
@@ -463,4 +463,13 @@ RUNAWAY|The nickname The Doctor gave to Colnel Manton during the Battle of Demon
 RUN|Demon's ___, the asteroid where MELODY POND was born|w
 RTD|Intitals of Doctor Who Showrunner (2005-2010, 2022-2026)|w
 RETCON|A targeted amnesia drug|w
+REL|A Dalek unit of time, just over a second|w
+SEC|Second leader of the Cult of Skaro|w
+CAAN|First leader of the Cult of Skaro|w
+LEO|Martha Jones' brother, youngest member of the Jones family|w
+RAGGEDY MAN|Amy's nickname for the Eleventh Doctor|w
+MALONE|Melody ___, River Song's book series, published by Amy Pond|w
+FLUX|A destructive anti-matter mass designed to destroy the universe|w
+IDRIS|The name of the woman whose body was used to hold the consciousness of the TARDIS|w
+CROSBIE|The name of the woman evicted from the Big Brother house just after The Doctor arrived|w
 `;
