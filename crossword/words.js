@@ -472,4 +472,5 @@ MALONE|Melody ___, River Song's book series, published by Amy Pond|w
 FLUX|A destructive anti-matter mass designed to destroy the universe|w
 IDRIS|The name of the woman whose body was used to hold the consciousness of the TARDIS|w
 CROSBIE|The name of the woman evicted from the Big Brother house just after The Doctor arrived|w
+MAVITY|Isaac Newton's name for the force that pulls objects together, after meeting Donna|w
 `;
